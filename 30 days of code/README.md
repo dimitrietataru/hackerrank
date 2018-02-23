@@ -45,3 +45,28 @@
 *  Scope
    - [Problem](https://www.hackerrank.com/challenges/30-scope/problem)
    - [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2014%20-%20Scope)
+*  Linked list
+   - [Problem](https://www.hackerrank.com/challenges/30-linked-list/problem)
+   - [Solution]()
+*  Exceptions (String to integer)
+   - [Problem](https://www.hackerrank.com/challenges/30-exceptions-string-to-integer/problem)
+   - [Solution]()
+*  More exceptions
+   - [Problem](https://www.hackerrank.com/challenges/30-more-exceptions/problem)
+   - [Solution]()
+*  Queues and stacks
+   - [Problem](https://www.hackerrank.com/challenges/30-queues-stacks/problem)
+   - [Solution]()
+*  Interfaces
+   - [Problem](https://www.hackerrank.com/challenges/30-interfaces/problem)
+   - [Solution]()
+*  Sorting
+   - [Problem](https://www.hackerrank.com/challenges/30-sorting/problem)
+   - [Solution]()
+*  Generics
+   - [Problem](https://www.hackerrank.com/challenges/30-generics/problem)
+   - [Solution]()
+*  Binary search trees
+   - [Problem](https://www.hackerrank.com/challenges/30-binary-search-trees/problem)
+   - [Solution]()
+   
