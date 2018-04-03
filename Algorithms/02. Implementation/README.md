@@ -100,3 +100,35 @@
    - [Problem](https://www.hackerrank.com/challenges/chocolate-feast/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/49%20-%20Chocolate%20feast)
 *  Service lane
    - [Problem](https://www.hackerrank.com/challenges/service-lane/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/50%20-%20Service%20lane)
+*  Lisa's workbook
+   - [Problem](https://www.hackerrank.com/challenges/lisa-workbook/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/51%20-%20Lisas%20workbook)
+*  Flatland space stations
+   - [Problem](https://www.hackerrank.com/challenges/flatland-space-stations/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/52%20-%20Flatland%20space%20stations)
+*  Fair rations
+   - [Problem](https://www.hackerrank.com/challenges/fair-rations/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/53%20-%20Fair%20rations)
+*  Cavity map
+   - [Problem](https://www.hackerrank.com/challenges/cavity-map/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/54%20-%20Cavity%20map)
+*  Manasa and stones
+   - [Problem](https://www.hackerrank.com/challenges/manasa-and-stones/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/55%20-%20Manasa%20and%20stones)
+*  The grid search
+   - [Problem](https://www.hackerrank.com/challenges/the-grid-search/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/56%20-%20The%20grid%20search)
+*  Happy ladybugs
+   - [Problem](https://www.hackerrank.com/challenges/happy-ladybugs/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/57%20-%20Happy%20ladybugs)
+*  Strange counter
+   - [Problem](https://www.hackerrank.com/challenges/strange-code/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/58%20-%20Strange%20counter)
+*  Absolute permutation
+   - [Problem](https://www.hackerrank.com/challenges/absolute-permutation/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/59%20-%20Absolute%20permutation)
+*  The bomberman game
+   - [Problem](https://www.hackerrank.com/challenges/bomber-man/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/60%20-%20The%20bomberman%20game)
+*  Ema's supercomputer
+   - [Problem](https://www.hackerrank.com/challenges/two-pluses/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/61%20-%20Emas%20supercomputer)
+*  Larry's array
+   - [Problem](https://www.hackerrank.com/challenges/larrys-array/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/62%20-%20Larrys%20array)
+*  Almost sorted
+   - [Problem](https://www.hackerrank.com/challenges/almost-sorted/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/63%20-%20Almost%20sorted)
+*  Matrix layer rotation
+   - [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/64%20-%20Matrix%20layer%20rotation)
+*  Halloween sale
+   - [Problem](https://www.hackerrank.com/challenges/halloween-sale/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/65%20-%20Halloween%20sale)
+*  3D surface area
+   - [Problem](https://www.hackerrank.com/challenges/3d-surface-area/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/66%20-%203D%20surface%20area)
