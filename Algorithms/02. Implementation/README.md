@@ -78,4 +78,25 @@
    - [Problem](https://www.hackerrank.com/challenges/equality-in-a-array/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/38%20-%20Equalize%20the%20array)
 *  Queens attack II
    - [Problem](https://www.hackerrank.com/challenges/queens-attack-2/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/39%20-%20Queens%20attack%20II)
-   
+*  ACM ICPC Team
+   - [Problem](https://www.hackerrank.com/challenges/acm-icpc-team/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/40%20-%20ACM%20ICPC%20team)
+*  Taum and B'day
+   - [Problem](https://www.hackerrank.com/challenges/taum-and-bday/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/41%20-%20Taum%20and%20Bday)
+*  Organizing containers of balls
+   - [Problem](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/42%20-%20Organizing%20containers%20of%20balls)
+*  Encryption
+   - [Problem](https://www.hackerrank.com/challenges/encryption/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/43%20-%20Encryption)
+*  Bigger is greater
+   - [Problem](https://www.hackerrank.com/challenges/bigger-is-greater/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/44%20-%20Bigger%20is%20greater)
+*  Modified Kaprekar numbers
+   - [Problem](https://www.hackerrank.com/challenges/kaprekar-numbers/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/45%20-%20Modified%20Kaprekar%20numbers)
+*  Beautiful triplets
+   - [Problem](https://www.hackerrank.com/challenges/beautiful-triplets/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/46%20-%20Beautiful%20triplets)
+*  Minimum distances
+   - [Problem](https://www.hackerrank.com/challenges/minimum-distances/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/47%20-%20Minimum%20distances)
+*  The time in words
+   - [Problem](https://www.hackerrank.com/challenges/the-time-in-words/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/48%20-%20The%20time%20in%20words)
+*  Chocolate feast
+   - [Problem](https://www.hackerrank.com/challenges/chocolate-feast/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/49%20-%20Chocolate%20feast)
+*  Service lane
+   - [Problem](https://www.hackerrank.com/challenges/service-lane/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/50%20-%20Service%20lane)
