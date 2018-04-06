@@ -12,25 +12,28 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int input = scan.nextInt();
+        {
+            int n = scan.nextInt();
+            viralAdvertising(n);
+        }
         scan.close();
-
-        viralAdvertising(input);
     }
 
-    private static void viralAdvertising(int input) {
-        if (input == 0) {
+    private static void viralAdvertising(int n) {
+        if (n == 0) {
             System.out.println(0);
             return;
         }
+
         int seeds = 5;
         int nextSeeds = seeds / 2;
         int result = nextSeeds;
-        while(--input > 0) {
+        while(--n > 0) {
             seeds = nextSeeds * 3;
             nextSeeds = seeds / 2;
             result += nextSeeds;
         }
+
         System.out.println(result);
     }
 }

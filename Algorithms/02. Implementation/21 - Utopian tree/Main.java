@@ -12,10 +12,12 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while (testCases-- > 0) {
-            int cycles = scan.nextInt();
-            utopianTree(cycles);
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int cycles = scan.nextInt();
+                utopianTree(cycles);
+            }
         }
         scan.close();
     }
@@ -29,6 +31,6 @@ public class Main {
                 height++;
             }
         }
-        System.out.println(String.valueOf(height));
+        System.out.println(height);
     }
 }

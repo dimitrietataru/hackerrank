@@ -12,27 +12,29 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int length = scan.nextInt();
-        int rotation = scan.nextInt() % length;
-        int queries = scan.nextInt();
-        int[] array = new int[length];
-        for (int i = 0; i < length; ++i) {
-            array[i] = scan.nextInt();
-        }
+        {
+            int length = scan.nextInt();
+            int rotation = scan.nextInt() % length;
+            int queries = scan.nextInt();
+            int[] array = new int[length];
+            for (int i = 0; i < array.length; ++i) {
+                array[i] = scan.nextInt();
+            }
 
-        array = circularArrayRotation(array, rotation);
-        while (queries-- > 0) {
-            System.out.println(array[scan.nextInt()]);
+            array = circularArrayRotation(array, rotation);
+            while (queries-- > 0) {
+                System.out.println(array[scan.nextInt()]);
+            }
         }
         scan.close();
     }
 
     private static int[] circularArrayRotation(int[] array, int rotation) {
-        int length = array.length;
-        int[] array2 = new int[length];
-        for (int i = 0; i < length; ++i) {
-            array2[i] = array[(i - rotation + length) % length];
+        int len = array.length;
+        int[] resultArray = new int[len];
+        for (int i = 0; i < len; ++i) {
+            resultArray[i] = array[(i - rotation + len) % len];
         }
-        return array2;
+        return resultArray;
     }
 }

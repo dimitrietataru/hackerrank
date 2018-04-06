@@ -12,15 +12,17 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int jump = scan.nextInt();
-        int[] clouds = new int[n];
-        for (int i = 0; i < n; ++i) {
-            clouds[i] = scan.nextInt();
+        {
+            int[] clouds = new int[scan.nextInt()];
+            int jump = scan.nextInt();
+
+            for (int i = 0; i < clouds.length; ++i) {
+                clouds[i] = scan.nextInt();
+            }
+
+            jumpingOnTheClouds(clouds, jump);
         }
         scan.close();
-
-        jumpingOnTheClouds(clouds, jump);
     }
 
     private static void jumpingOnTheClouds(int[] clouds, int jump) {
@@ -30,7 +32,7 @@ public class Main {
         while (energy > 0) {
             start = (start + jump + total) % total;
             energy -= (clouds[start] == 1) ? 3 : 1;
-
+            
             if (start == 0) {
                 System.out.println(energy);
                 return;
