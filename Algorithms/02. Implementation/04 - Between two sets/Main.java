@@ -12,22 +12,22 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int aCount = scan.nextInt();
-        int bCount = scan.nextInt();
+        {
+            int[] a = new int[scan.nextInt()];
+            int[] b = new int[scan.nextInt()];
 
-        int[] a = new int[aCount];
-        for (int i = 0; i < aCount; ++i) {
-            a[i] = scan.nextInt();
-        }
+            for (int i = 0; i < a.length; ++i) {
+                a[i] = scan.nextInt();
+            }
 
-        int[] b = new int[bCount];
-        for (int i = 0; i < bCount; ++i) {
-            b[i] = scan.nextInt();
+            for (int i = 0; i < b.length; ++i) {
+                b[i] = scan.nextInt();
+            }
+
+            int result = solveTwoSets(a, b);
+            System.out.println(result);
         }
         scan.close();
-
-        int result = solveTwoSets(a, b);
-        System.out.println(result);
     }
 
     private static int solveTwoSets(int[] a, int[] b) {
@@ -43,7 +43,7 @@ public class Main {
     private static int getMaxValueFromArray(int[] array) {
         int max = Integer.MIN_VALUE;
         for (int i : array) {
-            max = (i > max) ? i : max;
+            max = Math.max(i, max);
         }
         return max;
     }
@@ -51,7 +51,7 @@ public class Main {
     private static int getMinValueFromArray(int[] array) {
         int min = Integer.MAX_VALUE;
         for (int i : array) {
-            min = (i < min) ? i : min;
+            min = Math.min(i, min);
         }
         return min;
     }
@@ -63,7 +63,7 @@ public class Main {
         }
         return value;
     }
-
+    
     private static int getGreatestCommonDivisor(int[] array) {
         int index = 1;
         int value = 0;
