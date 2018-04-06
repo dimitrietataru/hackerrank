@@ -12,17 +12,19 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        Tree myTree = new Tree();
-        Node root = null;
+        {
+            Tree tree = new Tree();
+            Node root = null;
 
-        int totalNodes = scan.nextInt();
-        while (totalNodes-- > 0) {
-            int data = scan.nextInt();
-            root = myTree.insert(root, data);
+            int nodes = scan.nextInt();
+            while (nodes-- > 0) {
+                int data = scan.nextInt();
+                root = tree.insert(root, data);
+            }
+
+            System.out.println(tree.getHeight(root));
         }
         scan.close();
-
-        System.out.println(myTree.getHeight(root));
     }
 }
 

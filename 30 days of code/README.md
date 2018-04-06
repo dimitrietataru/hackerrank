@@ -1,6 +1,6 @@
-## 30 DAYS OF CODE
+# 30 DAYS OF CODE
 
-| Day ## | Challenge                                                                                               | Java      | C++      | C#      |
+|   Day  | Problem                                                                                                 | Java      | C++      | C#      |
 |:------:|:-------------------------------------------------------------------------------------------------------:|:---------:|:--------:|:-------:|
 |    0   | [Hello, world](https://www.hackerrank.com/challenges/30-hello-world)                                    | [.java]() | [.cpp]() | [.cs]() |
 |    1   | [Data types](https://www.hackerrank.com/challenges/30-data-types)                                       | [.java]() | [.cpp]() | [.cs]() |

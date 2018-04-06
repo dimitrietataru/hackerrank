@@ -12,11 +12,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
+        {
+            int n = scan.nextInt();
+            System.out.print(factorial(n));
+        }
         scan.close();
-
-        int result = factorial(n);
-        System.out.print(result);
     }
 
     private static int factorial(int n) {

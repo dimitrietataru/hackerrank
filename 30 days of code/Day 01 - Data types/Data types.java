@@ -10,22 +10,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        int i = 4;
-        double d = 4.0;
-        String s = "HackerRank ";
-
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
+        {
+            int i = Integer.parseInt(scan.nextLine());
+            double d = Double.parseDouble(scan.nextLine());
+            String s = scan.nextLine();
 
-        int i2 = scan.nextInt();
-        scan.nextLine();
-        double d2 = Double.parseDouble(scan.nextLine());
-        String s2 = scan.nextLine();
-
+            System.out.println(4 + i);
+            System.out.println(4.0 + d);
+            System.out.println("HackerRank" + s);
+        }
         scan.close();
-
-        System.out.println(i + i2);
-        System.out.println(d + d2);
-        System.out.println(s + s2);
     }
 }

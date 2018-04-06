@@ -12,14 +12,15 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.next();
-        scan.close();
-
-        try {
-            int n = Integer.parseInt(input);
-            System.out.println(n);
-        } catch (NumberFormatException nfe) {
-            System.out.println("Bad String");
+        {
+            String input = scan.next();
+            try {
+                int n = Integer.parseInt(input);
+                System.out.println(n);
+            } catch (NumberFormatException nfe) {
+                System.out.println("Bad String");
+            }
         }
+        scan.close();
     }
 }

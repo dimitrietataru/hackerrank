@@ -12,17 +12,18 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-
-        Calculator calculator = new Calculator();
-        int queries = scan.nextInt();
-        while (queries-- > 0) {
-            int n = scan.nextInt();
-            int p = scan.nextInt();
-            try {
-                int answer = calculator.power(n, p);
-                System.out.println(answer);
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
+        {
+            Calculator calculator = new Calculator();
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int n = scan.nextInt();
+                int p = scan.nextInt();
+                try {
+                    int answer = calculator.power(n, p);
+                    System.out.println(answer);
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
             }
         }
         scan.close();

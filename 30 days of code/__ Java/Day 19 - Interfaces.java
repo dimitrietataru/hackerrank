@@ -12,13 +12,16 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        scan.close();
+        {
+            int n = scan.nextInt();
 
-        IAdvancedArithmetic calculator = new Calculator();
-        int sum = calculator.divisorSum(n);
-        System.out.println("I implemented: " + calculator.getClass().getInterfaces()[0].getName());
-        System.out.println(sum);
+            IAdvancedArithmetic calculator = new Calculator();
+            System.out.println("I implemented: " + calculator.getClass().getInterfaces()[0].getName());
+
+            int sum = calculator.divisorSum(n);
+            System.out.println(sum);
+        }
+        scan.close();
     }
 }
 

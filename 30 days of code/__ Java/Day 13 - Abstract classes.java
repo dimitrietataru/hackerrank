@@ -12,13 +12,15 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String title = scan.nextLine();
-        String author = scan.nextLine();
-        int price = scan.nextInt();
-        scan.close();
+        {
+            String title = scan.nextLine();
+            String author = scan.nextLine();
+            int price = scan.nextInt();
 
-        Book book = new MyBook(title, author, price);
-        book.display();
+            Book book = new MyBook(title, author, price);
+            book.display();
+        }
+        scan.close();
     }
 }
 

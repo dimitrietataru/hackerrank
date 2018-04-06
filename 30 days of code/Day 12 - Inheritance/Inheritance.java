@@ -7,30 +7,30 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String firstName = scan.next();
-        String lastName = scan.next();
-        int id = scan.nextInt();
-        int scores = scan.nextInt();
-        int[] testScores = new int[scores];
-        for (int i = 0; i < testScores.length; ++i) {
-            testScores[i] = scan.nextInt();
+        {
+            String firstName = scan.next();
+            String lastName = scan.next();
+            int id = scan.nextInt();
+            int[] testScores = new int[scan.nextInt()];
+            for (int i = 0; i < testScores.length; ++i) {
+                testScores[i] = scan.nextInt();
+            }
+            Student student = new Student(firstName, lastName, id, testScores);
+            student.printPerson();
+            System.out.println("Grade: " + student.calculate());
         }
         scan.close();
-
-        Student student = new Student(firstName, lastName, id, testScores);
-        student.printPerson();
-        System.out.println("Grade: " + student.calculate());
     }
 }
 
 class Person {
-    private String firstName;
-    private String lastName;
+    private String firstName, lastName;
     private int id;
 
     Person(String firstName, String lastName, int id) {
@@ -53,11 +53,7 @@ class Student extends Person {
     }
 
     char calculate() {
-        int total = 0;
-        for (int i : testScores) {
-            total += i;
-        }
-
+        int total = IntStream.of(testScores).sum();// 0;
         int mean = total / testScores.length;
         if (mean >= 90 && mean <= 100) {
             return 'O';
