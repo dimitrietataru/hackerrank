@@ -12,11 +12,13 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int totalPages = scan.nextInt();
-        int page = scan.nextInt();
-        scan.close();
+        {
+            int totalPages = scan.nextInt();
+            int page = scan.nextInt();
 
-        drawingBook(totalPages, page);
+            drawingBook(totalPages, page);
+        }
+        scan.close();
     }
 
     private static void drawingBook(int totalPages, int page) {
@@ -26,7 +28,6 @@ public class Main {
         }
 
         int totalStart = page / 2;
-        //int totalEnd = (page % 2 == 0) ? (totalPages - page) / 2 : (totalPages - page + 1) / 2;
         int totalEnd = (totalPages / 2) - (page / 2);
 
         System.out.println(Math.min(totalStart, totalEnd));

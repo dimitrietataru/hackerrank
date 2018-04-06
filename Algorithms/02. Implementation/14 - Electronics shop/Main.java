@@ -14,50 +14,48 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int money = scan.nextInt();
-        int kbCount = scan.nextInt();
-        int usbCount = scan.nextInt();
-        Integer[] kb = new Integer[kbCount];
-        Integer[] usb = new Integer[usbCount];
-        for (int i = 0 ; i < kb.length; ++i) {
-            kb[i] = scan.nextInt();
-        }
-        for (int i = 0 ; i < usb.length; ++i) {
-            usb[i] = scan.nextInt();
+        {
+            int budget = scan.nextInt();
+            Integer[] keyboards = new Integer[scan.nextInt()];
+            Integer[] usbs = new Integer[scan.nextInt()];
+            for (int i = 0; i < keyboards.length; ++i) {
+                keyboards[i] = scan.nextInt();
+            }
+            for (int i = 0; i < usbs.length; ++i) {
+                usbs[i] = scan.nextInt();
+            }
+
+            int moneySpent = getMoneySpent(keyboards, usbs, budget);
+            System.out.println(moneySpent);
         }
         scan.close();
-
-        int moneySpent = getMoneySpent(kb, usb, money);
-        System.out.println(moneySpent);
     }
 
-    private static int getMoneySpent(Integer[] kb, Integer[] usb, int money) {
+    private static int getMoneySpent(Integer[] keyboards, Integer[] usbs, int budget) {
         int max = -1;
-        for (int i : kb) {
-            for (int j : usb) {
-                int currentSum = i + j;
-                max = ((currentSum <= money) && (currentSum > max)) ? currentSum : max;
+        for (int kb : keyboards) {
+            for (int usb : usbs) {
+                int sum = kb + usb;
+                max = ((sum <= budget) && (sum > max)) ? sum : max;
             }
         }
         return max;
     }
 
-    private static int getMoneySpentOptimized(Integer[] kb, Integer[] usb, int money) {
+    private static int getMoneySpentOptimized(Integer[] keyboards, Integer[] usbs, int budget) {
         /* Sort the arrays in descending and ascending order */
-        Arrays.sort(kb, Collections.reverseOrder());
-        Arrays.sort(usb);
-        int max = -1;
+        Arrays.sort(keyboards, Collections.reverseOrder());
+        Arrays.sort(usbs);
 
-        for (int i = 0, j = 0; i < kb.length; ++i) {
-            for (; j < usb.length; ++j) {
-                int currentSum = kb[i] + usb[j];
-                if (currentSum > money) {
+        int max = -1;
+        for (int i = 0, j = 0; i < keyboards.length; ++i) {
+            for (; j < usbs.length; ++j) {
+                int sum = keyboards[i] + usbs[j];
+                if (sum > budget) {
                     /* This prevents j from incrementing */
                     break;
                 }
-                if (currentSum > max) {
-                    max = currentSum;
-                }
+                max = Math.max(sum, max);
             }
         }
         return max;
