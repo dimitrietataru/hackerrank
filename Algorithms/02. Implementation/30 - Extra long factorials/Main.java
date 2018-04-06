@@ -13,19 +13,20 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
+        {
+            int n = scan.nextInt();
+            extraLongFactorial(n);
+            customFactorial(n);
+        }
         scan.close();
-
-        extraLongFactorial(n);
-        customFactorial(n);
     }
 
     private static void extraLongFactorial(int n) {
-        BigInteger bigInt = new BigInteger(String.valueOf(n));
+        BigInteger bi = new BigInteger(String.valueOf(n));
         while (--n > 0) {
-            bigInt = bigInt.multiply(new BigInteger(String.valueOf(n)));
+            bi = bi.multiply(new BigInteger(String.valueOf(n)));
         }
-        System.out.println(String.valueOf(bigInt));
+        System.out.println(String.valueOf(bi));
     }
 
     private static void customFactorial(int n) {

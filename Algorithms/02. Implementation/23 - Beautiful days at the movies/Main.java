@@ -12,11 +12,14 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int i = scan.nextInt();
-        int j = scan.nextInt();
-        int k = scan.nextInt();
+        {
+            int i = scan.nextInt();
+            int j = scan.nextInt();
+            int k = scan.nextInt();
+
+            beautifulDaysAtTheMovies(i, j, k);
+        }
         scan.close();
-        beautifulDaysAtTheMovies(i, j, k);
     }
 
     private static void beautifulDaysAtTheMovies(int startDay, int endDay, int reverse) {
