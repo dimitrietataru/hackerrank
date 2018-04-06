@@ -1,14 +1,14 @@
 # WARMUP
 
-|    #   | Problem                                                                              | Difficulty | Solution     |
-|:------:|:------------------------------------------------------------------------------------:|:----------:|:------------:|
-|    1   | [Solve me first](https://www.hackerrank.com/challenges/solve-me-first)               |    Easy    | [.java](url) |
-|    2   | [Simple array sum](https://www.hackerrank.com/challenges/simple-array-sum)           |    Easy    | [.java](url) |
-|    3   | [Compare the triplets](https://www.hackerrank.com/challenges/compare-the-triplets)   |    Easy    | [.java](url) |
-|    4   | [A very big sum](https://www.hackerrank.com/challenges/a-very-big-sum)               |    Easy    | [.java](url) |
-|    5   | [Diagonal difference](https://www.hackerrank.com/challenges/diagonal-difference)     |    Easy    | [.java](url) |
-|    6   | [Plus minus](https://www.hackerrank.com/challenges/plus-minus)                       |    Easy    | [.java](url) |
-|    7   | [Staircase](https://www.hackerrank.com/challenges/staircase)                         |    Easy    | [.java](url) |
-|    8   | [Mini-max sum](https://www.hackerrank.com/challenges/mini-max-sum)                   |    Easy    | [.java](url) |
-|    9   | [Birthday cake candles](https://www.hackerrank.com/challenges/birthday-cake-candles) |    Easy    | [.java](url) |
-|   10   | [Time conversion](https://www.hackerrank.com/challenges/time-conversion)             |    Easy    | [.java](url) |
+|    #   | Problem                                                                              | Difficulty | Solution                                                                                                                               |
+|:------:|:------------------------------------------------------------------------------------:|:----------:|:--------------------------------------------------------------------------------------------------------------------------------------:|
+|    1   | [Solve me first](https://www.hackerrank.com/challenges/solve-me-first)               |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/01%20-%20Solve%20me%20first/Main.java)        |
+|    2   | [Simple array sum](https://www.hackerrank.com/challenges/simple-array-sum)           |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/02%20-%20Simple%20array%20sum/Main.java)      |
+|    3   | [Compare the triplets](https://www.hackerrank.com/challenges/compare-the-triplets)   |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/03%20-%20Compare%20the%20triplets/Main.java)  |
+|    4   | [A very big sum](https://www.hackerrank.com/challenges/a-very-big-sum)               |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/04%20-%20A%20very%20big%20sum/Main.java)      |
+|    5   | [Diagonal difference](https://www.hackerrank.com/challenges/diagonal-difference)     |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/05%20-%20Diagonal%20difference/Main.java)     |
+|    6   | [Plus minus](https://www.hackerrank.com/challenges/plus-minus)                       |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/06%20-%20Plus%20minus/Main.java)              |
+|    7   | [Staircase](https://www.hackerrank.com/challenges/staircase)                         |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/07%20-%20Staircase/Main.java)                 |
+|    8   | [Mini-max sum](https://www.hackerrank.com/challenges/mini-max-sum)                   |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/08%20-%20Mini-max%20sum/Main.java)            |
+|    9   | [Birthday cake candles](https://www.hackerrank.com/challenges/birthday-cake-candles) |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/09%20-%20Birthday%20cake%20candles/Main.java) |
+|   10   | [Time conversion](https://www.hackerrank.com/challenges/time-conversion)             |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/01.%20Warmup/10%20-%20Time%20conversion/Main.java)         |
