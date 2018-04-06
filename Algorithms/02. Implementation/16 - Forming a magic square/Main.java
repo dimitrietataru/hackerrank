@@ -12,28 +12,30 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int[] characteristic = new int[9];
-        int[][] matrix = new int[3][3];
-        for (int i = 0; i < 3; ++i) {
-            for (int j = 0; j < 3; ++j) {
-                matrix[i][j] = scan.nextInt();
-                characteristic[matrix[i][j] - 1]++;
-            }
-        }
-        scan.close();
-
-        int minCost = Integer.MAX_VALUE;
-        for (int[][] array : seed) {
-            int currentCost = 0;
+        {
+            int[] characteristic = new int[9];
+            int[][] matrix = new int[3][3];
             for (int i = 0; i < 3; ++i) {
                 for (int j = 0; j < 3; ++j) {
-                    currentCost += Math.abs(matrix[i][j] - array[i][j]);
+                    matrix[i][j] = scan.nextInt();
+                    characteristic[matrix[i][j] - 1]++;
                 }
             }
-            minCost = (currentCost < minCost) ? currentCost : minCost;
-        }
 
-        System.out.println(minCost);
+            int minCost = Integer.MAX_VALUE;
+            for (int[][] array : seed) {
+                int cost = 0;
+                for (int i = 0; i < 3; ++i) {
+                    for (int j = 0; j < 3; ++j) {
+                        cost += Math.abs(matrix[i][j] - array[i][j]);
+                    }
+                }
+                minCost = Math.min(cost, minCost);
+            }
+
+            System.out.println(minCost);
+        }
+        scan.close();
     }
 
     private static final int[][][] seed = {

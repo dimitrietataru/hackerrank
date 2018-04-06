@@ -12,23 +12,24 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        Set<Integer> socks = new HashSet<>();
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
+        {
+            Set<Integer> socks = new HashSet<>();
+            int n = scan.nextInt();
 
-        int sockPairs = 0;
-        for (int i = 0; i < n; ++i) {
-            int currentSock = scan.nextInt();
-            if (socks.contains(currentSock)) {
-                socks.remove(currentSock);
-                sockPairs++;
-            } else {
-                socks.add(currentSock);
+            int pairs = 0;
+            for (int i = 0; i < n; ++i) {
+                int currentSock = scan.nextInt();
+                if (socks.contains(currentSock)) {
+                    socks.remove(currentSock);
+                    pairs++;
+                } else {
+                    socks.add(currentSock);
+                }
             }
+            System.out.println(pairs);
         }
         scan.close();
-
-        System.out.println(sockPairs);
     }
 }

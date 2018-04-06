@@ -1,40 +1,30 @@
 # IMPLEMENTATION
 
-|    #   | Problem                                                                                       | Difficulty | Solution                                                                                                                                         |
-|:------:|:---------------------------------------------------------------------------------------------:|:----------:|:------------------------------------------------------------------------------------------------------------------------------------------------:|
-|    1   | [Grading students](https://www.hackerrank.com/challenges/grading)                             |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/01%20-%20Grading%20students/Main.java)          |
-|    2   | [Apple and orange](https://www.hackerrank.com/challenges/apple-and-orange)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/02%20-%20Apple%20and%20orange/Main.java)        |
-|    3   | [Kangaroo](https://www.hackerrank.com/challenges/kangaroo)                                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/03%20-%20Kangaroo/Main.java)                    |
-|    4   | [Between two sets](https://www.hackerrank.com/challenges/between-two-sets)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/04%20-%20Between%20two%20sets/Main.java)        |
-|    5   | [Breaking the records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records) |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/05%20-%20Breaking%20the%20records/Main.java)    |
-|    6   | [Birthday chocolate](https://www.hackerrank.com/challenges/the-birthday-bar)                  |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/06%20-%20Birthday%20chocolate/Main.java)        |
-|    7   | [Divisible sum pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs)              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/07%20-%20Divisible%20sum%20pairs/Main.java)     |
-|    8   | [Migratory birds](https://www.hackerrank.com/challenges/migratory-birds)                      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/08%20-%20Migratory%20birds/Main.java)           |
-|    9   | [Day of the programmer](https://www.hackerrank.com/challenges/day-of-the-programmer)          |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/09%20-%20Day%20of%20the%20programmer/Main.java) |
-|   10   | [Bon appetit](https://www.hackerrank.com/challenges/bon-appetit)                              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/10%20-%20Bon%20appetit/Main.java)               |
+|    #   | Problem                                                                                       | Difficulty | Solution                                                                                                                                          |
+|:------:|:---------------------------------------------------------------------------------------------:|:----------:|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
+|    1   | [Grading students](https://www.hackerrank.com/challenges/grading)                             |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/01%20-%20Grading%20students/Main.java)           |
+|    2   | [Apple and orange](https://www.hackerrank.com/challenges/apple-and-orange)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/02%20-%20Apple%20and%20orange/Main.java)         |
+|    3   | [Kangaroo](https://www.hackerrank.com/challenges/kangaroo)                                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/03%20-%20Kangaroo/Main.java)                     |
+|    4   | [Between two sets](https://www.hackerrank.com/challenges/between-two-sets)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/04%20-%20Between%20two%20sets/Main.java)         |
+|    5   | [Breaking the records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records) |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/05%20-%20Breaking%20the%20records/Main.java)     |
+|    6   | [Birthday chocolate](https://www.hackerrank.com/challenges/the-birthday-bar)                  |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/06%20-%20Birthday%20chocolate/Main.java)         |
+|    7   | [Divisible sum pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs)              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/07%20-%20Divisible%20sum%20pairs/Main.java)      |
+|    8   | [Migratory birds](https://www.hackerrank.com/challenges/migratory-birds)                      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/08%20-%20Migratory%20birds/Main.java)            |
+|    9   | [Day of the programmer](https://www.hackerrank.com/challenges/day-of-the-programmer)          |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/09%20-%20Day%20of%20the%20programmer/Main.java)  |
+|   10   | [Bon appetit](https://www.hackerrank.com/challenges/bon-appetit)                              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/10%20-%20Bon%20appetit/Main.java)                |
+|   11   | [Sock merchant](https://www.hackerrank.com/challenges/sock-merchant)                          |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/11%20-%20Sock%20merchant/Main.java)              |
+|   12   | [Drawing book](https://www.hackerrank.com/challenges/drawing-book)                            |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/12%20-%20Drawing%20book/Main.java)               |
+|   13   | [Counting valleys](https://www.hackerrank.com/challenges/counting-valleys)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/13%20-%20Counting%20valleys/Main.java)           |
+|   14   | [Electronics shop](https://www.hackerrank.com/challenges/electronics-shop)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/14%20-%20Electronics%20shop/Main.java)           |
+|   15   | [Cats and a mouse](https://www.hackerrank.com/challenges/cats-and-a-mouse)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/15%20-%20Cat%20and%20a%20mouse/Main.java)        |
+|   16   | [Forming a magic square](https://www.hackerrank.com/challenges/magic-square-forming)          |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/16%20-%20Forming%20a%20magic%20square/Main.java) |
+|   17   | [Picking numbers](https://www.hackerrank.com/challenges/picking-numbers)                      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/17%20-%20Picking%20numbers/Main.java)            |
+|   18   | [Climbing the leaderboard](https://www.hackerrank.com/challenges/climbing-the-leaderboard)    |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/18%20-%20Climbing%20the%20leaderboard/Main.java) |
+|   19   | [The hurdle race](https://www.hackerrank.com/challenges/the-hurdle-race)                      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/19%20-%20The%20hurdle%20race/Main.java)          |
+|   20   | [Designer PDF viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer)              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/20%20-%20Designer%20PDF%20viewer/Main.java)      |
 
 ## IMPLEMENTATION
 
-*  Sock merchant
-   - [Problem](https://www.hackerrank.com/challenges/sock-merchant/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/11%20-%20Sock%20merchant)
-*  Drawing book
-   - [Problem](https://www.hackerrank.com/challenges/drawing-book/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/12%20-%20Drawing%20book)
-*  Counting valleys
-   - [Problem](https://www.hackerrank.com/challenges/counting-valleys/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/13%20-%20Counting%20valleys)
-*  Electronics shop
-   - [Problem](https://www.hackerrank.com/challenges/electronics-shop/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/14%20-%20Electronics%20shop)
-*  Cats and a mouse
-   - [Problem](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/15%20-%20Cat%20and%20a%20mouse)
-*  Forming a magic square
-   - [Problem](https://www.hackerrank.com/challenges/magic-square-forming/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/16%20-%20Forming%20a%20magic%20square)
-*  Picking numbers
-   - [Problem](https://www.hackerrank.com/challenges/picking-numbers/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/17%20-%20Picking%20numbers)
-*  Climbing the leaderboard
-   - [Problem](https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/18%20-%20Climbing%20the%20leaderboard)
-*  The hurdle race
-   - [Problem](https://www.hackerrank.com/challenges/the-hurdle-race/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/19%20-%20The%20hurdle%20race)
-*  Designer PDF viewer
-   - [Problem](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/20%20-%20Designer%20PDF%20viewer)
 *  Utopian tree
    - [Problem](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/21%20-%20Utopian%20tree) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/21%20-%20Utopian%20tree)
 *  Angry professor

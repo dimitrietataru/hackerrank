@@ -12,24 +12,25 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        scan.nextLine();
-        String road = scan.nextLine();
-        scan.close();
+        {
+            scan.nextLine();
+            String road = scan.nextLine();
 
-        int position = 0;
-        int valleyCount = 0;
-        for (int i = 0; i < n; ++i) {
-            if (road.charAt(i) == 'U') {
-                position++;
-            } else if (road.charAt(i) == 'D') {
-                if (position == 0) {
-                    valleyCount++;
+            int position = 0;
+            int valleyCount = 0;
+            for (char ch : road.toCharArray()) {
+                if (ch == 'U') {
+                    position++;
+                } else if (ch == 'D') {
+                    if (position == 0) {
+                        valleyCount++;
+                    }
+                    position--;
                 }
-                position--;
             }
-        }
 
-        System.out.println(valleyCount);
+            System.out.println(valleyCount);
+        }
+        scan.close();
     }
 }
