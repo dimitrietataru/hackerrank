@@ -1,49 +1,34 @@
 ## 30 DAYS OF CODE
 
-*  Hello world
-   - [Problem](https://www.hackerrank.com/challenges/30-hello-world/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2000%20-%20Hello%20world)
-*  Data types
-   - [Problem](https://www.hackerrank.com/challenges/30-data-types/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2001%20-%20Data%20types)
-*  Operators
-   - [Problem](https://www.hackerrank.com/challenges/30-operators/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2002%20-%20Operators)
-*  Intro to conditional statements
-   - [Problem](https://www.hackerrank.com/challenges/30-conditional-statements/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2003%20-%20Intro%20to%20conditional%20statements)
-*  Class vs. instance
-   - [Problem](https://www.hackerrank.com/challenges/30-class-vs-instance/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2004%20-%20Class%20vs.%20instance)
-*  Loops
-   - [Problem](https://www.hackerrank.com/challenges/30-loops/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2005%20-%20Loops)
-*  Let's review
-   - [Problem](https://www.hackerrank.com/challenges/30-review-loop/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2006%20-%20Let's%20review)
-*  Arrays
-   - [Problem](https://www.hackerrank.com/challenges/30-arrays/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2007%20-%20Arrays)
-*  Dictionaries and maps
-   - [Problem](https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2008%20-%20Dictionaries%20and%20maps)
-*  Recursion
-   - [Problem](https://www.hackerrank.com/challenges/30-recursion/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2009%20-%20Recursion)
-*  Binary numbers
-   - [Problem](https://www.hackerrank.com/challenges/30-binary-numbers/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2010%20-%20Binary%20numbers)
-*  2D arrays
-   - [Problem](https://www.hackerrank.com/challenges/30-2d-arrays/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2011%20-%202D%20arrays)
-*  Inheritance
-   - [Problem](https://www.hackerrank.com/challenges/30-inheritance/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2012%20-%20Inheritance)
-*  Abstract classes
-   - [Problem](https://www.hackerrank.com/challenges/30-abstract-classes/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2013%20-%20Abstract%20classes)
-*  Scope
-   - [Problem](https://www.hackerrank.com/challenges/30-scope/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2014%20-%20Scope)
-*  Linked list
-   - [Problem](https://www.hackerrank.com/challenges/30-linked-list/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2015%20-%20Linked%20list)
-*  Exceptions (String to integer)
-   - [Problem](https://www.hackerrank.com/challenges/30-exceptions-string-to-integer/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2016%20-%20Exceptions%20(String%20to%20integer))
-*  More exceptions
-   - [Problem](https://www.hackerrank.com/challenges/30-more-exceptions/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2017%20-%20More%20exceptions)
-*  Queues and stacks
-   - [Problem](https://www.hackerrank.com/challenges/30-queues-stacks/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2018%20-%20Queues%20and%20stacks)
-*  Interfaces
-   - [Problem](https://www.hackerrank.com/challenges/30-interfaces/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2019%20-%20Interfaces)
-*  Sorting
-   - [Problem](https://www.hackerrank.com/challenges/30-sorting/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2020%20-%20Sorting)
-*  Generics
-   - [Problem](https://www.hackerrank.com/challenges/30-generics/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2021%20-%20Generics)
-*  Binary search trees
-   - [Problem](https://www.hackerrank.com/challenges/30-binary-search-trees/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/30%20days%20of%20code/Day%2022%20-%20Binary%20search%20trees)
-   
+| Day ## | Challenge                                                                                               | Java      | C++      | C#      |
+|:------:|:-------------------------------------------------------------------------------------------------------:|:---------:|:--------:|:-------:|
+|    0   | [Hello, world](https://www.hackerrank.com/challenges/30-hello-world)                                    | [.java]() | [.cpp]() | [.cs]() |
+|    1   | [Data types](https://www.hackerrank.com/challenges/30-data-types)                                       | [.java]() | [.cpp]() | [.cs]() |
+|    2   | [Operators](https://www.hackerrank.com/challenges/30-operators)                                         | [.java]() | [.cpp]() | [.cs]() |
+|    3   | [Intro to conditional statements](https://www.hackerrank.com/challenges/30-conditional-statements)      | [.java]() | [.cpp]() | [.cs]() |
+|    4   | [Class vs. instance](https://www.hackerrank.com/challenges/30-class-vs-instance)                        | [.java]() | [.cpp]() | [.cs]() |
+|    5   | [Loops](https://www.hackerrank.com/challenges/30-loops)                                                 | [.java]() | [.cpp]() | [.cs]() |
+|    6   | [Let's review](https://www.hackerrank.com/challenges/30-review-loop)                                    | [.java]() | [.cpp]() | [.cs]() |
+|    7   | [Arrays](https://www.hackerrank.com/challenges/30-arrays)                                               | [.java]() | [.cpp]() | [.cs]() |
+|    8   | [Dictionaries and maps](https://www.hackerrank.com/challenges/30-dictionaries-and-maps)                 | [.java]() | [.cpp]() | [.cs]() |
+|    9   | [Recursion](https://www.hackerrank.com/challenges/30-recursion)                                         | [.java]() | [.cpp]() | [.cs]() |
+|   10   | [Binary numbers](https://www.hackerrank.com/challenges/30-binary-numbers)                               | [.java]() | [.cpp]() | [.cs]() |
+|   11   | [2D arrays](https://www.hackerrank.com/challenges/30-2d-arrays)                                         | [.java]() | [.cpp]() | [.cs]() |
+|   12   | [Inheritance](https://www.hackerrank.com/challenges/30-inheritance)                                     | [.java]() | [.cpp]() | [.cs]() |
+|   13   | [Abstract classes](https://www.hackerrank.com/challenges/30-abstract-classes)                           | [.java]() | [.cpp]() | [.cs]() |
+|   14   | [Scope](https://www.hackerrank.com/challenges/30-scope)                                                 | [.java]() | [.cpp]() | [.cs]() |
+|   15   | [Linked list](https://www.hackerrank.com/challenges/30-linked-list)                                     | [.java]() | [.cpp]() | [.cs]() |
+|   16   | [Exceptions - String to Integer](https://www.hackerrank.com/challenges/30-exceptions-string-to-integer) | [.java]() | [.cpp]() | [.cs]() |
+|   17   | [More exceptions](https://www.hackerrank.com/challenges/30-more-exceptions)                             | [.java]() | [.cpp]() | [.cs]() |
+|   18   | [Queues and stacks](https://www.hackerrank.com/challenges/30-queues-stacks)                             | [.java]() | [.cpp]() | [.cs]() |
+|   19   | [Interfaces](https://www.hackerrank.com/challenges/30-interfaces)                                       | [.java]() | [.cpp]() | [.cs]() |
+|   20   | [Sorting](https://www.hackerrank.com/challenges/30-sorting)                                             | [.java]() | [.cpp]() | [.cs]() |
+|   21   | [Generics](https://www.hackerrank.com/challenges/30-generics)                                           | [.java]() | [.cpp]() | [.cs]() |
+|   22   | [Binary search trees](https://www.hackerrank.com/challenges/30-binary-search-trees)                     | [.java]() | [.cpp]() | [.cs]() |
+|   23   | [BST level-order traversal](https://www.hackerrank.com/challenges/30-binary-trees)                      | [.java]() | [.cpp]() | [.cs]() |
+|   24   | [More linked lists](https://www.hackerrank.com/challenges/30-linked-list-deletion)                      | [.java]() | [.cpp]() | [.cs]() |
+|   25   | [Running time and complexity](https://www.hackerrank.com/challenges/30-running-time-and-complexity)     | [.java]() | [.cpp]() | [.cs]() |
+|   26   | [Nested logic](https://www.hackerrank.com/challenges/30-nested-logic)                                   | [.java]() | [.cpp]() | [.cs]() |
+|   27   | [Testing](https://www.hackerrank.com/challenges/30-testing)                                             | [.java]() | [.cpp]() | [.cs]() |
+|   28   | [Regex, patterns, and intro to databases](https://www.hackerrank.com/challenges/30-regex-patterns)      | [.java]() | [.cpp]() | [.cs]() |
+|   29   | [Bitwise AND](https://www.hackerrank.com/challenges/30-bitwise-and)                                     | [.java]() | [.cpp]() | [.cs]() |
