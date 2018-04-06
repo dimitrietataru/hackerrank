@@ -12,16 +12,17 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int[] array = new int[n];
-        for (int i = 0; i < array.length; ++i) {
-            array[i] = scan.nextInt();
+        {
+            int[] array = new int[scan.nextInt()];
+            for (int i = 0; i < array.length; ++i) {
+                array[i] = scan.nextInt();
+            }
+
+            Difference difference = new Difference(array);
+            difference.computeDifference();
+            System.out.println(difference.maximumDifference);
         }
         scan.close();
-
-        Difference difference = new Difference(array);
-        difference.computeDifference();
-        System.out.println(difference.maximumDifference);
     }
 }
 
@@ -38,7 +39,7 @@ class Difference {
         for (int i = 0; i < elements.length - 1; ++i) {
             for (int j = i + 1; j < elements.length; ++j) {
                 int difference = Math.abs(elements[i] - elements[j]);
-                maximumDifference = (difference > maximumDifference) ? difference : maximumDifference;
+                maximumDifference = Math.max(difference, maximumDifference);
             }
         }
     }

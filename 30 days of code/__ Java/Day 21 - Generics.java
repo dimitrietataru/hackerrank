@@ -12,24 +12,24 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        Integer[] intArray = new Integer[n];
-        for (int i = 0; i < n; ++i) {
-            intArray[i] = scan.nextInt();
-        }
+        {
+            Integer[] intArray = new Integer[scan.nextInt()];
+            for (int i = 0; i < intArray.length; ++i) {
+                intArray[i] = scan.nextInt();
+            }
 
-        n = scan.nextInt();
-        String[] stringArray = new String[n];
-        for (int i = 0; i < n; ++i) {
-            stringArray[i] = scan.next();
+            String[] stringArray = new String[scan.nextInt()];
+            for (int i = 0; i < stringArray.length; ++i) {
+                stringArray[i] = scan.next();
+            }
+
+            Printer<Integer> intPrinter = new Printer<>();
+            Printer<String> stringPrinter = new Printer<>();
+
+            intPrinter.printArray(intArray);
+            stringPrinter.printArray(stringArray);
         }
         scan.close();
-
-        Printer<Integer> intPrinter = new Printer<>();
-        Printer<String> stringPrinter = new Printer<>();
-
-        intPrinter.printArray(intArray);
-        stringPrinter.printArray(stringArray);
     }
 }
 

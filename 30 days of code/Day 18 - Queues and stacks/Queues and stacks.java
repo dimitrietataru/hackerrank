@@ -15,33 +15,32 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.next();
-        scan.close();
-
-        QueueStack qs = new QueueStack();
-        char[] word = input.toCharArray();
-
-        for (char c : word) {
-            qs.pushCharacter(c);
-            qs.enqueueCharacter(c);
-        }
-
-        boolean isPalindrome = true;
-        for (int i = 0; i < word.length / 2; ++i) {
-            if (qs.popCharacter() != qs.dequeueCharacter()) {
-                isPalindrome = false;
-                break;
+        {
+            QueueStack qs = new QueueStack();
+            String input = scan.next();
+            for (char c : input.toCharArray()) {
+                qs.pushCharacter(c);
+                qs.enqueueCharacter(c);
             }
-        }
 
-        System.out.println("The word, " + input + ", is "
-            + ((isPalindrome) ? "a palindrome." : "not a palindrome."));
+            boolean isPalindrome = true;
+            for (int i = 0; i < input.length() / 2; ++i) {
+                if (qs.popCharacter() != qs.dequeueCharacter()) {
+                    isPalindrome = false;
+                    break;
+                }
+            }
+
+            System.out.println("The word, " + input + ", is "
+                    + ((isPalindrome) ? "a palindrome." : "not a palindrome."));
+        }
+        scan.close();
     }
 }
 
 class QueueStack {
-    private Stack<Character> stack;             // FILO
-    private Queue<Character> queue;             // FIFO
+    private Stack<Character> stack;     // FILO
+    private Queue<Character> queue;     // FIFO
 
     QueueStack() {
         stack = new Stack<>();

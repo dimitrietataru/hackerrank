@@ -13,33 +13,34 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
+        {
+            int n = scan.nextInt();
+            binaryNumbers(n);
+        }
         scan.close();
-
-        binaryNumbers(n);
     }
 
     private static void binaryNumbers(int n) {
-        ArrayList<Integer> byteList = intToBinary(n);
+        ArrayList<Integer> bytes = intToBinary(n);
         int currentCount = 0;
         int result = 0;
 
-        for (Integer i : byteList) {
+        for (Integer i : bytes) {
             currentCount = (i == 1) ? (currentCount + 1) : 0;
-            result = (currentCount > result) ? currentCount : result;
+            result = Math.max(currentCount, result);
         }
 
         System.out.println(result);
     }
 
     private static ArrayList<Integer> intToBinary(int n) {
-        ArrayList<Integer> byteList = new ArrayList<>();
+        ArrayList<Integer> bytes = new ArrayList<>();
+
         while (n > 0) {
-            int remainder = n % 2;
+            bytes.add(n % 2);
             n /= 2;
-            byteList.add(remainder);
         }
 
-        return byteList;
+        return bytes;
     }
 }

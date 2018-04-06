@@ -12,43 +12,45 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        Node head = null;
+        {
+            int n = scan.nextInt();
+            Node linkedList = null;
 
-        while (n-- > 0) {
-            int element = scan.nextInt();
-            head = insert(head, element);
+            while (n-- > 0) {
+                int element = scan.nextInt();
+                linkedList = insert(linkedList, element);
+            }
+
+            display(linkedList);
         }
         scan.close();
-
-        display(head);
     }
 
-    private static Node insert(Node head, int data) {
-        if (head == null) {
-            head = new Node(data);
+    private static Node insert(Node linkedList, int data) {
+        if (linkedList == null) {
+            linkedList = new Node(data);
         } else {
-            Node c = head;
-            while (c.next != null) {
-                c = c.next;
+            Node temp = linkedList;
+            while (temp.next != null) {
+                temp = temp.next;
             }
-            c.next = new Node(data);
+            temp.next = new Node(data);
         }
-        return head;
+        return linkedList;
     }
 
-    private  static void display(Node head) {
-        Node currentNode = head;
-        while (currentNode != null) {
-            System.out.print(currentNode.data + " ");
-            currentNode = currentNode.next;
+    private static void display(Node linkedList) {
+        Node temp = linkedList;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
         }
     }
 }
 
 class Node {
-    int data;
     Node next;
+    int data;
 
     Node(int d) {
         this.data = d;

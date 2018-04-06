@@ -12,20 +12,21 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while (testCases-- > 0) {
-            int age = scan.nextInt();
-            Person person = new Person(age);
-            person.amIOld();
-            for (int i = 0; i < 3; ++i) {
-                person.yearPasses();
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int age = scan.nextInt();
+                Person person = new Person(age);
+                person.amIOld();
+                for (int i = 0; i < 3; ++i) {
+                    person.yearPasses();
+                }
+                person.amIOld();
+                System.out.println();
             }
-            person.amIOld();
-            System.out.println();
         }
         scan.close();
     }
-
 }
 
 class Person {
