@@ -12,11 +12,12 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String s = scan.next();
+        {
+            String s = scan.next();
+            String result = timeConversion(s);
+            System.out.println(result);
+        }
         scan.close();
-
-        String result = timeConversion(s);
-        System.out.println(result);
     }
 
     private static String timeConversion(String s) {
