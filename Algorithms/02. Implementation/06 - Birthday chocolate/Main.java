@@ -12,24 +12,25 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int[] chocolateBar = new int[n];
-        for (int i = 0; i < n; ++i) {
-            chocolateBar[i] = scan.nextInt();
-        }
-        int d = scan.nextInt();
-        int m = scan.nextInt();
-        scan.close();
+        {
+            int[] chocolate = new int[scan.nextInt()];
+            for (int i = 0; i < chocolate.length; ++i) {
+                chocolate[i] = scan.nextInt();
+            }
+            int d = scan.nextInt();
+            int m = scan.nextInt();
 
-        shareChocolate(chocolateBar, d, m);
+            shareChocolate(chocolate, d, m);
+        }
+        scan.close();
     }
 
-    private static void shareChocolate(int[] choco, int d, int m) {
+    private static void shareChocolate(int[] chocolate, int d, int m) {
         int result = 0;
-        for (int i = 0; i <= choco.length - m; ++i) {
+        for (int i = 0; i <= chocolate.length - m; ++i) {
             int currentSum = 0;
             for (int j = i; j < i + m; ++j) {
-                currentSum += choco[j];
+                currentSum += chocolate[j];
             }
             if (currentSum == d) {
                 result++;

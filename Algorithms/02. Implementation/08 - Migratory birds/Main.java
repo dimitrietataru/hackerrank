@@ -12,27 +12,29 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int[] birdsArray = new int[n];
-        for (int i = 0; i < n; ++i) {
-            birdsArray[i] = scan.nextInt();
+        {
+            int[] birdsArray = new int[scan.nextInt()];
+            for (int i = 0; i < birdsArray.length; ++i) {
+                birdsArray[i] = scan.nextInt();
+            }
+
+            migratoryBirds(birdsArray);
         }
         scan.close();
 
-        migratoryBirds(birdsArray);
     }
 
     private static void migratoryBirds(int[] birdsArray) {
-        int[] characteristicArray = new int[5];
+        int[] freq = new int[5];
         for (int i : birdsArray) {
-            characteristicArray[i - 1]++;
+            freq[i - 1]++;
         }
 
         int max = 0;
-        for (int i = 0; i < characteristicArray.length; ++i) {
-            max = (characteristicArray[i] > characteristicArray[max]) ? i : max;
+        for (int i = 0; i < freq.length; ++i) {
+            max = (freq[i] > freq[max]) ? i : max;
         }
-        
+
         System.out.println(max + 1);
     }
 }

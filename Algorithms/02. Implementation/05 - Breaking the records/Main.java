@@ -12,32 +12,32 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int gameCount = scan.nextInt();
-        int[] gameArray = new int[gameCount];
-        for (int i = 0; i < gameCount; ++i) {
-            gameArray[i] = scan.nextInt();
+        {
+            int[] games = new int[scan.nextInt()];
+            for (int i = 0; i < games.length; ++i) {
+                games[i] = scan.nextInt();
+            }
+            breakRecords(games);
         }
         scan.close();
-
-        breakRecords(gameArray);
     }
 
     private static void breakRecords(int[] gameArray) {
-        int highestScore = gameArray[0];
-        int lowestScore = gameArray[0];
+        int highScore = gameArray[0];
+        int lowScore = gameArray[0];
 
         int highStreak = 0;
         int lowStreak = 0;
 
         for (int i = 1; i < gameArray.length; ++i) {
             int currentScore = gameArray[i];
-            if (currentScore > highestScore) {
-                highestScore = currentScore;
+            if (currentScore > highScore) {
+                highScore = currentScore;
                 highStreak++;
             }
 
-            if (currentScore < lowestScore) {
-                lowestScore = currentScore;
+            if (currentScore < lowScore) {
+                lowScore = currentScore;
                 lowStreak++;
             }
         }

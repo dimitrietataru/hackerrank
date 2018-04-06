@@ -12,15 +12,17 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while (testCases-- > 0) {
-            int grade = scan.nextInt();
-            System.out.println(solve(grade));
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int grade = scan.nextInt();
+                System.out.println(gradingStudents(grade));
+            }
         }
         scan.close();
     }
 
-    private static int solve(int grade) {
+    private static int gradingStudents(int grade) {
         if ((grade % 5 <= 2) || (grade < 38)) {
             return grade;
         }

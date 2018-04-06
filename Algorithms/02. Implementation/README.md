@@ -1,25 +1,20 @@
+# IMPLEMENTATION
+
+|    #   | Problem                                                                                       | Difficulty | Solution                                                                                                                                         |
+|:------:|:---------------------------------------------------------------------------------------------:|:----------:|:------------------------------------------------------------------------------------------------------------------------------------------------:|
+|    1   | [Grading students](https://www.hackerrank.com/challenges/grading)                             |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/01%20-%20Grading%20students/Main.java)          |
+|    2   | [Apple and orange](https://www.hackerrank.com/challenges/apple-and-orange)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/02%20-%20Apple%20and%20orange/Main.java)        |
+|    3   | [Kangaroo](https://www.hackerrank.com/challenges/kangaroo)                                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/03%20-%20Kangaroo/Main.java)                    |
+|    4   | [Between two sets](https://www.hackerrank.com/challenges/between-two-sets)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/04%20-%20Between%20two%20sets/Main.java)        |
+|    5   | [Breaking the records](https://www.hackerrank.com/challenges/breaking-best-and-worst-records) |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/05%20-%20Breaking%20the%20records/Main.java)    |
+|    6   | [Birthday chocolate](https://www.hackerrank.com/challenges/the-birthday-bar)                  |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/06%20-%20Birthday%20chocolate/Main.java)        |
+|    7   | [Divisible sum pairs](https://www.hackerrank.com/challenges/divisible-sum-pairs)              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/07%20-%20Divisible%20sum%20pairs/Main.java)     |
+|    8   | [Migratory birds](https://www.hackerrank.com/challenges/migratory-birds)                      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/08%20-%20Migratory%20birds/Main.java)           |
+|    9   | [Day of the programmer](https://www.hackerrank.com/challenges/day-of-the-programmer)          |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/09%20-%20Day%20of%20the%20programmer/Main.java) |
+|   10   | [Bon appetit](https://www.hackerrank.com/challenges/bon-appetit)                              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/10%20-%20Bon%20appetit/Main.java)               |
+
 ## IMPLEMENTATION
 
-*  Grading students
-   - [Problem](https://www.hackerrank.com/challenges/grading/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/01%20-%20Grading%20students)
-*  Apple and orange
-   - [Problem](https://www.hackerrank.com/challenges/apple-and-orange/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/02%20-%20Apple%20and%20orange)
-*  Kangaroo
-   - [Problem](https://www.hackerrank.com/challenges/kangaroo/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/03%20-%20Kangaroo)
-*  Between two sets
-   - [Problem](https://www.hackerrank.com/challenges/between-two-sets/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/04%20-%20Between%20two%20sets)
-*  Breaking the records
-   - [Problem](https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/05%20-%20Breaking%20the%20records)
-*  Birthday chocolate
-   - [Problem](https://www.hackerrank.com/challenges/the-birthday-bar/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/06%20-%20Birthday%20chocolate)
-*  Divisible sum pairs
-   - [Problem](https://www.hackerrank.com/challenges/divisible-sum-pairs/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/07%20-%20Divisible%20sum%20pairs)
-*  Migratory birds
-   - [Problem](https://www.hackerrank.com/challenges/migratory-birds/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/08%20-%20Migratory%20birds)
-*  Day of the programmer
-   - [Problem](https://www.hackerrank.com/challenges/day-of-the-programmer/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/09%20-%20Day%20of%20the%20programmer)
-*  Bon appetit
-   - [Problem](https://www.hackerrank.com/challenges/bon-appetit/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/10%20-%20Bon%20appetit)
 *  Sock merchant
    - [Problem](https://www.hackerrank.com/challenges/sock-merchant/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/11%20-%20Sock%20merchant)
 *  Drawing book
@@ -79,56 +74,56 @@
 *  Queens attack II
    - [Problem](https://www.hackerrank.com/challenges/queens-attack-2/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/39%20-%20Queens%20attack%20II)
 *  ACM ICPC Team
-   - [Problem](https://www.hackerrank.com/challenges/acm-icpc-team/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/40%20-%20ACM%20ICPC%20team)
+   - [Problem](https://www.hackerrank.com/challenges/acm-icpc-team/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/40%20-%20ACM%20ICPC%20team)
 *  Taum and B'day
-   - [Problem](https://www.hackerrank.com/challenges/taum-and-bday/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/41%20-%20Taum%20and%20Bday)
+   - [Problem](https://www.hackerrank.com/challenges/taum-and-bday/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/41%20-%20Taum%20and%20Bday)
 *  Organizing containers of balls
-   - [Problem](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/42%20-%20Organizing%20containers%20of%20balls)
+   - [Problem](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/42%20-%20Organizing%20containers%20of%20balls)
 *  Encryption
-   - [Problem](https://www.hackerrank.com/challenges/encryption/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/43%20-%20Encryption)
+   - [Problem](https://www.hackerrank.com/challenges/encryption/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/43%20-%20Encryption)
 *  Bigger is greater
-   - [Problem](https://www.hackerrank.com/challenges/bigger-is-greater/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/44%20-%20Bigger%20is%20greater)
+   - [Problem](https://www.hackerrank.com/challenges/bigger-is-greater/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/44%20-%20Bigger%20is%20greater)
 *  Modified Kaprekar numbers
-   - [Problem](https://www.hackerrank.com/challenges/kaprekar-numbers/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/45%20-%20Modified%20Kaprekar%20numbers)
+   - [Problem](https://www.hackerrank.com/challenges/kaprekar-numbers/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/45%20-%20Modified%20Kaprekar%20numbers)
 *  Beautiful triplets
-   - [Problem](https://www.hackerrank.com/challenges/beautiful-triplets/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/46%20-%20Beautiful%20triplets)
+   - [Problem](https://www.hackerrank.com/challenges/beautiful-triplets/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/46%20-%20Beautiful%20triplets)
 *  Minimum distances
-   - [Problem](https://www.hackerrank.com/challenges/minimum-distances/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/47%20-%20Minimum%20distances)
+   - [Problem](https://www.hackerrank.com/challenges/minimum-distances/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/47%20-%20Minimum%20distances)
 *  The time in words
-   - [Problem](https://www.hackerrank.com/challenges/the-time-in-words/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/48%20-%20The%20time%20in%20words)
+   - [Problem](https://www.hackerrank.com/challenges/the-time-in-words/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/48%20-%20The%20time%20in%20words)
 *  Chocolate feast
-   - [Problem](https://www.hackerrank.com/challenges/chocolate-feast/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/49%20-%20Chocolate%20feast)
+   - [Problem](https://www.hackerrank.com/challenges/chocolate-feast/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/49%20-%20Chocolate%20feast)
 *  Service lane
-   - [Problem](https://www.hackerrank.com/challenges/service-lane/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/50%20-%20Service%20lane)
+   - [Problem](https://www.hackerrank.com/challenges/service-lane/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/50%20-%20Service%20lane)
 *  Lisa's workbook
-   - [Problem](https://www.hackerrank.com/challenges/lisa-workbook/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/51%20-%20Lisas%20workbook)
+   - [Problem](https://www.hackerrank.com/challenges/lisa-workbook/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/51%20-%20Lisas%20workbook)
 *  Flatland space stations
-   - [Problem](https://www.hackerrank.com/challenges/flatland-space-stations/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/52%20-%20Flatland%20space%20stations)
+   - [Problem](https://www.hackerrank.com/challenges/flatland-space-stations/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/52%20-%20Flatland%20space%20stations)
 *  Fair rations
-   - [Problem](https://www.hackerrank.com/challenges/fair-rations/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/53%20-%20Fair%20rations)
+   - [Problem](https://www.hackerrank.com/challenges/fair-rations/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/53%20-%20Fair%20rations)
 *  Cavity map
-   - [Problem](https://www.hackerrank.com/challenges/cavity-map/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/54%20-%20Cavity%20map)
+   - [Problem](https://www.hackerrank.com/challenges/cavity-map/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/54%20-%20Cavity%20map)
 *  Manasa and stones
-   - [Problem](https://www.hackerrank.com/challenges/manasa-and-stones/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/55%20-%20Manasa%20and%20stones)
+   - [Problem](https://www.hackerrank.com/challenges/manasa-and-stones/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/55%20-%20Manasa%20and%20stones)
 *  The grid search
-   - [Problem](https://www.hackerrank.com/challenges/the-grid-search/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/56%20-%20The%20grid%20search)
+   - [Problem](https://www.hackerrank.com/challenges/the-grid-search/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/56%20-%20The%20grid%20search)
 *  Happy ladybugs
-   - [Problem](https://www.hackerrank.com/challenges/happy-ladybugs/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/57%20-%20Happy%20ladybugs)
+   - [Problem](https://www.hackerrank.com/challenges/happy-ladybugs/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/57%20-%20Happy%20ladybugs)
 *  Strange counter
-   - [Problem](https://www.hackerrank.com/challenges/strange-code/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/58%20-%20Strange%20counter)
+   - [Problem](https://www.hackerrank.com/challenges/strange-code/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/58%20-%20Strange%20counter)
 *  Absolute permutation
-   - [Problem](https://www.hackerrank.com/challenges/absolute-permutation/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/59%20-%20Absolute%20permutation)
+   - [Problem](https://www.hackerrank.com/challenges/absolute-permutation/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/59%20-%20Absolute%20permutation)
 *  The bomberman game
-   - [Problem](https://www.hackerrank.com/challenges/bomber-man/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/60%20-%20The%20bomberman%20game)
+   - [Problem](https://www.hackerrank.com/challenges/bomber-man/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/60%20-%20The%20bomberman%20game)
 *  Ema's supercomputer
-   - [Problem](https://www.hackerrank.com/challenges/two-pluses/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/61%20-%20Emas%20supercomputer)
+   - [Problem](https://www.hackerrank.com/challenges/two-pluses/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/61%20-%20Emas%20supercomputer)
 *  Larry's array
-   - [Problem](https://www.hackerrank.com/challenges/larrys-array/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/62%20-%20Larrys%20array)
+   - [Problem](https://www.hackerrank.com/challenges/larrys-array/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/62%20-%20Larrys%20array)
 *  Almost sorted
-   - [Problem](https://www.hackerrank.com/challenges/almost-sorted/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/63%20-%20Almost%20sorted)
+   - [Problem](https://www.hackerrank.com/challenges/almost-sorted/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/63%20-%20Almost%20sorted)
 *  Matrix layer rotation
-   - [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/64%20-%20Matrix%20layer%20rotation)
+   - [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/64%20-%20Matrix%20layer%20rotation)
 *  Halloween sale
-   - [Problem](https://www.hackerrank.com/challenges/halloween-sale/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/65%20-%20Halloween%20sale)
+   - [Problem](https://www.hackerrank.com/challenges/halloween-sale/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/65%20-%20Halloween%20sale)
 *  3D surface area
-   - [Problem](https://www.hackerrank.com/challenges/3d-surface-area/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/algorithms-implementation/Algorithms/02.%20Implementation/66%20-%203D%20surface%20area)
+   - [Problem](https://www.hackerrank.com/challenges/3d-surface-area/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/66%20-%203D%20surface%20area)
