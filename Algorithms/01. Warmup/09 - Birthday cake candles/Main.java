@@ -12,22 +12,23 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
+        {
+            int max = 1;
+            int count = 0;
 
-        int max = 1;
-        int count = 0;
-        for (int i = 0; i < n; ++i) {
-            int in = scan.nextInt();
+            int n = scan.nextInt();
+            for (int i = 0; i < n; ++i) {
+                int in = scan.nextInt();
 
-            if (in > max) {
-                max = in;
-                count = 1;
+                if (in > max) {
+                    max = in;
+                    count = 1;
+                }
+
+                count += (max == in) ? 1 : 0;
             }
-
-            count += (max == in) ? 1 : 0;
+            System.out.println(count);
         }
         scan.close();
-
-        System.out.println(count);
     }
 }

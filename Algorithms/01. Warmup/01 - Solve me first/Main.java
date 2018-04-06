@@ -12,12 +12,13 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
+        {
+            int a = scan.nextInt();
+            int b = scan.nextInt();
+            int sum = sum(a, b);
+            System.out.println(sum);
+        }
         scan.close();
-
-        int sum = sum(a, b);
-        System.out.println(sum);
     }
 
     private static int sum(int a, int b) {

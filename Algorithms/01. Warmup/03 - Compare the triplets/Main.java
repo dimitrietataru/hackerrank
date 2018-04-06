@@ -12,16 +12,18 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int a0 = scan.nextInt();
-        int a1 = scan.nextInt();
-        int a2 = scan.nextInt();
-        int b0 = scan.nextInt();
-        int b1 = scan.nextInt();
-        int b2 = scan.nextInt();
-        scan.close();
+        {
+            int a0 = scan.nextInt();
+            int a1 = scan.nextInt();
+            int a2 = scan.nextInt();
+            int b0 = scan.nextInt();
+            int b1 = scan.nextInt();
+            int b2 = scan.nextInt();
 
-        int[] result = solve(a0, a1, a2, b0, b1, b2);
-        System.out.println(result[0] + " " + result[1]);
+            int[] result = solve(a0, a1, a2, b0, b1, b2);
+            System.out.println(result[0] + " " + result[1]);
+        }
+        scan.close();
     }
 
     private static int[] solve(int a0, int a1, int a2, int b0, int b1, int b2) {
