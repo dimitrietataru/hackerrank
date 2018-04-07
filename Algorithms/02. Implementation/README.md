@@ -62,18 +62,9 @@
 |   58   | [Strange counter](https://www.hackerrank.com/challenges/strange-code)                                  |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/58%20-%20Strange%20counter/Main.java)                    |
 |   59   | [Absolute permutation](https://www.hackerrank.com/challenges/absolute-permutation)                     |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/59%20-%20Absolute%20permutation/Main.java)               |
 |   60   | [The bomberman game](https://www.hackerrank.com/challenges/bomber-man)                                 |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/60%20-%20The%20bomberman%20game/Main.java)               |
-
-## IMPLEMENTATION
-
-*  Ema's supercomputer
-   - [Problem](https://www.hackerrank.com/challenges/two-pluses/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/61%20-%20Emas%20supercomputer)
-*  Larry's array
-   - [Problem](https://www.hackerrank.com/challenges/larrys-array/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/62%20-%20Larrys%20array)
-*  Almost sorted
-   - [Problem](https://www.hackerrank.com/challenges/almost-sorted/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/63%20-%20Almost%20sorted)
-*  Matrix layer rotation
-   - [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/64%20-%20Matrix%20layer%20rotation)
-*  Halloween sale
-   - [Problem](https://www.hackerrank.com/challenges/halloween-sale/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/65%20-%20Halloween%20sale)
-*  3D surface area
-   - [Problem](https://www.hackerrank.com/challenges/3d-surface-area/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/66%20-%203D%20surface%20area)
+|   61   | [Ema's supercomputer](https://www.hackerrank.com/challenges/two-pluses)                                |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/61%20-%20Emas%20supercomputer/Main.java)                 |
+|   62   | [Lary's array](https://www.hackerrank.com/challenges/larrys-array)                                     |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/62%20-%20Larrys%20array/Main.java)                       |
+|   63   | [Almost sorted](https://www.hackerrank.com/challenges/almost-sorted)                                   |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/63%20-%20Almost%20sorted/Main.java)                      |
+|   64   | [Matrix layer rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo)                    |  **Hard**  | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/64%20-%20Matrix%20layer%20rotation/Main.java)            |
+|   65   | [Halloween sale](https://www.hackerrank.com/challenges/halloween-sale)                                 |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/65%20-%20Halloween%20sale/Main.java)                     |
+|   66   | [3D surface area](https://www.hackerrank.com/challenges/3d-surface-area)                               |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/66%20-%203D%20surface%20area/Main.java)                  |
