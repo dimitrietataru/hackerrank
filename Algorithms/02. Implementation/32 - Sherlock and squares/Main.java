@@ -12,11 +12,13 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while(testCases-- > 0) {
-            int start = scan.nextInt();
-            int end = scan.nextInt();
-            sherlockAndSquares(start, end);
+        {
+            int testCases = scan.nextInt();
+            while(testCases-- > 0) {
+                int start = scan.nextInt();
+                int end = scan.nextInt();
+                sherlockAndSquares(start, end);
+            }
         }
         scan.close();
     }
