@@ -12,23 +12,24 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int m = scan.nextInt();
-        int seconds = scan.nextInt();
-        seconds = (seconds > 1) ? (seconds % 4 + 4) : seconds;
-        seconds--;
-        scan.nextLine();
-        int[][] matrix = new int[n][m];
+        {
+            int n = scan.nextInt();
+            int m = scan.nextInt();
+            int[][] matrix = new int[n][m];
 
-        for (int i = 0; i < n; ++i) {
-            String currentLine = scan.nextLine();
-            for (int j = 0; j < currentLine.length(); ++j) {
-                matrix[i][j] = currentLine.charAt(j) == 'O' ? 2 : 0;
+            int seconds = scan.nextInt();
+            seconds = (seconds > 1) ? (seconds % 4 + 4) : seconds;
+            scan.nextLine();
+
+            for (int i = 0; i < n; ++i) {
+                char[] row = scan.nextLine().toCharArray();
+                for (int j = 0; j < row.length; ++j) {
+                    matrix[i][j] = (row[j] == 'O') ? 2 : 0;
+                }
             }
+            play(matrix, n, m, seconds - 1);
         }
         scan.close();
-
-        play(matrix, n, m, seconds);
     }
 
     private static void play(int[][] matrix, int n, int m, int seconds) {
@@ -37,6 +38,7 @@ public class Main {
             if (counter % 2 == 0) {
                 for (int i = 0; i < n; ++i) {
                     for (int j = 0; j < m; ++j) {
+                        // matrix[i][j] += (matrix[i][j] == 0) ? 3 : -1;
                         if (matrix[i][j] == 0) {
                             matrix[i][j] = 3;
                         } else {
@@ -61,9 +63,10 @@ public class Main {
             }
             counter++;
         }
+
         printMatrix(matrix, n, m);
     }
-
+    
     private static void explode(int[][] matrix, int n, int m, int i, int j) {
         boolean t = (i > 0), r = (j < m - 1), b = (i < n - 1), l = (j > 0);
 

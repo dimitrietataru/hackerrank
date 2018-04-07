@@ -9,14 +9,13 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class Main {
-
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
-        Scanner in = new Scanner(file);
-        int n = in.nextInt();                   // board size
-        int k = in.nextInt();                   // obstacles
-        int xQueen = in.nextInt();
-        int yQueen = in.nextInt();
+        Scanner scan = new Scanner(file);
+        int n = scan.nextInt();                   // board size
+        int k = scan.nextInt();                   // obstacles
+        int xQueen = scan.nextInt();
+        int yQueen = scan.nextInt();
 
         // (X,Y) coordinates of the closest obstacle in each direction
         int xTop = -1, yTop = -1;
@@ -35,8 +34,8 @@ public class Main {
         for(int i = 0; i < k; i++){
 
             // Obstacle coordinates (X,Y)
-            int xObst = in.nextInt();
-            int yObst = in.nextInt();
+            int xObst = scan.nextInt();
+            int yObst = scan.nextInt();
 
             // Top
             if((xObst < xTop || xTop == -1)     // obstacle is closer to queen/no known obstacle
@@ -69,7 +68,7 @@ public class Main {
                 xRight = xObst;
                 yRight = yObst;
             }
-
+            
             // Top Left
             if(xObst - xQueen == yQueen - yObst                             // obstacle on diagonal TL
                     && yObst < yQueen && xObst > xQueen                     // obstacle on TOP-LEFT

@@ -12,17 +12,16 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-
-        int testCases = scan.nextInt();
-        while (testCases-- > 0) {
-            int n = scan.nextInt();
-            int[] array = new int[n];
-            for (int i = 0; i < n; ++i) {
-                array[i] = scan.nextInt();
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int[] array = new int[scan.nextInt()];
+                for (int i = 0; i < array.length; ++i) {
+                    array[i] = scan.nextInt();
+                }
+                larrysArray(array);
             }
-            larrysArray(array);
         }
-
         scan.close();
     }
 
@@ -39,7 +38,7 @@ public class Main {
             }
         }
 
-        System.out.println(count % 2 == 0 ? "YES" : "NO");
+        System.out.println((count % 2 == 0) ? "YES" : "NO");
     }
 
     private static int smallBubbleSort(int[] array, int start, int end) {

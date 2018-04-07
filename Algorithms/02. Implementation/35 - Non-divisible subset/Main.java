@@ -6,23 +6,24 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int divisor = scan.nextInt();
-        int[] dividedArray = new int[n];
-        for (int i = 0; i < dividedArray.length; i++) {
-            dividedArray[i] = (scan.nextInt() % divisor);
+        {
+            int n = scan.nextInt();
+            int divisor = scan.nextInt();
+            int[] array = new int[n];
+            for (int i = 0; i < array.length; i++) {
+                array[i] = (scan.nextInt() % divisor);
+            }
+
+            int result = nonDivisibleSubset(array, divisor);
+            System.out.println(result);
         }
         scan.close();
-
-        int result = nonDivisibleSubset(dividedArray, divisor);
-        System.out.println(result);
     }
 
     private static int nonDivisibleSubset(int[] array, int divisor) {
@@ -30,22 +31,22 @@ public class Main {
             return 1;
         }
 
-        int[] modArray = new int[divisor];
+        int[] freq = new int[divisor];
         for (int i : array) {
-            modArray[i]++;
+            freq[i]++;
         }
 
-        System.out.println(Arrays.toString(modArray));
-
         /* For even divisors, only one value can be added to the result set */
-        int result = (divisor % 2 == 0 && modArray[divisor / 2] > 0) ? 1 : 0;
+        int result = (divisor % 2 == 0 && freq[divisor / 2] > 0) ? 1 : 0;
 
         /* At most one value which is evenly divisible can be added to the result set */
-        result += (modArray[0] > 0) ? 1 : 0;
+        result += (freq[0] > 0) ? 1 : 0;
 
         /* For every remainder pair, choose the biggest one */
         for (int i = 1; i <= divisor / 2; i++) {
-                result += (i != divisor - i) ? Math.max(modArray[i], modArray[divisor - i]) : 0;
+            if (i != divisor - i) {
+                result += Math.max(freq[i], freq[divisor - i]);
+            }
         }
 
         return result;

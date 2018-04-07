@@ -12,14 +12,15 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
+        {
+            int price = scan.nextInt();
+            int dif = scan.nextInt();
+            int min = scan.nextInt();
+            int wallet = scan.nextInt();
 
-        int price = scan.nextInt();
-        int dif = scan.nextInt();
-        int min = scan.nextInt();
-        int wallet = scan.nextInt();
-
+            halloweenSale(price, dif, min, wallet);
+        }
         scan.close();
-        halloweenSale(price, dif, min, wallet);
     }
 
     private static void halloweenSale(int price, int dif, int min, int wallet) {
@@ -27,7 +28,7 @@ public class Main {
         while (price <= wallet) {
             wallet -= price;
             price -= dif;
-            price = (price < min) ? min : price;
+            price = Math.max(min, price);
             result++;
         }
         System.out.println(result);

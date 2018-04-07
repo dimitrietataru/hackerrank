@@ -12,11 +12,13 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.next();
-        long letters = scan.nextLong();
-        scan.close();
+        {
+            String input = scan.next();
+            long n = scan.nextLong();
 
-        repeatedString(input, letters);
+            repeatedString(input, n);
+        }
+        scan.close();
     }
 
     private static void repeatedString(String input, long letters) {

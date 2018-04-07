@@ -12,16 +12,14 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int input = scan.nextInt();
-        int[] arr = new int[input];
-        int min = Integer.MAX_VALUE;
-        for (int i = 0; i < arr.length; ++i) {
-            arr[i] = scan.nextInt();
-            min = (arr[i] < min) ? arr[i] : min;
+        {
+            int[] array = new int[scan.nextInt()];
+            for (int i = 0; i < array.length; ++i) {
+                array[i] = scan.nextInt();
+            }
+            cutTheSticks(array);
         }
         scan.close();
-
-        cutTheSticks(arr);
     }
 
     private static void cutTheSticks(int[] array) {

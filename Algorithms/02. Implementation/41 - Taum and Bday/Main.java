@@ -1,5 +1,5 @@
 /**
- *              41 | TAUM AND BDAY
+ *              41 | TAUM AND B'DAY
  * Domain       ALGORITHMS
  * Sub domain   IMPLEMENTATION
  */
@@ -12,14 +12,16 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while (testCases-- > 0) {
-            long blacks = scan.nextLong();
-            long whites = scan.nextLong();
-            long blackCost = scan.nextLong();
-            long whiteCost = scan.nextLong();
-            long exchangeCost = scan.nextLong();
-            taumAndBday(blacks, whites, blackCost, whiteCost, exchangeCost);
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                long blacks = scan.nextLong();
+                long whites = scan.nextLong();
+                long blackCost = scan.nextLong();
+                long whiteCost = scan.nextLong();
+                long exchangeCost = scan.nextLong();
+                taumAndBday(blacks, whites, blackCost, whiteCost, exchangeCost);
+            }
         }
         scan.close();
     }

@@ -12,27 +12,27 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-
-        int toyStack = 1;
-        int h = scan.nextInt();
-        int w = scan.nextInt();
-        int[][] matrix = new int[h][w];
-        for (int i = 0; i < h; ++i) {
-            for (int j = 0; j < w; ++j) {
-                int value = scan.nextInt();
-                matrix[i][j] = value;
-                toyStack = (value > toyStack) ? value : toyStack;
+        {
+            int toyLayers = 1;
+            int h = scan.nextInt();
+            int w = scan.nextInt();
+            int[][] matrix = new int[h][w];
+            for (int i = 0; i < h; ++i) {
+                for (int j = 0; j < w; ++j) {
+                    int value = scan.nextInt();
+                    matrix[i][j] = value;
+                    toyLayers = Math.max(value, toyLayers);
+                }
             }
+            surfaceArea(h, w, matrix, toyLayers);
         }
         scan.close();
-
-        surfaceArea(h, w, matrix, toyStack);
     }
 
-    private static void surfaceArea(int h, int w, int[][] matrix, int max) {
-        int sum = (w * h) + (2 * w) + (2 * h);
+    private static void surfaceArea(int h, int w, int[][] matrix, int layers) {
+        int sum = (w * h) + (2 * (w + h));
 
-        while (max-- > 0) {
+        while (layers-- > 0) {
             for (int i = 0; i < h; ++i) {
                 for (int j = 0; j < w; ++j) {
                     matrix[i][j]--;

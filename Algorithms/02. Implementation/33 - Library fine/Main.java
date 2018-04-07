@@ -12,27 +12,36 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int rDay = scan.nextInt();
-        int rMonth = scan.nextInt();
-        int rYear = scan.nextInt();
+        {
+            int retD = scan.nextInt();
+            int retM = scan.nextInt();
+            int retY = scan.nextInt();
 
-        int dDay = scan.nextInt();
-        int dMonth = scan.nextInt();
-        int dYear = scan.nextInt();
-        scan.close();
+            int lastD = scan.nextInt();
+            int lastM = scan.nextInt();
+            int lastY = scan.nextInt();
 
-        if (rYear < dYear) {
-            System.out.println("0");
-        } else if (rYear > dYear) {
-            System.out.println("10000");
-        } else if (rMonth < dMonth) {
-            System.out.println("0");
-        } else if (rMonth > dMonth) {
-            System.out.println(500 * (rMonth - dMonth));
-        } else if (rDay <= dDay) {
-            System.out.println("0");
-        } else {
-            System.out.println(15 * (rDay - dDay));
+            int result = libraryFine(retD, retM, retY, lastD, lastM, lastY);
+            System.out.println(result);
         }
+        scan.close();
+    }
+
+    private static int libraryFine(int retD, int retM, int retY, int lastD, int lastM, int lastY) {
+        if (retY > lastY) {
+            return 10000;
+        }
+
+        if (retY == lastY) {
+            if (retM > lastM) {
+                return 500 * (retM - lastM);
+            } else if (retM == lastM) {
+                if (retD > lastD) {
+                    return 15 * (retD - lastD);
+                }
+            }
+        }
+
+        return 0;
     }
 }

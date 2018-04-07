@@ -12,18 +12,20 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int peoples = scan.nextInt();
-        int topics = scan.nextInt();
-        byte[][] bytes = new byte[peoples][topics];
-        for (int i = 0; i < peoples; ++i) {
-            String in = scan.next();
-            for (int j = 0; j < in.length(); ++j) {
-                bytes[i][j] = Byte.parseByte(String.valueOf(in.charAt(j)));
+        {
+            int peoples = scan.nextInt();
+            int topics = scan.nextInt();
+            byte[][] bytes = new byte[peoples][topics];
+            for (int i = 0; i < peoples; ++i) {
+                String in = scan.next();
+                for (int j = 0; j < in.length(); ++j) {
+                    bytes[i][j] = Byte.parseByte(String.valueOf(in.charAt(j)));
+                }
             }
+
+            acmIcpcTeam(bytes, peoples, topics);
         }
         scan.close();
-
-        acmIcpcTeam(bytes, peoples, topics);
     }
 
     private static void acmIcpcTeam(byte[][] b, int p, int t) {

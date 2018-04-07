@@ -12,29 +12,30 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int m = scan.nextInt();
-        int[][] matrix = new int[n][m];
-        for (int i = 0; i < n; i++) {
-            String line = scan.next();
-            for (int j = 0; j < m; j++) {
-                char ch = line.charAt(j);
-                matrix[i][j] = (ch == 'G') ? 0 : -1;
+        {
+            int n = scan.nextInt();
+            int m = scan.nextInt();
+            int[][] matrix = new int[n][m];
+            for (int i = 0; i < n; i++) {
+                char[] line = scan.next().toCharArray();
+                for (int j = 0; j < m; j++) {
+                    matrix[i][j] = (line[j] == 'G') ? 0 : -1;
+                }
             }
+
+            emasSupercomputer(matrix, n, m);
         }
         scan.close();
-
-        emasSupercomputer(matrix, n, m);
     }
 
     private static void emasSupercomputer(int[][] matrix, int n, int m) {
-        ArrayList<Point> points = getPlusPositions(matrix, n, m);
+        ArrayList<Point> points = getPlusPoints(matrix, n, m);
 
-        int result = getProduct(points);
+        int result = getMaxProduct(points);
         System.out.println(result);
     }
 
-    private static ArrayList<Point> getPlusPositions(int[][] matrix, int n, int m) {
+    private static ArrayList<Point> getPlusPoints(int[][] matrix, int n, int m) {
         ArrayList<Point> points = new ArrayList<>();
 
         for (int i = 1; i < n - 1; i++) {
@@ -60,7 +61,7 @@ public class Main {
         return points;
     }
 
-    private static int getProduct(ArrayList<Point> points) {
+    private static int getMaxProduct(ArrayList<Point> points) {
         int maxProduct = 1;
         for (int i = 0; i < points.size() - 1; ++i) {
             for (int j = i + 1; j < points.size(); j++) {

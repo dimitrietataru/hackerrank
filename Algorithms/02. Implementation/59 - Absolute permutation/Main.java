@@ -12,12 +12,14 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while (testCases-- > 0) {
-            int n = scan.nextInt();
-            int k = scan.nextInt();
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int n = scan.nextInt();
+                int k = scan.nextInt();
 
-            absolutePermutation(n, k);
+                absolutePermutation(n, k);
+            }
         }
         scan.close();
     }
@@ -29,11 +31,11 @@ public class Main {
             }
             System.out.println();
         } else if (n % (2 * k) == 0){
-            int kSinged = k;
-            for(int i = 1; i <= n; ++i) {
-                System.out.print((i + kSinged) + " ");
+            int kSigned = k;
+            for (int i = 1; i <= n; ++i) {
+                System.out.print((i + kSigned) + " ");
                 if (i % k == 0) {
-                    kSinged *= -1;
+                    kSigned *= -1;
                 }
             }
             System.out.println();

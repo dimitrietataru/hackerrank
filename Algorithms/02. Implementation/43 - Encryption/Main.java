@@ -12,14 +12,16 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.nextLine();
-        scan.close();
+        {
+            String input = scan.nextLine();
+            input = input.trim().replaceAll("\\s", "");
 
-        encryption(input);
+            encryption(input);
+        }
+        scan.close();
     }
 
     private static void encryption(String input) {
-        input = input.trim().replace(" ", "");
         int n = (int) Math.sqrt(input.length());
         int m = (n * n >= input.length()) ? n : n + 1;
         n += (n * m < input.length()) ? 1 : 0;
