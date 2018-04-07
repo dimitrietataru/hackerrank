@@ -52,29 +52,19 @@
 |   48   | [The time in words](https://www.hackerrank.com/challenges/the-time-in-words)                           |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/48%20-%20The%20time%20in%20words/Main.java)              |
 |   49   | [Chocolate feast](https://www.hackerrank.com/challenges/chocolate-feast)                               |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/49%20-%20Chocolate%20feast/Main.java)                    |
 |   50   | [Service lane](https://www.hackerrank.com/challenges/service-lane)                                     |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/50%20-%20Service%20lane/Main.java)                       |
+|   51   | [Lisa's workbook](https://www.hackerrank.com/challenges/lisa-workbook)                                 |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/51%20-%20Lisas%20workbook/Main.java)                      |
+|   52   | [Flatland space stations](https://www.hackerrank.com/challenges/flatland-space-stations)               |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/52%20-%20Flatland%20space%20stations/Main.java)           |
+|   53   | [Fair rations](https://www.hackerrank.com/challenges/fair-rations)                                     |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/53%20-%20Fair%20rations/Main.java)                        |
+|   54   | [Cavity map](https://www.hackerrank.com/challenges/cavity-map)                                         |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/54%20-%20Cavity%20map/Main.java)                          |
+|   55   | [Manasa and stones](https://www.hackerrank.com/challenges/manasa-and-stones)                           |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/55%20-%20Manasa%20and%20stones/Main.java)                 |
+|   56   | [The grid search](https://www.hackerrank.com/challenges/the-grid-search)                               |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/56%20-%20The%20grid%20search/Main.java)                   |
+|   57   | [Happy ladybugs](https://www.hackerrank.com/challenges/happy-ladybugs)                                 |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/57%20-%20Happy%20ladybugs/Main.java)                      |
+|   58   | [Strange counter](https://www.hackerrank.com/challenges/strange-code)                                  |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/58%20-%20Strange%20counter/Main.java)                     |
+|   59   | [Absolute permutation](https://www.hackerrank.com/challenges/absolute-permutation)                     |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/59%20-%20Absolute%20permutation/Main.java)                |
+|   60   | [The bomberman game](https://www.hackerrank.com/challenges/bomber-man)                                 |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/masterAlgorithms/02.%20Implementation/60%20-%20The%20bomberman%20game/Main.java)                |
 
 ## IMPLEMENTATION
 
-*  Lisa's workbook
-   - [Problem](https://www.hackerrank.com/challenges/lisa-workbook/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/51%20-%20Lisas%20workbook)
-*  Flatland space stations
-   - [Problem](https://www.hackerrank.com/challenges/flatland-space-stations/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/52%20-%20Flatland%20space%20stations)
-*  Fair rations
-   - [Problem](https://www.hackerrank.com/challenges/fair-rations/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/53%20-%20Fair%20rations)
-*  Cavity map
-   - [Problem](https://www.hackerrank.com/challenges/cavity-map/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/54%20-%20Cavity%20map)
-*  Manasa and stones
-   - [Problem](https://www.hackerrank.com/challenges/manasa-and-stones/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/55%20-%20Manasa%20and%20stones)
-*  The grid search
-   - [Problem](https://www.hackerrank.com/challenges/the-grid-search/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/56%20-%20The%20grid%20search)
-*  Happy ladybugs
-   - [Problem](https://www.hackerrank.com/challenges/happy-ladybugs/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/57%20-%20Happy%20ladybugs)
-*  Strange counter
-   - [Problem](https://www.hackerrank.com/challenges/strange-code/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/58%20-%20Strange%20counter)
-*  Absolute permutation
-   - [Problem](https://www.hackerrank.com/challenges/absolute-permutation/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/59%20-%20Absolute%20permutation)
-*  The bomberman game
-   - [Problem](https://www.hackerrank.com/challenges/bomber-man/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/60%20-%20The%20bomberman%20game)
 *  Ema's supercomputer
    - [Problem](https://www.hackerrank.com/challenges/two-pluses/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/61%20-%20Emas%20supercomputer)
 *  Larry's array
