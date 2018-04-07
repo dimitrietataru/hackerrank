@@ -32,29 +32,19 @@
 |   28   | [Jumping on the clouds](https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited)     |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/28%20-%20Jumping%20on%20the%20clouds/Main.java)          |
 |   29   | [Find digits](https://www.hackerrank.com/challenges/find-digits)                                   |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/29%20-%20Find%20digits/Main.java)                        |
 |   30   | [Extra long factorials](https://www.hackerrank.com/challenges/extra-long-factorials)               |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/30%20-%20Extra%20long%20factorials/Main.java)            |
+|   31   | [Append and delete](https://www.hackerrank.com/challenges/append-and-delete)                       |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/31%20-%20Append%20and%20delete/Main.java)                |
+|   32   | [Sherlock and squares](https://www.hackerrank.com/challenges/sherlock-and-squares)                 |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/32%20-%20Sherlock%20and%20squares/Main.java)             |
+|   33   | [Library fine](https://www.hackerrank.com/challenges/library-fine)                                 |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/33%20-%20Library%20fine/Main.java)                       |
+|   34   | [Cut the sticks](https://www.hackerrank.com/challenges/cut-the-sticks)                             |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/34%20-%20Cut%20the%20sticks/Main.java)                   |
+|   35   | [Non-divisible subset](https://www.hackerrank.com/challenges/non-divisible-subset)                 |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/35%20-%20Non-divisible%20subset/Main.java)               |
+|   36   | [Repeated string](https://www.hackerrank.com/challenges/repeated-string)                           |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/36%20-%20Repeated%20string/Main.java)                    |
+|   37   | [Jumping on the clouds](https://www.hackerrank.com/challenges/jumping-on-the-clouds)               |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/37%20-%20Jumping%20on%20the%20clouds/Main.java)          |
+|   38   | [Equalize the array](https://www.hackerrank.com/challenges/equality-in-a-array)                    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/38%20-%20Equalize%20the%20array/Main.java)               |
+|   39   | [Queen's attack II](https://www.hackerrank.com/challenges/queens-attack-2)                         |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/39%20-%20Queens%20attack%20II/Main.java)                 |
+|   40   | [ACM ICPC team](https://www.hackerrank.com/challenges/acm-icpc-team)                               |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Algorithms/02.%20Implementation/40%20-%20ACM%20ICPC%20team/Main.java)                    |
 
 ## IMPLEMENTATION
 
-*  Append and delete
-   - [Problem](https://www.hackerrank.com/challenges/append-and-delete/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/31%20-%20Append%20and%20delete)
-*  Sherlock and squares
-   - [Problem](https://www.hackerrank.com/challenges/sherlock-and-squares/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/32%20-%20Sherlock%20and%20squares)
-*  Library fine
-   - [Problem](https://www.hackerrank.com/challenges/library-fine/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/33%20-%20Library%20fine)
-*  Cut the sticks
-   - [Problem](https://www.hackerrank.com/challenges/cut-the-sticks/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/34%20-%20Cut%20the%20sticks)
-*  Non-divisible subset
-   - [Problem](https://www.hackerrank.com/challenges/non-divisible-subset/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/35%20-%20Non-divisible%20subset)
-*  Repeated string
-   - [Problem](https://www.hackerrank.com/challenges/repeated-string/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/36%20-%20Repeated%20string)
-*  Jumping on the clouds
-   - [Problem](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/37%20-%20Jumping%20on%20the%20clouds)
-*  Equalize the array
-   - [Problem](https://www.hackerrank.com/challenges/equality-in-a-array/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/38%20-%20Equalize%20the%20array)
-*  Queens attack II
-   - [Problem](https://www.hackerrank.com/challenges/queens-attack-2/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/39%20-%20Queens%20attack%20II)
-*  ACM ICPC Team
-   - [Problem](https://www.hackerrank.com/challenges/acm-icpc-team/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/40%20-%20ACM%20ICPC%20team)
 *  Taum and B'day
    - [Problem](https://www.hackerrank.com/challenges/taum-and-bday/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/master/Algorithms/02.%20Implementation/41%20-%20Taum%20and%20Bday)
 *  Organizing containers of balls
