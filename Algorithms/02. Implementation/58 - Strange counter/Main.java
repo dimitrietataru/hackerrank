@@ -12,10 +12,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        long n = scan.nextLong();
+        {
+            long n = scan.nextLong();
+            strangeCounter(n);
+        }
         scan.close();
-
-        strangeCounter(n);
     }
 
     private static void strangeCounter(long time) {

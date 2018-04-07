@@ -12,13 +12,15 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while(testCases-- > 0) {
-            int stones = scan.nextInt();
-            int a = scan.nextInt();
-            int b = scan.nextInt();
+        {
+            int testCases = scan.nextInt();
+            while(testCases-- > 0) {
+                int stones = scan.nextInt();
+                int a = scan.nextInt();
+                int b = scan.nextInt();
 
-            manasaAndStones(stones - 1, Math.min(a, b), Math.max(a, b));
+                manasaAndStones(stones - 1, Math.min(a, b), Math.max(a, b));
+            }
         }
         scan.close();
     }

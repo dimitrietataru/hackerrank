@@ -12,15 +12,16 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int cityCount = scan.nextInt();
-        int stations = scan.nextInt();
-        int[] cities = new int[cityCount];
-        for (int i = 0; i < stations; ++i) {
-            cities[scan.nextInt()] = 1;
+        {
+            int[] cities = new int[scan.nextInt()];
+            int stations = scan.nextInt();
+            for (int i = 0; i < stations; ++i) {
+                cities[scan.nextInt()] = 1;
+            }
+
+            flatlandSpaceStations(cities);
         }
         scan.close();
-
-        flatlandSpaceStations(cities);
     }
 
     private static void flatlandSpaceStations(int[] cities) {

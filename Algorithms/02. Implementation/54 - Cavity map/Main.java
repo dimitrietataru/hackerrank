@@ -12,17 +12,19 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int matrix[][] = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            String s = scan.next();
-            for (int j = 0; j < n; j++) {
-                matrix[i][j] = Integer.parseInt(String.valueOf(s.charAt(j)));
+        {
+            int n = scan.nextInt();
+            int matrix[][] = new int[n][n];
+            for (int i = 0; i < n; i++) {
+                String s = scan.next();
+                for (int j = 0; j < n; j++) {
+                    matrix[i][j] = Integer.parseInt(String.valueOf(s.charAt(j)));
+                }
             }
+
+            cavityMap(matrix, n);
         }
         scan.close();
-
-        cavityMap(matrix, n);
     }
 
     private static void cavityMap(int[][] mat, int n) {
