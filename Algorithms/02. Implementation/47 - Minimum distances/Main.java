@@ -12,14 +12,15 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int[] array = new int[n];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = scan.nextInt();
+        {
+            int[] array = new int[scan.nextInt()];
+            for (int i = 0; i < array.length; i++) {
+                array[i] = scan.nextInt();
+            }
+
+            minimumDistances(array);
         }
         scan.close();
-
-        minimumDistances(array);
     }
 
     private static void minimumDistances(int[] array) {

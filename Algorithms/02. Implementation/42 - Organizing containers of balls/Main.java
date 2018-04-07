@@ -12,16 +12,18 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while (testCases-- > 0) {
-            int n = scan.nextInt();
-            int[][] matrix = new int[n][n];
-            for (int i = 0; i < n; ++i) {
-                for(int j = 0; j < n; ++j) {
-                    matrix[i][j] = scan.nextInt();
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int n = scan.nextInt();
+                int[][] matrix = new int[n][n];
+                for (int i = 0; i < n; ++i) {
+                    for(int j = 0; j < n; ++j) {
+                        matrix[i][j] = scan.nextInt();
+                    }
                 }
+                organizingContainersOfBalls(matrix, n);
             }
-            organizingContainersOfBalls(matrix, n);
         }
         scan.close();
     }

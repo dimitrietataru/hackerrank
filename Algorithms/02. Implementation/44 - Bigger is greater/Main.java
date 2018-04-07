@@ -11,27 +11,24 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        scan.nextLine();
-        while (testCases-- > 0) {
-            String input = scan.nextLine();
-            System.out.println(biggerIsGreater(input));
+        {
+            int testCases = Integer.parseInt(scan.nextLine());
+            while (testCases-- > 0) {
+                String input = scan.nextLine();
+                String result = biggerIsGreater(input.toCharArray(), input.length());
+                System.out.println(result);
+            }
         }
         scan.close();
     }
 
-    private static String biggerIsGreater(String input) {
-        // Length = 0..1
-        int size = input.length();
-        if (size <= 1) {
+    private static String biggerIsGreater(char[] chars, int len) {
+        if (len <= 1) {
             return "no answer";
         }
 
-        // Convert input String -> char[]
-        char[] chars = input.toCharArray();
-
         // Find longest non-increasing suffix
-        int pivotL = size - 1;
+        int pivotL = len - 1;
         while (pivotL > 0 && chars[pivotL - 1] >= chars[pivotL]) {
             pivotL--;
         }
@@ -42,7 +39,7 @@ public class Main {
         }
 
         // Find the rightmost element that exceeds the pivot
-        int pivotR = size - 1;
+        int pivotR = len - 1;
         while (chars[pivotR] <= chars[pivotL - 1]) {
             pivotR--;
         }
@@ -53,7 +50,7 @@ public class Main {
         chars[pivotR] = temp;
 
         // Reverse the suffix
-        pivotR = size - 1;
+        pivotR = len - 1;
         while (pivotL < pivotR) {
             temp = chars[pivotL];
             chars[pivotL] = chars[pivotR];

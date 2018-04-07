@@ -12,18 +12,17 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int hour = scan.nextInt();
-        int min = scan.nextInt();
-        scan.close();
+        {
+            int hour = scan.nextInt();
+            int min = scan.nextInt();
 
-        theTimeInWords(hour, min);
+            theTimeInWords(hour, min);
+        }
+        scan.close();
     }
 
     private static void theTimeInWords(int h, int m) {
-        final String[] words = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
-            "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
-            "seventeen", "eighteen", "nineteen", "twenty", "twenty one", "twenty two", "twenty three",
-            "twenty four", "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine" };
+        final String[] words = getWords();
 
         if (m == 0) {
             System.out.println(words[h] + " o' clock");
@@ -39,5 +38,16 @@ public class Main {
             m = 60 - m;
             System.out.println(words[m] + " minutes to " + words[h + 1]);
         }
+    }
+
+    private static String[] getWords() {
+        return new String[] {
+                "zero", "one", "two", "three", "four",
+                "five", "six", "seven", "eight", "nine",
+                "ten", "eleven", "twelve", "thirteen", "fourteen",
+                "fifteen", "sixteen", "seventeen", "eighteen", "nineteen",
+                "twenty", "twenty one", "twenty two", "twenty three", "twenty four",
+                "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine"
+        };
     }
 }
