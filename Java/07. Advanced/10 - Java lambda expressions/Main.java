@@ -15,24 +15,25 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int operation = scan.nextInt();
+                int number = scan.nextInt();
 
-        while (testCases-- > 0) {
-            int operation = scan.nextInt();
-            int number = scan.nextInt();
-
-            if (operation == 1) {
-                PerformOperation po = MyMath.isOdd();
-                boolean isOdd = MyMath.checker(po, number);
-                System.out.println(isOdd ? "ODD" : "EVEN");
-            } else if (operation == 2) {
-                PerformOperation po = MyMath.isPrime();
-                boolean isPrime = MyMath.checker(po, number);
-                System.out.println(isPrime ? "PRIME" : "COMPOSITE");
-            } else if (operation == 3) {
-                PerformOperation po = MyMath.isPalindrome();
-                boolean isPalindrome = MyMath.checker(po, number);
-                System.out.println(isPalindrome ? "PALINDROME" : "NOT PALINDROME");
+                if (operation == 1) {
+                    PerformOperation po = MyMath.isOdd();
+                    boolean isOdd = MyMath.checker(po, number);
+                    System.out.println(isOdd ? "ODD" : "EVEN");
+                } else if (operation == 2) {
+                    PerformOperation po = MyMath.isPrime();
+                    boolean isPrime = MyMath.checker(po, number);
+                    System.out.println(isPrime ? "PRIME" : "COMPOSITE");
+                } else if (operation == 3) {
+                    PerformOperation po = MyMath.isPalindrome();
+                    boolean isPalindrome = MyMath.checker(po, number);
+                    System.out.println(isPalindrome ? "PALINDROME" : "NOT PALINDROME");
+                }
             }
         }
         scan.close();

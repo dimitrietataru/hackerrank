@@ -7,31 +7,30 @@
 // https://en.wikipedia.org/wiki/Prime_number
 
 import java.io.*;
-import static java.lang.System.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         File file = new File("input.txt");
-
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            int n1 = Integer.parseInt(bufferedReader.readLine());
-            int n2 = Integer.parseInt(bufferedReader.readLine());
-            int n3 = Integer.parseInt(bufferedReader.readLine());
-            int n4 = Integer.parseInt(bufferedReader.readLine());
-            int n5 = Integer.parseInt(bufferedReader.readLine());
-            bufferedReader.close();
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        {
+            int n1 = Integer.parseInt(br.readLine());
+            int n2 = Integer.parseInt(br.readLine());
+            int n3 = Integer.parseInt(br.readLine());
+            int n4 = Integer.parseInt(br.readLine());
+            int n5 = Integer.parseInt(br.readLine());
 
             Prime prime = new Prime();
-            prime.checkPrime(n1);
-            prime.checkPrime(n1, n2);
-            prime.checkPrime(n1, n2, n3);
-            prime.checkPrime(n1, n2, n3, n4, n5);
+            prime.check(n1);
+            prime.check(n1, n2);
+            prime.check(n1, n2, n3);
+            prime.check(n1, n2, n3, n4, n5);
+        }
+        br.close();
     }
 }
 
 class Prime {
-    public void checkPrime(int... args) {
+    void check(int... args) {
         for (int i : args) {
             if (isPrime(i)) {
                 System.out.print(i + " ");

@@ -12,17 +12,17 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.nextLine();
-        scan.close();
+        {
+            String input = scan.nextLine();
 
-        Singleton singleton = Singleton.getSingleInstance(input);
-        Singleton singleton2 = Singleton.getSingleInstance(input);
+            Singleton singleton = Singleton.getSingleInstance(input);
+            Singleton singleton2 = Singleton.getSingleInstance(input);
+        }
+        scan.close();
     }
 }
 
 class Singleton {
-    public String str;
-
     private volatile static Singleton singleton;
 
     private Singleton() {}

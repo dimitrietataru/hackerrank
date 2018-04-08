@@ -11,26 +11,27 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         File file = new File("input.txt");
-        FileReader fileReader = new FileReader(file);
-        BufferedReader br = new BufferedReader(fileReader);
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        {
+            int n1 = Integer.parseInt(br.readLine());
+            int n2 = Integer.parseInt(br.readLine());
+            int n3 = Integer.parseInt(br.readLine());
+            int n4 = Integer.parseInt(br.readLine());
+            int n5 = Integer.parseInt(br.readLine());
+            int n6 = Integer.parseInt(br.readLine());
 
-        int n1 = Integer.parseInt(br.readLine());
-        int n2 = Integer.parseInt(br.readLine());
-        int n3 = Integer.parseInt(br.readLine());
-        int n4 = Integer.parseInt(br.readLine());
-        int n5 = Integer.parseInt(br.readLine());
-        int n6 = Integer.parseInt(br.readLine());
-
-        Add add = new Add();
-        add.add(n1, n2);
-        add.add(n1, n2, n3);
-        add.add(n1, n2, n3, n4, n5);
-        add.add(n1, n2, n3, n4, n5, n6);
+            Add add = new Add();
+            add.add(n1, n2);
+            add.add(n1, n2, n3);
+            add.add(n1, n2, n3, n4, n5);
+            add.add(n1, n2, n3, n4, n5, n6);
+        }
+        br.close();
     }
 }
 
 class Add {
-    public void add(int... arg) {
+    void add(int... arg) {
         int sum = 0;
         String separator = "";
 
