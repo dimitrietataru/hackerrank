@@ -14,19 +14,20 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int queries = scan.nextInt();
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int a = scan.nextInt();
+                int b = scan.nextInt();
+                int n = scan.nextInt();
 
-        for (int i = 0; i < queries; ++i) {
-            int a = scan.nextInt();
-            int b = scan.nextInt();
-            int n = scan.nextInt();
-
-            int result = a;
-            for (int j = 0; j < n; ++j) {
-                result += (int) (Math.pow(2, j) * b);
-                System.out.print(result + " ");
+                int result = a;
+                for (int j = 0; j < n; ++j) {
+                    result += (int) (Math.pow(2, j) * b);
+                    System.out.print(result + " ");
+                }
+                System.out.println();
             }
-            System.out.println();
         }
         scan.close();
     }

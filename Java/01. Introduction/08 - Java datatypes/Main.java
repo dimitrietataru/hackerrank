@@ -30,28 +30,29 @@ public class Main {
 
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        scan.close();
-
-        for (int i = 0; i < n; i++) {
-            try {
-                long x = scan.nextLong();
-                System.out.println(x + " can be fitted in:");
-                if (x >= byte_low && x <= byte_high) {
-                    System.out.println("* byte");
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                try {
+                    long x = scan.nextLong();
+                    System.out.println(x + " can be fitted in:");
+                    if (x >= byte_low && x <= byte_high) {
+                        System.out.println("* byte");
+                    }
+                    if (x >= short_low && x <= short_high) {
+                        System.out.println("* short");
+                    }
+                    if (x >= int_low && x <= int_high) {
+                        System.out.println("* int");
+                    }
+                    if (x >= long_low && x <= long_high) {
+                        System.out.println("* long");
+                    }
+                } catch (Exception e) {
+                    System.out.println(scan.next() + " can't be fitted anywhere.");
                 }
-                if (x >= short_low && x <= short_high) {
-                    System.out.println("* short");
-                }
-                if (x >= int_low && x <= int_high) {
-                    System.out.println("* int");
-                }
-                if (x >= long_low && x <= long_high) {
-                    System.out.println("* long");
-                }
-            } catch (Exception e) {
-                System.out.println(scan.next() + " can't be fitted anywhere.");
             }
         }
+        scan.close();
     }
 }
