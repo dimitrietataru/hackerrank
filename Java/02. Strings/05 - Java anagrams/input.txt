@@ -1,7 +1,0 @@
-anagram
-margana
-// Anagrams
-
-anagramm
-marganaa
-// Not Anagrams
