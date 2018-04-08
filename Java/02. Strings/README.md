@@ -1,7 +1,7 @@
 # STRINGS
 
-|    #   | Problem                                                                                      | Difficulty | Solution                                                                                                                                          |
-|:------:|:--------------------------------------------------------------------------------------------:|:----------:|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
+|    #   | Problem                                                                                      | Difficulty | Solution                                                                                                                                            |
+|:------:|:--------------------------------------------------------------------------------------------:|:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    1   | [Strings introduction](https://www.hackerrank.com/challenges/java-strings-introduction)      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/02.%20Strings/01%20-%20Java%20strings%20introduction/Main.java)               |
 |    2   | [Substring](https://www.hackerrank.com/challenges/java-substring)                            |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/02.%20Strings/02%20-%20Java%20substring/Main.java)                            |
 |    3   | [Substring comparisons](https://www.hackerrank.com/challenges/java-string-compare)           |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/02.%20Strings/03%20-%20Java%20substring%20comparisons/Main.java)              |
