@@ -12,52 +12,51 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        List<Student> studentList = new ArrayList<>();
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = Integer.parseInt(scan.nextLine());
-        while (testCases-- > 0) {
-            int id = scan.nextInt();
-            String name = scan.next();
-            double gpa = scan.nextDouble();
-            Student student = new Student(id, name, gpa);
-            studentList.add(student);
-        }
-        scan.close();
-        studentList.sort(new Comparator<Student>() {
-            @Override
-            public int compare(Student s1, Student s2) {
-                if (s1.getCgpa() > s2.getCgpa()) {
+        {
+            List<Student> students = new ArrayList<>();
+            int testCases = Integer.parseInt(scan.nextLine());
+            while (testCases-- > 0) {
+                int id = scan.nextInt();
+                String name = scan.next();
+                double gpa = scan.nextDouble();
+                students.add(new Student(id, name, gpa));
+            }
+
+            students.sort((s1, s2) -> {
+                if (s1.getGpa() > s2.getGpa()) {
                     return -1;
-                } else if (s1.getCgpa() < s2.getCgpa()) {
+                } else if (s1.getGpa() < s2.getGpa()) {
                     return 1;
                 }
-                return s1.getFname().compareTo(s2.getFname());
-            }
-        });
+                return s1.getName().compareTo(s2.getName());
+            });
 
-        for (Student student : studentList) {
-            System.out.println(student.getFname());
+            for (Student s : students) {
+                System.out.println(s.getName());
+            }
         }
+        scan.close();
     }
 }
 
 class Student {
     private int id;
-    private String fname;
-    private double cgpa;
+    private String name;
+    private double gpa;
 
-    Student(int id, String fname, double cgpa) {
+    Student(int id, String name, double cgpa) {
         this.id = id;
-        this.fname = fname;
-        this.cgpa = cgpa;
+        this.name = name;
+        this.gpa = cgpa;
     }
 
-    String getFname() {
-        return fname;
+    String getName() {
+        return name;
     }
 
-    double getCgpa() {
-        return cgpa;
+    double getGpa() {
+        return gpa;
     }
 }

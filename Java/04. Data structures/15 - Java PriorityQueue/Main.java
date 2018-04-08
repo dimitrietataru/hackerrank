@@ -12,38 +12,41 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        Priorities priorities = new Priorities();
-        List<String> events = new ArrayList<>();
+
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int totalEvents = scan.nextInt();
-        scan.nextLine();
-        while (totalEvents-- > 0) {
-            String event = scan.nextLine();
-            events.add(event);
-        }
-        scan.close();
+        {
+            Priorities priorities = new Priorities();
+            List<String> actions = new ArrayList<>();
 
-        List<Student> studentList = priorities.getStudents(events);
-        if (studentList.isEmpty()) {
-            System.out.println("EMPTY");
-        } else {
-            for (Student student : studentList) {
-                System.out.println(student.getName());
+            int n = Integer.parseInt(scan.nextLine());
+            while (n-- > 0) {
+                String event = scan.nextLine();
+                actions.add(event);
+            }
+
+            List<Student> students = priorities.getStudents(actions);
+            if (students.isEmpty()) {
+                System.out.println("EMPTY");
+            } else {
+                for (Student student : students) {
+                    System.out.println(student.getName());
+                }
             }
         }
+        scan.close();
     }
 }
 
 class Student {
-    private int id;
     private String name;
     private double gpa;
+    private int id;
 
-    Student(int id, String name, double gpa) {
-        this.id = id;
+    Student(String name, double gpa, int id) {
         this.name = name;
         this.gpa = gpa;
+        this.id = id;
     }
 
     int getId() {
@@ -60,34 +63,31 @@ class Student {
 }
 
 class Priorities {
-    Priorities() {}
+    List<Student> getStudents(List<String> actions) {
+        List<Student> result = new ArrayList<>();
 
-    List<Student> getStudents(List<String> events) {
-        List<Student> bufferList = new ArrayList<>();
-
-        for (int i = 0; i < events.size(); ++i) {
-            String[] eventArray = events.get(i).split(" ");
-            String action = eventArray[0];
-
-            switch (action) {
+        actions.forEach(action -> {
+            String[] events = action.split(" ");
+            switch (events[0]) {
                 case "ENTER":
-                    String name = eventArray[1];
-                    double gpa = Double.parseDouble(eventArray[2]);
-                    int id = Integer.parseInt(eventArray[3]);
-                    bufferList.add(new Student(id, name, gpa));
+                    String name = events[1];
+                    double gpa = Double.parseDouble(events[2]);
+                    int id = Integer.parseInt(events[3]);
+                    result.add(new Student(name, gpa, id));
                     break;
                 case "SERVED":
-                    bufferList.sort(Comparator.comparing(Student::getGpa).reversed()
-                                              .thenComparing(Student::getName)
-                                              .thenComparing(Student::getId));
-                    if (!bufferList.isEmpty()) {
-                        bufferList.remove(0);
+                    result.sort(Comparator.comparing(Student::getGpa).reversed()
+                            .thenComparing(Student::getName)
+                            .thenComparing(Student::getId));
+                    if (!result.isEmpty()) {
+                        result.remove(0);
                     }
                     break;
                 default:
                     break;
             }
-        }
-        return bufferList;
+        });
+
+        return result;
     }
 }

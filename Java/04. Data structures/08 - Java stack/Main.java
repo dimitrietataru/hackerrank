@@ -13,32 +13,36 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        while (scan.hasNext()) {
-            String input = scan.nextLine();
-            System.out.println(isBalanced(input));
+        {
+            while (scan.hasNext()) {
+                String input = scan.nextLine();
+                System.out.println(isBalanced(input));
+            }
         }
         scan.close();
     }
 
     private static boolean isBalanced(String s) {
         final ArrayDeque<Character> stack = new ArrayDeque<> ();
-        final char[] charArray = s.toCharArray ();
-
-        for (char character : charArray) {
-            char matchingCharacter = '.';
-            switch (character) {
+        for (char ch : s.toCharArray()) {
+            char match = '.';
+            switch (ch) {
                 case '(':
                 case '{':
                 case '[':
-                    stack.addFirst (character);
+                    stack.addFirst (ch);
                     break;
                 case ')':
-                    matchingCharacter = '(';
+                    match = '(';
                 case '}':
-                    if (matchingCharacter == '.') matchingCharacter = '{';
+                    if (match == '.') {
+                        match = '{';
+                    }
                 case ']':
-                    if (matchingCharacter == '.') matchingCharacter = '[';
-                    if (stack.isEmpty() || (stack.removeFirst () != matchingCharacter)) {
+                    if (match == '.') {
+                        match = '[';
+                    }
+                    if (stack.isEmpty() || (stack.removeFirst () != match)) {
                         return false;
                     }
                     break;
@@ -46,11 +50,12 @@ public class Main {
                     return false;
             }
         }
+
         return stack.isEmpty();
     }
 
     private static boolean shortIsBalanced(String s) {
-        while (s.length() != (s = s.replaceAll("\\(\\)|\\[\\]|\\{\\}", "")).length());
+        while (s.length() != (s = s.replaceAll("\\(\\)|\\[]|\\{}", "")).length());
         return s.isEmpty();
     }
 }
