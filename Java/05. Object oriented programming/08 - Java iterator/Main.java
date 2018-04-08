@@ -12,37 +12,39 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        ArrayList<Object> arrayList = new ArrayList<>();
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int m = scan.nextInt();
+        {
+            ArrayList<Object> elements = new ArrayList<>();
+            int n = scan.nextInt();
+            int m = scan.nextInt();
 
-        for (int i = 0; i < n; ++i) {
-            arrayList.add(scan.nextInt());
-        }
+            for (int i = 0; i < n; ++i) {
+                elements.add(scan.nextInt());
+            }
 
-        arrayList.add("###");
-        for (int i = 0; i < m; ++i) {
-            arrayList.add(scan.next());
+            elements.add("###");
+            for (int i = 0; i < m; ++i) {
+                elements.add(scan.next());
+            }
+
+            Iterator it = getIterator(elements);
+            while (it.hasNext()) {
+                Object element = it.next();
+                System.out.println((String) element);
+            }
         }
         scan.close();
-
-        Iterator iterator = getIterator(arrayList);
-        while (iterator.hasNext()) {
-            Object element = iterator.next();
-            System.out.println((String) element);
-        }
     }
 
-    private static Iterator getIterator(ArrayList arrayList) {
-        Iterator iterator = arrayList.iterator();
-        while (iterator.hasNext()) {
-            Object object = iterator.next();
-            if (object instanceof String) {
+    private static Iterator getIterator(ArrayList elements) {
+        Iterator it = elements.iterator();
+        while (it.hasNext()) {
+            Object element = it.next();
+            if (element instanceof String) {
                 break;
             }
         }
-        return iterator;
+        return it;
     }
 }

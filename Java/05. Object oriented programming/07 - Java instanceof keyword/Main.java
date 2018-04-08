@@ -11,34 +11,39 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        ArrayList<Object> arrayList = new ArrayList<>();
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        for (int i = 0; i < n; ++i) {
-            String input = scan.next();
-            if (input.equals("Student")) {
-                arrayList.add(new Student());
+        {
+            ArrayList<Object> object = new ArrayList<>();
+
+            int instances = scan.nextInt();
+            while (instances-- > 0) {
+                String type = scan.next();
+                switch (type) {
+                    case "Student":
+                        object.add(new Student());
+                        break;
+                    case "Rockstar":
+                        object.add(new Rockstar());
+                        break;
+                    case "Hacker":
+                        object.add(new Hacker());
+                        break;
+                    default: break;
+                }
             }
-            if (input.equals("Rockstar")) {
-                arrayList.add(new Rockstar());
-            }
-            if (input.equals("Hacker")) {
-                arrayList.add(new Hacker());
-            }
+            System.out.println(countInstances(object));
         }
         scan.close();
-        System.out.println(count(arrayList));
     }
 
     @SuppressWarnings("unchecked")
-    private static String count(ArrayList<Object> arrayList) {
+    private static String countInstances(ArrayList<Object> objects) {
         int a = 0;
         int b = 0;
         int c = 0;
 
-        for (int i = 0; i < arrayList.size(); ++i) {
-            Object object = arrayList.get(i);
+        for (Object object : objects) {
             if (object instanceof Student) {
                 a++;
             }

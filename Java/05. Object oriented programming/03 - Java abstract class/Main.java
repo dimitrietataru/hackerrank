@@ -12,13 +12,14 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String title = scan.nextLine();
+        {
+            Book book = new MyBook();
+            String title = scan.nextLine();
+
+            book.setTitle(title);
+            System.out.println("The title is: " + book.getTitle());
+        }
         scan.close();
-
-        MyBook myBook = new MyBook();
-        myBook.setTitle(title);
-
-        System.out.println("The title is: " + myBook.getTitle());
     }
 }
 
