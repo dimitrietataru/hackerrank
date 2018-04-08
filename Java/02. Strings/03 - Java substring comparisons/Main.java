@@ -13,36 +13,37 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
-
         Scanner scan = new Scanner(file);
-        String s = scan.next();
-        int substringLength = scan.nextInt();
-        scan.close();
+        {
+            String s = scan.next();
+            int len = scan.nextInt();
 
-        System.out.println(getSmallestAndLargest(s, substringLength));
+            System.out.println(getSmallestAndLargest(s, len));
+        }
+        scan.close();
     }
 
-    private static String getSmallestAndLargest(String s, int substringLength) {
+    private static String getSmallestAndLargest(String s, int len) {
         if (s.length() == 0) {
             return "Empty string!";
         }
 
-        if (substringLength > s.length()) {
+        if (len > s.length()) {
             return "Length error!";
         }
+        String smallest = s.substring(0, len);
+        String largest = s.substring(0, len);
 
-        String smallest = s.substring(0, substringLength);
-        String largest = s.substring(0, substringLength);
-
-        for (int i = 1; i <= s.length() - substringLength; ++i) {
-            String currentString = s.substring(i, i + substringLength);
-            if (smallest.compareTo(currentString) > 0) {
-                smallest = currentString;
+        for (int i = 1; i <= s.length() - len; ++i) {
+            String current = s.substring(i, i + len);
+            if (smallest.compareTo(current) > 0) {
+                smallest = current;
             }
-            if (largest.compareTo(currentString) < 0) {
-                largest = currentString;
+            if (largest.compareTo(current) < 0) {
+                largest = current;
             }
         }
+        
         return smallest + "\n" + largest;
     }
 }
