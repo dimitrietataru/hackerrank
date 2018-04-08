@@ -1,4 +1,4 @@
-## HACKERRANK
+# HACKERRANK
 
 * 30 days of code
 * Algorithms
@@ -12,3 +12,4 @@
   - Object oriented programming
   - Exception handling
   - Advanded
+  
