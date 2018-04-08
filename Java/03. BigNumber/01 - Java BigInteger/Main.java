@@ -13,11 +13,13 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        BigInteger number1 = new BigInteger(scan.next());
-        BigInteger number2 = new BigInteger(scan.next());
-        scan.close();
+        {
+            BigInteger big1 = new BigInteger(scan.next());
+            BigInteger big2 = new BigInteger(scan.next());
 
-        System.out.println(number1.add(number2));
-        System.out.println(number1.multiply(number2));
+            System.out.println(big1.add(big2));
+            System.out.println(big1.multiply(big2));
+        }
+        scan.close();
     }
 }

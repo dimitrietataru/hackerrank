@@ -15,13 +15,15 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        BigInteger bi = scan.nextBigInteger();
-        scan.close();
+        {
+            BigInteger big = scan.nextBigInteger();
 
-        if (bi.isProbablePrime(1)) {
-            System.out.println("prime");
-        } else {
-            System.out.println("not prime");
+            if (big.isProbablePrime(1)) {
+                System.out.println("prime");
+            } else {
+                System.out.println("not prime");
+            }
         }
+        scan.close();
     }
 }
