@@ -1,5 +1,5 @@
 /**
- *              03 | JAVA SUBARRAY
+ *              03 | JAVA SUB ARRAY
  * Domain       JAVA
  * Sub domain   DATA STRUCTURES
  */
@@ -12,21 +12,25 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
-        int[] array = new int[n];
-        for (int i = 0; i < n; ++i) {
-            array[i] = scan.nextInt();
+        {
+            int[] array = new int[scan.nextInt()];
+            for (int i = 0; i < array.length; ++i) {
+                array[i] = scan.nextInt();
+            }
+            negativeArrays(array);
         }
         scan.close();
+    }
 
-        int negativeArrays = 0;
-        for (int i = 0; i < n; ++i) {
+    private static void negativeArrays(int[] array) {
+        int result = 0;
+        for (int i = 0; i < array.length; ++i) {
             int sum = 0;
-            for (int j = i; j < n; ++j) {
+            for (int j = i; j < array.length; ++j) {
                 sum += array[j];
-                negativeArrays += (sum < 0) ? 1 : 0;
+                result += (sum < 0) ? 1 : 0;
             }
         }
-        System.out.println(negativeArrays);
+        System.out.println(result);
     }
 }

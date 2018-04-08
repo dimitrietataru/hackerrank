@@ -13,27 +13,26 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
-        String regex = "<(.+)>([^<>]+)</\\1>";
-        // String rx = "<([^>]+)>([^<>]+)</\\1>";
-
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        scan.nextLine();
-
-        while (testCases-- > 0) {
-            String input = scan.nextLine();
-
-            boolean matchFound = false;
+        {
+            String regex = "<(.+)>([^<>]+)</\\1>";
             Pattern pattern = Pattern.compile(regex);
-            Matcher matcher = pattern.matcher(input);
-            while (matcher.find()) {
-                if (matcher.group(2).length() != 0) {
-                    System.out.println(matcher.group(2));
-                    matchFound = true;
+
+            int testCases = Integer.parseInt(scan.nextLine());
+            while (testCases-- > 0) {
+                String input = scan.nextLine();
+                Matcher matcher = pattern.matcher(input);
+
+                boolean matchFound = false;
+                while (matcher.find()) {
+                    if (matcher.group(2).length() != 0) {
+                        System.out.println(matcher.group(2));
+                        matchFound = true;
+                    }
                 }
-            }
-            if (!matchFound) {
-                System.out.println("None");
+                if (!matchFound) {
+                    System.out.println("None");
+                }
             }
         }
         scan.close();

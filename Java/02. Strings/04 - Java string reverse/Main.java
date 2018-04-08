@@ -12,14 +12,12 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.next();
-        scan.close();
+        {
+            String input = scan.next();
+            String reverse = new StringBuilder(input).reverse().toString();
 
-        String reverse = "";
-        for (int i = input.length() - 1; i >= 0; --i) {
-            reverse = reverse.concat(String.valueOf(input.charAt(i)));
+            System.out.println((reverse.equals(input)) ? "Yes" : "No");
         }
-
-        System.out.println((reverse.equals(input)) ? "Yes" : "No");
+        scan.close();
     }
 }

@@ -17,25 +17,21 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
-
-        /* Regex matching the repeated words */
-        String regex = "\\b(\\w+)(\\W+\\1\\b)+";
-        // String regex = "(\\b\\w+\\b)(\\s+\\1\\b)+";
-        Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
-
         Scanner scan = new Scanner(file);
-        int sentences = Integer.parseInt(scan.nextLine());
+        {
+            String regex = "\\b(\\w+)(\\W+\\1\\b)+";
+            Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 
-        while (sentences-- > 0) {
-            String input = scan.nextLine();
+            int testCases = Integer.parseInt(scan.nextLine());
+            while (testCases-- > 0) {
+                String input = scan.nextLine();
 
-            Matcher matcher = pattern.matcher(input);
-
-            /* Check for sub sequences of input that match the compiled pattern */
-            while (matcher.find()) {
-                input = input.replaceAll(matcher.group(), matcher.group(1));
+                Matcher matcher = pattern.matcher(input);
+                while (matcher.find()) {
+                    input = input.replaceAll(matcher.group(), matcher.group(1));
+                }
+                System.out.println(input);
             }
-            System.out.println(input);
         }
         scan.close();
     }

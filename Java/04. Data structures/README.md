@@ -1,32 +1,19 @@
-## DATA STRUCTURES
+# DATA STRUCTURES
 
-*  Java 1D array
-   - [Problem](https://www.hackerrank.com/challenges/java-1d-array-introduction/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/01%20-%20Java%201D%20array)
-*  Java 2D array
-   - [Problem](https://www.hackerrank.com/challenges/java-2d-array/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/02%20-%20Java%202D%20array)
-*  Java subarray
-   - [Problem](https://www.hackerrank.com/challenges/java-negative-subarray/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/03%20-%20Java%20subarray)
-*  Java arraylist
-   - [Problem](https://www.hackerrank.com/challenges/java-arraylist/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/04%20-%20Java%20arraylist)
-*  Java 1D array II
-   - [Problem](https://www.hackerrank.com/challenges/java-1d-array/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/05%20-%20Java%201D%20array%20II)
-*  Java list
-   - [Problem](https://www.hackerrank.com/challenges/java-list/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/06%20-%20Java%20list)
-*  Java map
-   - [Problem](https://www.hackerrank.com/challenges/phone-book/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/07%20-%20Java%20map)
-*  Java stack
-   - [Problem](https://www.hackerrank.com/challenges/java-stack/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/08%20-%20Java%20stack)
-*  Java hashset
-   - [Problem](https://www.hackerrank.com/challenges/java-hashset/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/09%20-%20Java%20hashset)
-*  Java generics
-   - [Problem](https://www.hackerrank.com/challenges/java-generics/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/10%20-%20Java%20generics)
-*  Java comparator
-   - [Problem](https://www.hackerrank.com/challenges/java-comparator/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/11%20-%20Java%20comparator)
-*  Java sort
-   - [Problem](https://www.hackerrank.com/challenges/java-sort/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/12%20-%20Java%20sort)
-*  Java dequeue
-   - [Problem](https://www.hackerrank.com/challenges/java-dequeue/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/13%20-%20Java%20dequeue)
-*  Java BitSet
-   - [Problem](https://www.hackerrank.com/challenges/java-bitset/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/14%20-%20Java%20BitSet)
-*  Java PriorityQueue
-   - [Problem](https://www.hackerrank.com/challenges/java-priority-queue/problem) | [Solution](https://github.com/dimitrietataru/hackerrank/tree/java/Java/04.%20Data%20structures/15%20-%20Java%20PriorityQueue)
+|    #   | Problem                                                                      | Difficulty | Solution                                                                                                                                 |
+|:------:|:----------------------------------------------------------------------------:|:----------:|:----------------------------------------------------------------------------------------------------------------------------------------:|
+|    1   | [1D array](https://www.hackerrank.com/challenges/java-1d-array-introduction) |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/01%20-%20Java%201D%20array/Main.java)      |
+|    2   | [2D array](https://www.hackerrank.com/challenges/java-2d-array)              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/02%20-%20Java%202D%20array/Main.java)      |
+|    3   | [Sub array](https://www.hackerrank.com/challenges/java-negative-subarray)    |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/03%20-%20Java%20subarray/Main.java)        |
+|    4   | [ArrayList](https://www.hackerrank.com/challenges/java-arraylist)            |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/04%20-%20Java%20arraylist/Main.java)       |
+|    5   | [1D array II](https://www.hackerrank.com/challenges/java-1d-array)           |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/05%20-%20Java%201D%20array%20II/Main.java) |
+|    6   | [List](https://www.hackerrank.com/challenges/java-list)                      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/06%20-%20Java%20list/Main.java)            |
+|    7   | [Map](https://www.hackerrank.com/challenges/phone-book)                      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/07%20-%20Java%20map/Main.java)             |
+|    8   | [Stack](https://www.hackerrank.com/challenges/java-stack)                    |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/08%20-%20Java%20stack/Main.java)           |
+|    9   | [HashSet](https://www.hackerrank.com/challenges/java-hashset)                |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/09%20-%20Java%20hashset/Main.java)         |
+|   10   | [Generics](https://www.hackerrank.com/challenges/java-generics)              |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/10%20-%20Java%20generics/Main.java)        |
+|   11   | [Comparator](https://www.hackerrank.com/challenges/java-comparator)          |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/11%20-%20Java%20comparator/Main.java)      |
+|   12   | [Sort](https://www.hackerrank.com/challenges/java-sort)                      |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/12%20-%20Java%20sort/Main.java)            |
+|   13   | [DeQueue](https://www.hackerrank.com/challenges/java-dequeue)                |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/13%20-%20Java%20dequeue/Main.java)         |
+|   14   | [BitSet](https://www.hackerrank.com/challenges/java-bitset)                  |    Easy    | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/14%20-%20Java%20BitSet/Main.java)          |
+|   15   | [PriorityQueue](https://www.hackerrank.com/challenges/java-priority-queue)   |   Medium   | [.java](https://github.com/dimitrietataru/hackerrank/blob/master/Java/04.%20Data%20structures/15%20-%20Java%20PriorityQueue/Main.java)   |

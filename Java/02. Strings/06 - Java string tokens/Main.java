@@ -15,19 +15,25 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.nextLine().trim();
+        {
+            String input = scan.nextLine().trim();
+            stringTokens(input);
+        }
         scan.close();
+    }
 
+    private static void stringTokens(String input) {
         if (input.length() == 0) {
             System.out.println("0");
             return;
         }
 
         String regexSplit = "[\\s!,?._'@]+";
-        String[] tokenArray = input.split(regexSplit);
+        String[] tokens = input.split(regexSplit);
 
-        System.out.println(tokenArray.length);
-        for (String s : tokenArray) {
+        System.out.println(tokens.length);
+
+        for (String s : tokens) {
             System.out.println(s);
         }
     }

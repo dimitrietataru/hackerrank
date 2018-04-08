@@ -12,22 +12,22 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int n = scan.nextInt();
+        {
+            AdvancedArithmetic calc = new MyCalculator();
+
+            System.out.print("I implemented: ");
+            printInterfaces(calc);
+
+            int n = scan.nextInt();
+            System.out.println(calc.divisorSum(n) + "\n");
+        }
         scan.close();
-
-        MyCalculator myCalculator = new MyCalculator();
-
-        System.out.println("I implemented: ");
-        ImplementedInterfaceNames(myCalculator);
-
-        System.out.println(myCalculator.divisorSum(n) + "\n");
     }
 
-    private static void ImplementedInterfaceNames(Object object){
-        Class[] classInterfaceArray = object.getClass().getInterfaces();
-        for (Class ci : classInterfaceArray){
-            String interfaceName = ci.getName();
-            System.out.println(interfaceName);
+    private static void printInterfaces(Object object){
+        Class[] interfaces = object.getClass().getInterfaces();
+        for (Class c : interfaces){
+            System.out.println(c.getName() + " ");
         }
     }
 }
@@ -37,7 +37,6 @@ interface AdvancedArithmetic {
 }
 
 class MyCalculator implements AdvancedArithmetic {
-
     MyCalculator() {}
 
     public int divisorSum(int n) {

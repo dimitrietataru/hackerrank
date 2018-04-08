@@ -14,20 +14,20 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        scan.nextLine();
+        {
+            int testCases = Integer.parseInt(scan.nextLine());
+            while (testCases-- > 0) {
+                String regex = "^[aA-zZ]\\w{7,29}$";
+                Pattern pattern = Pattern.compile(regex);
 
-        while (testCases-- > 0) {
-            String username = scan.nextLine();
+                String username = scan.nextLine();
+                Matcher matcher = pattern.matcher(username);
 
-            String regex = "^[aA-zZ]\\w{7,29}$";
-            Pattern pattern = Pattern.compile(regex);
-            Matcher matcher = pattern.matcher(username);
-
-            if (matcher.find()) {
-                System.out.println(username + " - Valid");
-            } else {
-                System.out.println(username + " - Invalid");
+                if (matcher.find()) {
+                    System.out.println(username + " - Valid");
+                } else {
+                    System.out.println(username + " - Invalid");
+                }
             }
         }
         scan.close();

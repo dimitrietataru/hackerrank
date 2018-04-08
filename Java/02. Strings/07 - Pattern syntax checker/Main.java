@@ -16,18 +16,22 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        scan.nextLine();
-
-        for (int i = 0; i < testCases; ++i) {
-            String pattern = scan.nextLine();
-            try {
-                Pattern p = Pattern.compile(pattern);
-                System.out.println("Valid");
-            } catch (PatternSyntaxException pse) {
-                System.out.println("Invalid");
+        {
+            int testCases = Integer.parseInt(scan.nextLine());
+            while (testCases-- > 0) {
+                String pattern = scan.nextLine();
+                patternSyntaxChecker(pattern);
             }
         }
         scan.close();
+    }
+
+    private static void patternSyntaxChecker(String pattern) {
+        try {
+            Pattern p = Pattern.compile(pattern);
+            System.out.println("Valid");
+        } catch (PatternSyntaxException pse) {
+            System.out.println("Invalid");
+        }
     }
 }

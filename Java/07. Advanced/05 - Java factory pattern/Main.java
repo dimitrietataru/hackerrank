@@ -6,24 +6,27 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        String[] foodInput = new String[2];
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        foodInput[0] = scan.nextLine();
-        foodInput[1] = scan.nextLine();
-        scan.close();
+        {
+            List<String> foods = new ArrayList<>();
+            foods.add(scan.nextLine());
+            foods.add(scan.nextLine());
+            FoodFactory foodFactory = new FoodFactory();
 
-        FoodFactory foodFactory = new FoodFactory();
-
-        for (String s : foodInput) {
-            Food food = foodFactory.getFood(s);
-            System.out.println("The factory returned " + food.getClass());
-            System.out.println(food.getType() + "\n");
+            for (String s : foods) {
+                Food food = foodFactory.getFood(s);
+                System.out.println("The factory returned " + food.getClass());
+                System.out.println(food.getType() + "\n");
+            }
         }
+        scan.close();
     }
 }
 

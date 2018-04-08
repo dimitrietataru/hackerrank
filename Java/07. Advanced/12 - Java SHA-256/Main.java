@@ -14,10 +14,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException, NoSuchAlgorithmException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.next();
+        {
+            String input = scan.next();
+            SHA256(input);
+        }
         scan.close();
-
-        SHA256(input);
     }
 
     private static void SHA256(String input) throws NoSuchAlgorithmException{

@@ -20,28 +20,30 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int testCases = scan.nextInt();
-        while (testCases-- > 0) {
-            String role = scan.next();
-            int spend = scan.nextInt();
-            try {
-                Class annotatedClass = FamilyMember.class;
-                Method[] methods = annotatedClass.getMethods();
-                for (Method method : methods) {
-                    if (method.isAnnotationPresent(FamilyBudget.class)) {
-                        FamilyBudget family = method.getAnnotation(FamilyBudget.class);
-                        String userRole = family.userRole();
-                        int budgetLimit = family.budgetLimit();
-                        if (userRole.equals(role)) {
-                            if (spend <= budgetLimit) {
-                                method.invoke(FamilyMember.class.newInstance(), budgetLimit, spend);
-                            } else {
-                                System.out.println("Budget over limit");
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                String role = scan.next();
+                int spend = scan.nextInt();
+                try {
+                    Class annotatedClass = FamilyMember.class;
+                    Method[] methods = annotatedClass.getMethods();
+                    for (Method method : methods) {
+                        if (method.isAnnotationPresent(FamilyBudget.class)) {
+                            FamilyBudget family = method.getAnnotation(FamilyBudget.class);
+                            String userRole = family.userRole();
+                            int budgetLimit = family.budgetLimit();
+                            if (userRole.equals(role)) {
+                                if (spend <= budgetLimit) {
+                                    method.invoke(FamilyMember.class.newInstance(), budgetLimit, spend);
+                                } else {
+                                    System.out.println("Budget over limit");
+                                }
                             }
                         }
                     }
-                }
-            } catch (Exception e) {}
+                } catch (Exception e) {}
+            }
         }
         scan.close();
     }

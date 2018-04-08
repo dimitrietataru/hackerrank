@@ -17,9 +17,12 @@ public class Main {
 
     static {
         try {
-            Scanner s = new Scanner(file);
-            Breadth = s.nextInt();
-            Height = s.nextInt();
+            Scanner scan = new Scanner(file);
+            {
+                Breadth = scan.nextInt();
+                Height = scan.nextInt();
+            }
+            scan.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

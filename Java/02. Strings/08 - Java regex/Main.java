@@ -25,9 +25,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        while (scan.hasNext()) {
-            String IP = scan.next();
-            System.out.println(IP.matches(new MyRegex().pattern));
+        {
+            while (scan.hasNext()) {
+                String IP = scan.next();
+                System.out.println(IP.matches(new MyRegex().pattern));
+            }
         }
         scan.close();
     }

@@ -12,33 +12,35 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int queries = scan.nextInt();
-        while (queries-- > 0) {
-            int arrayLength = scan.nextInt();
-            int leap = scan.nextInt();
+        {
+            int testCases = scan.nextInt();
+            while (testCases-- > 0) {
+                int[] game = new int[scan.nextInt()];
+                int leap = scan.nextInt();
 
-            int[] game = new int[arrayLength];
-            for (int i = 0; i < game.length; ++i) {
-                game[i] = scan.nextInt();
+                for (int i = 0; i < game.length; ++i) {
+                    game[i] = scan.nextInt();
+                }
+
+                System.out.println((canWin(game, leap, 0) ? "YES" : "NO"));
             }
-            System.out.println((canWin(game, leap, 0) ? "YES" : "NO"));
         }
         scan.close();
     }
 
-    private static boolean canWin(int[] game, int leap, int index) {
-        if (index < 0 || game[index] == 1) {
+    private static boolean canWin(int[] game, int leap, int i) {
+        if (i < 0 || game[i] == 1) {
             return false;
         }
 
-        if ((index + 1 >= game.length) || (index + leap >= game.length)) {
+        if ((i + 1 >= game.length) || (i + leap >= game.length)) {
             return true;
         }
 
-        game[index] = 1;
-        return canWin(game, leap, index + leap) ||
-                canWin(game, leap, index + 1) ||
-                canWin(game, leap, index - 1);
+        game[i] = 1;
+        return canWin(game, leap, i + leap) ||
+                canWin(game, leap, i + 1) ||
+                canWin(game, leap, i - 1);
     }
 }
 
@@ -46,7 +48,7 @@ public class Main {
         leap = 4
     Start off in position 0:
         { *0* 1 1 0 0 1 0 0 1 }
-    Can't walk forward, but can jump forward by m positions: i + m = 0 + 4 = 4, now you're at position 4
+    Can't walk forward, but can jump forward by m positions: i + m = 0 + 4 = 4, now we're at position 4
         { 0 1 1 0 *0* 1 0 0 1 }
     Can't walk forward, can't jump forward, but can walk backward to i - 1 = 3, end up in position 3
         { 0 1 1 *0* 0 1 0 0 1 }

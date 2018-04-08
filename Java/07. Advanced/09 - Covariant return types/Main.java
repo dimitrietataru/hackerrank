@@ -9,6 +9,7 @@
 // https://docs.oracle.com/javase/tutorial/java/IandI/override.html
 // http://wiki.c2.com/?CovariantReturnTypes
 // https://blogs.oracle.com/sundararajan/covariant-return-types-in-java
+// https://stackoverflow.com/questions/4202252/how-does-class-forname-work
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,17 +19,17 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String input = scan.next();
-        scan.close();
-
-        try {
-            State state = (State) Class.forName(input).newInstance();
-            // https://stackoverflow.com/questions/4202252/how-does-class-forname-work
-            Flower flower = state.yourNationalFlower();
-            System.out.println(flower.whatsYourName());
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
-            ex.printStackTrace();
+        {
+            String input = scan.next();
+            try {
+                State state = (State) Class.forName(input).newInstance();
+                Flower flower = state.yourNationalFlower();
+                System.out.println(flower.whatsYourName());
+            } catch (ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
+                ex.printStackTrace();
+            }
         }
+        scan.close();
     }
 }
 

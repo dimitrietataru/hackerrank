@@ -16,22 +16,20 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int queries = scan.nextInt();
+        {
+            Player[] players = new Player[scan.nextInt()];
+            for (int i = 0; i < players.length; ++i) {
+                String name = scan.next();
+                int score = scan.nextInt();
+                players[i] = new Player(name, score);
+            }
 
-        Player[] playerArray = new Player[queries];
-        Checker checker = new Checker();
-
-        for (int i = 0; i < queries; ++i) {
-            String name = scan.next();
-            int score = scan.nextInt();
-            playerArray[i] = new Player(name, score);
+            Arrays.sort(players, new Checker());
+            for (Player p : players) {
+                System.out.printf("%s %s\n", p.name, p.score);
+            }
         }
         scan.close();
-
-        Arrays.sort(playerArray, checker);
-        for (Player p : playerArray) {
-            System.out.printf("%s %s\n", p.name, p.score);
-        }
     }
 }
 
@@ -51,7 +49,7 @@ class Checker implements Comparator<Player>{
         if (p1.score == p2.score) {
             return p1.name.compareTo(p2.name);
         } else {
-            return (p1.score > p2.score ? -1 : 1);
+            return ((p1.score > p2.score) ? -1 : 1);
         }
     }
 }

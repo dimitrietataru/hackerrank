@@ -6,7 +6,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        Motorcycle motorcycle = new Motorcycle();
+        new Motorcycle();
     }
 }
 
@@ -17,13 +17,12 @@ class Bicycle {
 }
 
 class Motorcycle extends Bicycle {
-    String defineMe() {
-        return "a cycle with an engine.";
+    Motorcycle() {
+        System.out.println("Hello I am a motorcycle, I am " + defineMe());
+        System.out.println("My ancestor is a cycle who is " + super.defineMe());
     }
 
-    Motorcycle() {
-        String temp = super.defineMe();
-        System.out.println("Hello I am a motorcycle, I am " + defineMe());
-        System.out.println("My ancestor is a cycle who is " + temp);
+    String defineMe() {
+        return "a cycle with an engine.";
     }
 }

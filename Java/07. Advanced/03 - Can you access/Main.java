@@ -14,17 +14,18 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int num = scan.nextInt();
+        {
+            Object o = new Inner().new Private();
+            int num = scan.nextInt();
+
+            System.out.println(num + " is " + ((Main.Inner.Private)o).powerOf2(num));
+            System.out.println("An instance of class: "
+                    + o.getClass().getCanonicalName() + " has been created");
+        }
         scan.close();
-
-        Object o;
-        o = new Inner().new Private();
-
-        System.out.println(num + " is " + ((Main.Inner.Private)o).powerOf2(num));
-        System.out.println("An instance of class: " + o.getClass().getCanonicalName() + " has been created");
     }
 
-    static class Inner {
+    private static class Inner {
         private class Private {
             private String powerOf2(int num) {
                 return ((num & num - 1) == 0 ? "power of 2" : "not a power of 2");

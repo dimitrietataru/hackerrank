@@ -14,11 +14,13 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        String s = scan.next();
-        int start = scan.nextInt();
-        int end = scan.nextInt();
-        scan.close();
+        {
+            String s = scan.next();
+            int start = scan.nextInt();
+            int end = scan.nextInt();
 
-        System.out.println(s.substring(start, end));
+            System.out.println(s.substring(start, end));
+        }
+        scan.close();
     }
 }

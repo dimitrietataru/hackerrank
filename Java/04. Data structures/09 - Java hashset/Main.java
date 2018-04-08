@@ -14,23 +14,17 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        HashSet<String> hashSet = new HashSet<>();
         File file = new File("input.txt");
         Scanner scan = new Scanner(file);
-        int queries = scan.nextInt();
+        {
+            Set<String> set = new HashSet<>();
 
-        String[] pair_left = new String[queries];
-        String[] pair_right = new String[queries];
-
-        for (int i = 0; i < queries; ++i) {
-            pair_left[i] = scan.next();
-            pair_right[i] = scan.next();
+            int entries = scan.nextInt();
+            while (entries-- > 0) {
+                set.add(scan.next() + " " + scan.next());
+                System.out.println(set.size());
+            }
         }
         scan.close();
-
-        for (int i = 0; i < queries; ++i) {
-            hashSet.add(pair_left[i] + " " + pair_right[i]);
-            System.out.println(hashSet.size());
-        }
     }
 }
