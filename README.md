@@ -43,7 +43,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-	    int i = scan.nextInt();
+        int i = scan.nextInt();
         scan.close();
     }
 }
@@ -61,7 +61,7 @@ istream& f = file;
 
 void main() {
     int n;
-	f >> n;
+    f >> n;
 }
 
 
@@ -74,7 +74,7 @@ istream& f = cin;
 
 void main() {
     int n;
-	f >> n;
+    f >> n;
 }
 ```
 
@@ -88,7 +88,7 @@ class Program
     static StreamReader read = new StreamReader("input.txt");
     static void Main(string[] args)
     {
-		int i = Int32.Parse(read.ReadLine());
+        int i = Int32.Parse(read.ReadLine());
         read.Close();
     }
 }
@@ -103,7 +103,7 @@ class Program
     static TextReader read = Console.In;
     static void Main(string[] args)
     {
-	    int i = Int32.Parse(read.ReadLine());
+        int i = Int32.Parse(read.ReadLine());
         read.Close();
     }
 }
