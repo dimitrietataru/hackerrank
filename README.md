@@ -1,6 +1,6 @@
 # HACKERRANK
 
-175+ solutions (...and counting)
+185+ solutions (...and counting)
 
 * 30 days of code
   - Java
