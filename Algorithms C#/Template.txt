@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var reader = new InputReader(false);
+
+		// ...
+
+        reader.Close();
+    }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public int NextInt => int.Parse(input.ReadLine());
+    public int[] NextArrInt => Array.ConvertAll(input.ReadLine().Split(), int.Parse);
+    public List<int> NextInts => NextArrInt.ToList();
+
+    public long NextLong => long.Parse(input.ReadLine());
+    public long[] NextArrLong => Array.ConvertAll(input.ReadLine().Split(), long.Parse);
+    public List<long> NextLongs => NextArrLong.ToList();
+
+    public double NextDouble => double.Parse(input.ReadLine(), CultureInfo.InvariantCulture);
+    public double[] NextArrDouble => Array.ConvertAll(input.ReadLine().Split(), d => double.Parse(d, CultureInfo.InvariantCulture));
+    public List<double> NextDoubles => NextArrDouble.ToList();
+
+    public char NextChar => Convert.ToChar(input.ReadLine());
+    public char[] NextArrChar => input.ReadLine().Replace(" ", "").ToCharArray();
+    public List<char> NextChars => NextArrChar.ToList();
+
+    public string NextString => input.ReadLine();
+    public string[] NextArrString => input.ReadLine().Split();
+    public List<string> NextStrings => NextArrString.ToList();
+
+    public void Close() => input.Close();
+}
