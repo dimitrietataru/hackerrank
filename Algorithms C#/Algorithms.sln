@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A very big sum", "Algorithm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagonal difference", "Algorithms\01. Warmup\Diagonal difference\Diagonal difference.csproj", "{A366B1FC-E0EF-4457-B3CF-A6DA13590380}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plus minus", "Algorithms\01. Warmup\Plus minus\Plus minus.csproj", "{CA91A52C-9265-4974-9F95-83E9B6E0B8DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +68,10 @@ Global
 		{A366B1FC-E0EF-4457-B3CF-A6DA13590380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A366B1FC-E0EF-4457-B3CF-A6DA13590380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A366B1FC-E0EF-4457-B3CF-A6DA13590380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA91A52C-9265-4974-9F95-83E9B6E0B8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA91A52C-9265-4974-9F95-83E9B6E0B8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA91A52C-9265-4974-9F95-83E9B6E0B8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA91A52C-9265-4974-9F95-83E9B6E0B8DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{E8FFCE76-F577-432F-98EC-2E3C1336D087} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
 		{54F81B86-4712-49A1-B4AA-8D1AE74100D1} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
 		{A366B1FC-E0EF-4457-B3CF-A6DA13590380} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
+		{CA91A52C-9265-4974-9F95-83E9B6E0B8DB} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
