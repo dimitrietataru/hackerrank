@@ -9,52 +9,54 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        int testCases = int.Parse(read.ReadLine());
+        var reader = new InputReader(false);
+        var testCases = reader.NextInt;
+
         while (testCases-- > 0)
         {
-            int age = int.Parse(read.ReadLine());
-            Person person = new Person(age);
+            int age = reader.NextInt;
+            var person = new Person(age);
             person.AmIOld();
-            for(int i = 0; i < 3; ++i)
+            
+            for (int i = 0; i < 3; ++i)
             {
                 person.YearPasses();
             }
+
             person.AmIOld();
             Console.WriteLine();
         }
-        read.Close();
+
+        reader.Close();
     }
 }
 
 class Person
 {
-    private int Age { get; set; }
+    private int age;
 
     public Person(int initialAge)
     {
         if (initialAge < 0)
         {
             Console.WriteLine("Age is not valid, setting age to 0.");
-            Age = 0;
+            age = 0;
         }
         else
         {
-            Age = initialAge;
+            age = initialAge;
         }
     }
 
     public void AmIOld()
     {
-        if (Age < 13)
+        if (age < 13)
         {
             Console.WriteLine("You are young.");
         }
-        else if (Age < 18)
+        else if (age < 18)
         {
             Console.WriteLine("You are a teenager.");
         }
@@ -64,8 +66,21 @@ class Person
         }
     }
 
-    public void YearPasses()
+    public void YearPasses() => age++;
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
     {
-        Age++;
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
     }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+   
+    public void Close() => input.Close();
 }
