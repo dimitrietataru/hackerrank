@@ -9,29 +9,43 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
-    public static void PrintArray<T>(T[] array)
-    {
-        foreach (T t in array)
-        {
-            Console.WriteLine(t);
-        }
-    }
-
     static void Main(string[] args)
     {
-        int n = int.Parse(read.ReadLine());
-        string[] line = read.ReadLine().Split(' ');
-        int[] intArray = Array.ConvertAll(line, int.Parse);
+        var reader = new InputReader(false);
+        int n = reader.NextInt;
+        int[] integers = reader.NextArrInt;
+        string[] strings = reader.NextArrString;
+        reader.Close();
 
-        n = int.Parse(read.ReadLine());
-        string[] stringArray = read.ReadLine().Split(' ');
-
-        read.Close();
-
-        PrintArray<Int32>(intArray);
-        PrintArray<String>(stringArray);
+        PrintArray(integers);
+        PrintArray(strings);
     }
+
+    static void PrintArray<T>(T[] array)
+    {
+        foreach (T item in array)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public int[] NextArrInt => Array.ConvertAll(NextLine.Split(), int.Parse);
+
+    public string[] NextArrString => NextLine.Split();
+
+    public void Close() => input.Close();
 }
