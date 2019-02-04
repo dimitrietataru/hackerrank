@@ -9,26 +9,25 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
-    static void Main(string[] args)
+    static void Main()
     {
-        int n = 6;
-        int[][] matrix = new int[6][];
-        for (int i = 0; i < n; ++i)
-        {
-            string[] line = read.ReadLine().Split(' ');
-            matrix[i] = Array.ConvertAll(line, int.Parse);
-        }
-        read.Close();
+        var reader = new InputReader(false);
+        var matrix = new int[6][];
 
-        HourGlass(matrix, n);
+        for (int i = 0; i < 6; ++i)
+        {
+            matrix[i] = reader.NextArrInt;
+        }
+
+        reader.Close();
+
+        Solve(matrix, 6);
     }
 
-    private static void HourGlass(int[][] matrix, int n)
+    static void Solve(int[][] matrix, int n)
     {
         int max = int.MinValue;
+
         for (int i = 1; i < n - 1; ++i)
         {
             for (int j = 1; j < n - 1; ++j)
@@ -37,10 +36,26 @@ class Program
                     matrix[i - 1][j - 1] + matrix[i - 1][j] + matrix[i - 1][j + 1]
                                            + matrix[i][j] +
                     matrix[i + 1][j - 1] + matrix[i + 1][j] + matrix[i + 1][j + 1];
-                max = (currentSum > max) ? currentSum : max;
+                max = Math.Max(currentSum, max);
             }
         }
 
         Console.WriteLine(max);
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int[] NextArrInt => Array.ConvertAll(NextLine.Split(), int.Parse);
+
+    public void Close() => input.Close();
 }
