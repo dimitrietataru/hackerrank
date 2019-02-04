@@ -10,24 +10,22 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        string input = read.ReadLine();
-        read.Close();
+        var reader = new InputReader(false);
+        char[] chars = reader.NextArrChar;
+        reader.Close();
 
-        QueueStack qs = new QueueStack();
-        char[] word = input.ToCharArray();
+        Solution qs = new Solution();
 
-        foreach (char c in word) {
+        foreach (char c in chars)
+        {
             qs.PushCharacter(c);
             qs.EnqueueCharacter(c);
         }
 
         bool isPalindrome = true;
-        for (int i = 0; i < word.Length / 2; ++i)
+        for (int i = 0; i < chars.Length / 2; ++i)
         {
             if (qs.PopCharacter() != qs.DequeueCharacter())
             {
@@ -36,39 +34,43 @@ class Program
             }
         }
 
-        Console.WriteLine("The word, " + input + ", is "
-            + ((isPalindrome) ? "a palindrome." : "not a palindrome."));
+        Console.WriteLine($"The word, {new string(chars)}, is "
+            + (isPalindrome ? "a palindrome." : "not a palindrome"));
     }
 }
 
-class QueueStack
+class Solution
 {
-    private Stack<char> Stack { get; set; }
-    private Queue<char> Queue { get; set; }
+    private readonly Stack<char> stack;
+    private readonly Queue<char> queue;
 
-    public QueueStack()
+    public Solution()
     {
-        Stack = new Stack<char>();
-        Queue = new Queue<char>();
+        stack = new Stack<char>();
+        queue = new Queue<char>();
     }
 
-    public void PushCharacter(char c)
+    public void PushCharacter(char c) => stack.Push(c);
+
+    public void EnqueueCharacter(char c) => queue.Enqueue(c);
+
+    public char PopCharacter() => stack.Pop();
+
+    public char DequeueCharacter() => queue.Dequeue();
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
     {
-        Stack.Push(c);
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
     }
 
-    public void EnqueueCharacter(char c)
-    {
-        Queue.Enqueue(c);
-    }
+    public string NextLine => input.ReadLine();
 
-    public char PopCharacter()
-    {
-        return Stack.Pop();
-    }
+    public char[] NextArrChar => NextLine.Replace(" ", "").ToCharArray();
 
-    public char DequeueCharacter()
-    {
-        return Queue.Dequeue();
-    }
+    public void Close() => input.Close();
 }
