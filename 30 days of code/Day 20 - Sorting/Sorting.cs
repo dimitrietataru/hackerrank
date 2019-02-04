@@ -9,22 +9,19 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        int n = int.Parse(read.ReadLine());
-        string[] line = read.ReadLine().Split(' ');
-        int[] array = Array.ConvertAll(line, int.Parse);
-        read.Close();
+        var reader = new InputReader(false);
+        int n = reader.NextInt;
+        int[] array = reader.NextArrInt;
+        reader.Close();
 
         Sort(array);
     }
 
-    private static void Sort(int[] array)
+    static void Sort(int[] array)
     {
-        int totalSwaps = 0;
+        int swaps = 0;
         bool isSorted;
 
         do
@@ -39,13 +36,31 @@ class Program
                     array[i + 1] = temp;
 
                     isSorted = false;
-                    totalSwaps++;
+                    swaps++;
                 }
             }
         } while (!isSorted);
 
-        Console.WriteLine("Array is sorted in " + totalSwaps + " swaps.");
+        Console.WriteLine("Array is sorted in " + swaps + " swaps.");
         Console.WriteLine("First Element: " + array[0]);
         Console.WriteLine("Last Element: " + array[array.Length - 1]);
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public int[] NextArrInt => Array.ConvertAll(NextLine.Split(), int.Parse);
+
+    public void Close() => input.Close();
 }
