@@ -7,17 +7,29 @@
 using System;
 using System.IO;
 
-class Program
+public class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        string s = read.ReadLine();
-        read.Close();
+        var reader = new InputReader();
+
+        string text = reader.NextString;
 
         Console.WriteLine("Hello, World.");
-        Console.WriteLine(s);
+        Console.WriteLine(text);
     }
+}
+
+public class InputReader
+{
+    private TextReader @in;
+
+    public InputReader(bool fromFile = false)
+    {
+        @in = fromFile
+            ? new StreamReader("input.txt")
+            : Console.In;
+    }
+
+    public string NextString => @in.ReadLine();
 }
