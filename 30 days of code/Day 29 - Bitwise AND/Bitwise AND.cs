@@ -1,7 +1,7 @@
 ﻿/**
- *              MORE EXCEPTIONS | C#
+ *              BITWISE AND | C#
  * Domain       30 DAYS OF CODE
- * Sub domain   DAY 17
+ * Sub domain   DAY 29
  */
 
 using System;
@@ -16,33 +16,27 @@ class Program
 
         while (testCases-- > 0)
         {
-            int[] array = reader.NextArrInt;
-
-            try
-            {
-                int answer = new Calculator().Power(array[0], array[1]);
-                Console.WriteLine(answer);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            int[] line = reader.NextArrInt;
+            Solve(line[0], line[1]);
         }
 
         reader.Close();
     }
-}
 
-class Calculator
-{
-    public int Power(int n, int p)
+    static void Solve(int n, int k)
     {
-        if (n < 0 || p < 0)
+        int max = 0;
+
+        for (int i = 1; i <= n - 1; ++i)
         {
-            throw new Exception("n and p should be non-negative");
+            for (int j = i + 1; j <= n; ++j)
+            {
+                int and = i & j;
+                max = (and > max && and < k) ? and : max;
+            }
         }
 
-        return (int)Math.Pow(n, p);
+        Console.WriteLine(max);
     }
 }
 

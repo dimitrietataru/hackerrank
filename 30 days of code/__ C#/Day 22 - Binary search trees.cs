@@ -9,22 +9,22 @@ using System.IO;
 
 class Program
 {
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        Tree myTree = new Tree();
-        Node root = null;
+        var reader = new InputReader(false);
+        int totalNodes = reader.NextInt;
 
-        int totalNodes = int.Parse(read.ReadLine());
+        Node root = null;
+        Tree tree = new Tree();
+
         while (totalNodes-- > 0)
         {
-            int data = int.Parse(read.ReadLine());
-            root = myTree.Insert(root, data);
+            int data = reader.NextInt;
+            root = tree.Insert(root, data);
         }
-        read.Close();
+        reader.Close();
 
-        Console.WriteLine(myTree.GetHeight(root));
+        Console.WriteLine(tree.GetHeight(root));
     }
 }
 
@@ -46,6 +46,7 @@ class Tree
             {
                 root.Right = Insert(root.Right, data);
             }
+
             return root;
         }
     }
@@ -72,6 +73,23 @@ class Node
     public Node(int data)
     {
         Data = data;
-        Left = Right = null;
+        Left = null;
+        Right = null;
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public void Close() => input.Close();
 }

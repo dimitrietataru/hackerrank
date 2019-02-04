@@ -9,15 +9,29 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        string s = read.ReadLine();
-        read.Close();
+        var reader = new InputReader(true);
+        string text = reader.NextString;
+        reader.Close();
 
         Console.WriteLine("Hello, World.");
-        Console.WriteLine(s);
+        Console.WriteLine(text);
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public string NextString => NextLine;
+
+    public void Close() => input.Close();
 }

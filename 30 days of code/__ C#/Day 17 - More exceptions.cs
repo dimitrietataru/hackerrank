@@ -9,21 +9,18 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        Calculator calculator = new Calculator();
-        int queries = Int32.Parse(read.ReadLine());
-        while (queries-- > 0)
+        var reader = new InputReader(false);
+        int testCases = reader.NextInt;
+
+        while (testCases-- > 0)
         {
-            string[] line = read.ReadLine().Split(' ');
-            int n = int.Parse(line[0]);
-            int p = int.Parse(line[1]);
+            int[] array = reader.NextArrInt;
+
             try
             {
-                int answer = calculator.Power(n, p);
+                int answer = new Calculator().Power(array[0], array[1]);
                 Console.WriteLine(answer);
             }
             catch (Exception e)
@@ -31,7 +28,8 @@ class Program
                 Console.WriteLine(e.Message);
             }
         }
-        read.Close();
+
+        reader.Close();
     }
 }
 
@@ -43,6 +41,25 @@ class Calculator
         {
             throw new Exception("n and p should be non-negative");
         }
+
         return (int)Math.Pow(n, p);
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public int[] NextArrInt => Array.ConvertAll(NextLine.Split(), int.Parse);
+
+    public void Close() => input.Close();
 }

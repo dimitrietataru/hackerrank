@@ -4,24 +4,41 @@
  * Sub domain   DAY 16
  */
 
+using System;
+using System.IO;
+
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        string input = read.ReadLine();
-        read.Close();
+        var reader = new InputReader(false);
+        string input = reader.NextString;
+        reader.Close();
 
         try
         {
-            int n = Int32.Parse(input);
+            int n = int.Parse(input);
             Console.WriteLine(n);
         }
-        catch (FormatException fe)
+        catch (FormatException)
         {
             Console.WriteLine("Bad String");
         }
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public string NextString => NextLine;
+
+    public void Close() => input.Close();
 }

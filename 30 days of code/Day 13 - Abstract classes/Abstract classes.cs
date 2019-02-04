@@ -9,15 +9,15 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        string title = read.ReadLine();
-        string author = read.ReadLine();
-        int price = int.Parse(read.ReadLine());
-        read.Close();
+        var reader = new InputReader(false);
+
+        string title = reader.NextString;
+        string author = reader.NextString;
+        int price = reader.NextInt;
+
+        reader.Close();
 
         Book book = new MyBook(title, author, price);
         book.Display();
@@ -26,13 +26,13 @@ class Program
 
 abstract class Book
 {
-    protected String Title { get; set; }
-    protected String Author { get; set; }
+    protected readonly string title;
+    protected readonly string author;
 
-    public Book(String title, String author)
+    public Book(string title, string author)
     {
-        Title = title;
-        Author = author;
+        this.title = title;
+        this.author = author;
     }
 
     public abstract void Display();
@@ -40,17 +40,36 @@ abstract class Book
 
 class MyBook : Book
 {
-    private int Price { get; set; }
+    private readonly int price;
 
-    public MyBook(String title, String author, int price) : base(title, author)
+    public MyBook(string title, string author, int price)
+        : base(title, author)
     {
-        Price = price;
+        this.price = price;
     }
 
     public override void Display()
     {
-        Console.WriteLine("Title: " + Title);
-        Console.WriteLine("Author: " + Author);
-        Console.WriteLine("Price: " + Price);
+        Console.WriteLine("Title: " + title);
+        Console.WriteLine("Author: " + author);
+        Console.WriteLine("Price: " + price);
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public string NextString => NextLine;
+
+    public void Close() => input.Close();
 }

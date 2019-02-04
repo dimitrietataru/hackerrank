@@ -4,23 +4,26 @@
  * Sub domain   DAY 06
  */
 
+using System;
+using System.IO;
+
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        int testCases = int.Parse(read.ReadLine());
+        var reader = new InputReader(false);
+        int testCases = reader.NextInt;
+
         while (testCases-- > 0)
         {
-            string input = read.ReadLine();
-            LetsReview(input);
+            string input = reader.NextString;
+            Solve(input);
         }
-        read.Close();
+
+        reader.Close();
     }
 
-    private static void LetsReview(string input)
+    static void Solve(string input)
     {
         string even = string.Empty;
         string odd = string.Empty;
@@ -39,4 +42,22 @@ class Program
 
         Console.WriteLine($"{even} {odd}");
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public string NextString => NextLine;
+
+    public void Close() => input.Close();
 }

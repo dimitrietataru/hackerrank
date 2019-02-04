@@ -1,7 +1,7 @@
 ﻿/**
- *              MORE EXCEPTIONS | C#
+ *              RUNNING TIME AND COMPLEXITY | C#
  * Domain       30 DAYS OF CODE
- * Sub domain   DAY 17
+ * Sub domain   DAY 25
  */
 
 using System;
@@ -16,33 +16,39 @@ class Program
 
         while (testCases-- > 0)
         {
-            int[] array = reader.NextArrInt;
-
-            try
-            {
-                int answer = new Calculator().Power(array[0], array[1]);
-                Console.WriteLine(answer);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            int n = reader.NextInt;
+            Console.WriteLine(Solve(n));
         }
 
         reader.Close();
     }
-}
 
-class Calculator
-{
-    public int Power(int n, int p)
+    static string Solve(int n)
     {
-        if (n < 0 || p < 0)
+        if (n <= 1)
         {
-            throw new Exception("n and p should be non-negative");
+            return "Not prime";
         }
 
-        return (int)Math.Pow(n, p);
+        if (n == 2 || n == 3)
+        {
+            return "Prime";
+        }
+
+        if (n % 2 == 0 || n % 3 == 0)
+        {
+            return "Not prime";
+        }
+
+        for (int i = 4; (i * i) <= n; ++i)
+        {
+            if (n % i == 0)
+            {
+                return "Not prime";
+            }
+        }
+
+        return "Prime";
     }
 }
 
@@ -58,8 +64,6 @@ class InputReader
     public string NextLine => input.ReadLine();
 
     public int NextInt => int.Parse(NextLine);
-
-    public int[] NextArrInt => Array.ConvertAll(NextLine.Split(), int.Parse);
 
     public void Close() => input.Close();
 }

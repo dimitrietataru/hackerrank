@@ -10,42 +10,56 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        int n = int.Parse(read.ReadLine());
-        read.Close();
+        var reader = new InputReader(false);
+        int n = reader.NextInt;
+        reader.Close();
 
         BinaryNumbers(n);
     }
-
+    
     private static void BinaryNumbers(int n)
     {
-        List<int> byteList = IntToBinary(n);
+        var bytes = IntToBinary(n);
         int currentCount = 0;
         int result = 0;
 
-        foreach(int i in byteList)
+        bytes.ForEach(b =>
         {
-            currentCount = (i == 1) ? (currentCount + 1) : 0;
-            result = (currentCount > result) ? currentCount : result;
-        }
+            currentCount = (b == 1) ? (currentCount + 1) : 0;
+            result = Math.Max(currentCount, result);
+        });
 
         Console.WriteLine(result);
     }
 
     private static List<int> IntToBinary(int n)
     {
-        List<int> byteList = new List<int>();
+        var bytes = new List<int>();
+
         while (n > 0)
         {
-            int remainder = n % 2;
+            bytes.Add(n % 2);
             n /= 2;
-            byteList.Add(remainder);
         }
 
-        return byteList;
+        return bytes;
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public void Close() => input.Close();
 }
