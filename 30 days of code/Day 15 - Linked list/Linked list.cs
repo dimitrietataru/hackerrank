@@ -9,38 +9,42 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
+        var reader = new InputReader(false);
+
         Node head = null;
-        int n = Int32.Parse(read.ReadLine());
+        int n = reader.NextInt;
+
         while (n-- > 0)
         {
-            int data = Int32.Parse(read.ReadLine());
+            int data = reader.NextInt;
             head = Insert(head, data);
         }
-        read.Close();
+
+        reader.Close();
 
         Display(head);
     }
 
     private static Node Insert(Node head, int data)
     {
-        if (head == null)
+        if (head is null)
         {
             head = new Node(data);
         }
         else
         {
-            Node c = head;
-            while (c.Next != null)
+            Node current = head;
+
+            while (current.next != null)
             {
-                c = c.Next;
+                current = current.next;
             }
-            c.Next = new Node(data);
+
+            current.next = new Node(data);
         }
+
         return head;
     }
 
@@ -49,20 +53,36 @@ class Program
         Node currentNode = head;
         while (currentNode != null)
         {
-            Console.Write(currentNode.Data + " ");
-            currentNode = currentNode.Next;
+            Console.Write($"{currentNode.data} ");
+            currentNode = currentNode.next;
         }
     }
 }
 
 class Node
 {
-    public int Data { get; set; }
-    public Node Next { get; set; }
+    public readonly int data;
+    public Node next;
 
     public Node(int data)
     {
-        Data = data;
-        Next = null;
+        this.data = data;
+        next = null;
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public void Close() => input.Close();
 }
