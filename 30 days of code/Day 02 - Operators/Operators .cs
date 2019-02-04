@@ -10,20 +10,36 @@ using System.IO;
 
 class Program
 {
-    //static TextReader read = Console.In;
-    static StreamReader read = new StreamReader("input.txt");
-
     static void Main(string[] args)
     {
-        double mealCost = Double.Parse(read.ReadLine(), CultureInfo.InvariantCulture);
-        int tipPercent = int.Parse(read.ReadLine());
-        int taxPercent = int.Parse(read.ReadLine());
-        read.Close();
+        var reader = new InputReader(false);
+        double mealCost = reader.NextDouble;
+        int tipPercent = reader.NextInt;
+        int taxPercent = reader.NextInt;
+        reader.Close();
 
         double tip = (mealCost * tipPercent) / 100;
         double tax = (mealCost * taxPercent) / 100;
         int totalCost = (int)Math.Round(mealCost + tip + tax);
 
-        Console.WriteLine("The total meal cost is " + totalCost + " dollars.");
+        Console.WriteLine(totalCost);
     }
+}
+
+class InputReader
+{
+    private TextReader input;
+
+    public InputReader(bool fromFile)
+    {
+        input = fromFile ? new StreamReader("input.txt") : Console.In;
+    }
+
+    public string NextLine => input.ReadLine();
+
+    public int NextInt => int.Parse(NextLine);
+
+    public double NextDouble => double.Parse(NextLine, CultureInfo.InvariantCulture);
+
+    public void Close() => input.Close();
 }
