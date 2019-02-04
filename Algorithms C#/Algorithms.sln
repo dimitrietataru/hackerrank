@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Warmup", "01. Warmup", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Super reduced string", "Algorithms\03. Strings\Super reduced string\Super reduced string.csproj", "{95CFE24F-24CB-41D2-9989-0F7C9022B1FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Input", "Input\Input.csproj", "{691C549C-9CD9-4163-8EC7-3B81FC679F42}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
