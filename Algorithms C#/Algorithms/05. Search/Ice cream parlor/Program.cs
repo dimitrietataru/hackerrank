@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -8,10 +7,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        GetAllIndexes();
-        Console.WriteLine();
-        Console.WriteLine();
-
         var reader = new InputReader(true);
 
         int testCases = reader.NextInt;
@@ -19,103 +14,61 @@ class Program
         {
             int money = reader.NextInt;
             int n = reader.NextInt;
-            int[] prices = reader.NextArrInt;
+            int[] costs = reader.NextArrInt;
 
-            Solve(prices, money);
+            Solve(costs, money);
         }
 
         reader.Close();
     }
 
-    static List<int> GetAllIndexes(int[] array, int value)
+    static void Solve(int[] costs, int money)
     {
-        var result = new List<int>();
-
-        var index = Array.BinarySearch(array, 2);
-        if (index >= 0)
+        var priceIndexes = new Dictionary<int, List<int>>();
+        for (int i = 0; i < costs.Length; ++i)
         {
-            result.Add(index);
-        }
-        else
-        {
-            return result;
-        }
-        
-        var index2 = Array.BinarySearch(array, 0, index, 2);
-        result.Add(index2);
-        var index3 = Array.BinarySearch(array, index2 + 1, (array.Length - index2 - 1), 2);
-        result.Add(index2);
-
-        result.ForEach(x => Console.WriteLine(x));
-
-        return result.Where(x => x >= 0).OrderBy(x => x).ToList();
-    }
-
-    static void Solve(int[] prices, int money)
-    {
-        var orderedPrices = prices.OrderBy(_ => _).ToArray();
-        var pricesAsList = prices.ToList();
-
-        var priceIndexes = prices
-            .Select((p, i) => new Price(p, i))
-            .OrderBy(price => price.Value)
-            .ThenBy(price => price.Index)
-            .ToArray();
-
-        for (int i = 0; i < prices.Length; ++i)
-        {
-            int searchIndex = Array.BinarySearch(orderedPrices, money - prices[i]);
-            
-
-            Console.WriteLine($"I = {i}");
-            Console.WriteLine($"Looked for {money - prices[i]}. Found it at position {searchIndex}");
-
-            if (searchIndex >= 0)
+            var price = costs[i];
+            if (priceIndexes.ContainsKey(price))
             {
-                int nextIndex = Array.BinarySearch(orderedPrices, searchIndex + 1, orderedPrices.Length - (searchIndex + 1), money - prices[i]);
-                //Console.WriteLine("@@@ " + nextIndex);
-
-                //if (nextIndex >= 0)
-                //{
-
-                //}
-                var index1 = pricesAsList.IndexOf(prices[i]);
-                var index2 = pricesAsList.IndexOf(money - prices[i]);
-                if (index1 == index2)
-                {
-                }
-                Console.WriteLine($"### {index1 + 1} {index2 + 1}");
+                priceIndexes[price].Add(i);
+            }
+            else
+            {
+                priceIndexes.Add(price, new List<int> { i });
             }
         }
 
-        //var possiblePrices = new List<(Price, Price)>();
-        //for (int i = 1; i < money / 2; ++i)
-        //{
-        //    if (Array.BinarySearch(prices, i) != -1
-        //        && Array.BinarySearch(prices, money - i) != -1)
-        //    {
-        //        var price1 = priceIndexes.FirstOrDefault(p => p.Value == i);
-        //        var price2 = priceIndexes.FirstOrDefault(p => p.Value == money - i);
+        var first = new List<int>();
+        var second = new List<int>();
+        for (int i = 1; i <= money / 2; ++i)
+        {
+            if (priceIndexes.ContainsKey(i) && priceIndexes.ContainsKey(money - i))
+            {
+                if (i * 2 == money)
+                {
+                    var ordered = priceIndexes[i].OrderBy(index => index).ToList();
+                    first.Add(ordered[0]);
+                    second.Add(ordered[1]);
+                }
+                else
+                {
+                    first.Add(priceIndexes[i].Min());
+                    second.Add(priceIndexes[money - i].Min());
+                }
+            }
+        }
 
-        //        if (price1 != null && price2 != null)
-        //            possiblePrices.Add((price1, price2));
-        //    }
-        //}
-
-        //var result = possiblePrices.OrderBy(price => price.Item1.Index).FirstOrDefault();
-        //Console.WriteLine($"{result.Item1.Index + 1} {result.Item2.Index + 1}");
+        Print(first, second);
     }
-}
 
-class Price
-{
-    public int Value { get; set; }
-    public int Index { get; set; }
-
-    public Price(int value, int index)
+    static void Print(List<int> firstIndexes, List<int> secondIndexes)
     {
-        Value = value;
-        Index = index;
+        var best = firstIndexes
+            .Zip(secondIndexes, (i1, i2) => new { I1 = i1, I2 = i2 })
+            .OrderBy(pair => pair.I1)
+            .First();
+
+        Console.WriteLine($"{Math.Min(best.I1, best.I2) + 1} {Math.Max(best.I1, best.I2) + 1}");
     }
 }
 
@@ -129,34 +82,8 @@ class InputReader
     }
 
     public int NextInt => int.Parse(input.ReadLine());
+
     public int[] NextArrInt => Array.ConvertAll(input.ReadLine().Split(), int.Parse);
-    public List<int> NextInts => NextArrInt.ToList();
-
-    public long NextLong => long.Parse(input.ReadLine());
-    public long[] NextArrLong => Array.ConvertAll(input.ReadLine().Split(), long.Parse);
-    public List<long> NextLongs => NextArrLong.ToList();
-
-    public double NextDouble => double.Parse(input.ReadLine(), CultureInfo.InvariantCulture);
-    public double[] NextArrDouble => Array.ConvertAll(input.ReadLine().Split(), d => double.Parse(d, CultureInfo.InvariantCulture));
-    public List<double> NextDoubles => NextArrDouble.ToList();
-
-    public char NextChar => Convert.ToChar(input.ReadLine());
-    public char[] NextArrChar => input.ReadLine().Replace(" ", "").ToCharArray();
-    public List<char> NextChars => NextArrChar.ToList();
-
-    public string NextString => input.ReadLine();
-    public string[] NextArrString => input.ReadLine().Split();
-    public List<string> NextStrings => NextArrString.ToList();
-
-    public int[][] NextMatrix(int n)
-    {
-        int[][] matrix = new int[n][];
-        for (int i = 0; i < n; ++i)
-        {
-            matrix[i] = NextArrInt;
-        }
-        return matrix;
-    }
 
     public void Close() => input.Close();
 }
