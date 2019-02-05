@@ -30,17 +30,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagonal difference", "Algo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plus minus", "Algorithms\01. Warmup\Plus minus\Plus minus.csproj", "{CA91A52C-9265-4974-9F95-83E9B6E0B8DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Big sorting", "Algorithms\04. Sorting\Big sorting\Big sorting.csproj", "{61E390D0-B71D-4E83-803A-2417073EB7AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Big sorting", "Algorithms\04. Sorting\Big sorting\Big sorting.csproj", "{61E390D0-B71D-4E83-803A-2417073EB7AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Sorting", "04. Sorting", "{1A339059-7229-4AA2-9535-42226A7B058D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Search", "05. Search", "{CE415D9E-D595-48C2-8CBF-12495072D3FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerland radio transmitters", "Algorithms\05. Search\Hackerland radio transmitters\Hackerland radio transmitters.csproj", "{E50FC7A5-CEB1-41FC-A34E-1F23C94B0737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackerland radio transmitters", "Algorithms\05. Search\Hackerland radio transmitters\Hackerland radio transmitters.csproj", "{E50FC7A5-CEB1-41FC-A34E-1F23C94B0737}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gridland metro", "Algorithms\05. Search\Gridland metro\Gridland metro.csproj", "{0E290C20-8541-4F26-8788-319F96B771BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gridland metro", "Algorithms\05. Search\Gridland metro\Gridland metro.csproj", "{0E290C20-8541-4F26-8788-319F96B771BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ice cream parlor", "Algorithms\05. Search\Ice cream parlor\Ice cream parlor.csproj", "{FEAB67C4-F78B-42BE-8CD5-0321B0B0E94E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ice cream parlor", "Algorithms\05. Search\Ice cream parlor\Ice cream parlor.csproj", "{FEAB67C4-F78B-42BE-8CD5-0321B0B0E94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightL on a chessboard", "Algorithms\05. Search\KnightL on a chessboard\KnightL on a chessboard.csproj", "{EC6AC9DF-5577-4F07-BB79-49715C689703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +102,10 @@ Global
 		{FEAB67C4-F78B-42BE-8CD5-0321B0B0E94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEAB67C4-F78B-42BE-8CD5-0321B0B0E94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEAB67C4-F78B-42BE-8CD5-0321B0B0E94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6AC9DF-5577-4F07-BB79-49715C689703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6AC9DF-5577-4F07-BB79-49715C689703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6AC9DF-5577-4F07-BB79-49715C689703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6AC9DF-5577-4F07-BB79-49715C689703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,6 +124,7 @@ Global
 		{E50FC7A5-CEB1-41FC-A34E-1F23C94B0737} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 		{0E290C20-8541-4F26-8788-319F96B771BC} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 		{FEAB67C4-F78B-42BE-8CD5-0321B0B0E94E} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
+		{EC6AC9DF-5577-4F07-BB79-49715C689703} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
