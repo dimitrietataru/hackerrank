@@ -38,6 +38,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Search", "05. Search", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerland radio transmitters", "Algorithms\05. Search\Hackerland radio transmitters\Hackerland radio transmitters.csproj", "{E50FC7A5-CEB1-41FC-A34E-1F23C94B0737}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gridland metro", "Algorithms\05. Search\Gridland metro\Gridland metro.csproj", "{0E290C20-8541-4F26-8788-319F96B771BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,10 @@ Global
 		{E50FC7A5-CEB1-41FC-A34E-1F23C94B0737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E50FC7A5-CEB1-41FC-A34E-1F23C94B0737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E50FC7A5-CEB1-41FC-A34E-1F23C94B0737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E290C20-8541-4F26-8788-319F96B771BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E290C20-8541-4F26-8788-319F96B771BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E290C20-8541-4F26-8788-319F96B771BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E290C20-8541-4F26-8788-319F96B771BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +110,7 @@ Global
 		{CA91A52C-9265-4974-9F95-83E9B6E0B8DB} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
 		{61E390D0-B71D-4E83-803A-2417073EB7AB} = {1A339059-7229-4AA2-9535-42226A7B058D}
 		{E50FC7A5-CEB1-41FC-A34E-1F23C94B0737} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
+		{0E290C20-8541-4F26-8788-319F96B771BC} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
