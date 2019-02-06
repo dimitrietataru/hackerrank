@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mini-max sum", "Algorithms\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birthday cake candles", "Algorithms\01. Warmup\Birthday cake candles\Birthday cake candles.csproj", "{723658D4-AB96-4185-B17F-6488ABA3AF70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Time conversion", "Algorithms\01. Warmup\Time conversion\Time conversion.csproj", "{C38BB08D-C3CF-4969-A324-91DD3F08EFE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -124,6 +126,10 @@ Global
 		{723658D4-AB96-4185-B17F-6488ABA3AF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{723658D4-AB96-4185-B17F-6488ABA3AF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{723658D4-AB96-4185-B17F-6488ABA3AF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38BB08D-C3CF-4969-A324-91DD3F08EFE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38BB08D-C3CF-4969-A324-91DD3F08EFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38BB08D-C3CF-4969-A324-91DD3F08EFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38BB08D-C3CF-4969-A324-91DD3F08EFE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{812D3773-D4DF-4C33-A02F-5009D00132E8} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
 		{57AB03BB-D28A-4BC1-A325-519876C8F1E9} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
 		{723658D4-AB96-4185-B17F-6488ABA3AF70} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
+		{C38BB08D-C3CF-4969-A324-91DD3F08EFE1} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
