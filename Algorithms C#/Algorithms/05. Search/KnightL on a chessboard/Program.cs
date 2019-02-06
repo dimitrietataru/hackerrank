@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -7,81 +8,54 @@ class Program
     static void Main(string[] args)
     {
         var reader = new InputReader(true);
-
-        int size = reader.NextInt;
-        Solve(size);
-
+        int n = reader.NextInt;
         reader.Close();
-    }
 
-    static void Solve(int size)
-    {
-        int[][] result = new int[4][];
-        for (int i = 1; i <= result.Length; ++i)
+        for (int i = 1; i < n; ++i)
         {
-            for (int j = 1; j <= result.Length; ++j)
+            for (int j = 1; j < n; ++j)
             {
-                var visited = new bool[size, size];
-                var jumps = Jump(visited, i, j, 0, 0, size - 1);
-                Console.Write($"{Math.Max(jumps, -1)} ");
+                Console.Write($"{SolveBFS(i, j, n)} ");
             }
             Console.WriteLine();
         }
     }
 
-    static int Jump(bool[,] visited, int jumpX, int jumpY, int x, int y, int size)
+    static int SolveBFS(int dirA, int dirB, int n)
     {
-        //Console.WriteLine($"Visiting {x} x {y}");
+        var dX = new[] { 1, 1, -1, -1 };
+        var dY = new[] { 1, -1, 1, -1 };
+        var possibleDirections = dX
+            .Select((_, i1) => new KeyValuePair<int, int>(dirA * dX[i1], dirB * dY[i1]))
+            .Concat(dX.Select((_, i2) => new KeyValuePair<int, int>(dirB * dX[i2], dirA * dY[i2])))
+            .Distinct()
+            .ToList();
 
-        if (!IsValidCoordinate(x, y, size))
+        int[,] visits = new int[n, n];
+        visits[0, 0] = 1;
+
+        var queue = new Queue<KeyValuePair<int, int>>();
+        queue.Enqueue(new KeyValuePair<int, int>(0, 0));
+        while (queue.Count > 0)
         {
-            return 0;
-        }
+            var cell = queue.Dequeue();
+            int x = cell.Key;
+            int y = cell.Value;
 
-        if (visited[x, y])
-        {
-            return -999_999;
-        }
-
-        if (x == size && y == size)
-        {
-            return 1;
-        }
-
-        visited[x, y] = true;
-
-        var arrayX = GetXDirections(jumpX);
-        var arrayY = GetXDirections(jumpY);
-
-        return 1 +
-            new[]
+            possibleDirections.ForEach(direction =>
             {
-                Jump(visited, jumpX, jumpY, x + arrayX[0], y + arrayY[0], size),
-                Jump(visited, jumpX, jumpY, x + arrayX[1], y + arrayY[1], size),
-                Jump(visited, jumpX, jumpY, x + arrayX[2], y + arrayY[2], size),
-                Jump(visited, jumpX, jumpY, x + arrayX[3], y + arrayY[3], size),
-                Jump(visited, jumpX, jumpY, x + arrayX[4], y + arrayY[4], size),
-                Jump(visited, jumpX, jumpY, x + arrayX[5], y + arrayY[5], size),
-                Jump(visited, jumpX, jumpY, x + arrayX[6], y + arrayY[6], size),
-                Jump(visited, jumpX, jumpY, x + arrayX[7], y + arrayY[7], size)
-            }
-//            .Where(val => val >= 0)
-            .Max();
-    }
+                int a = direction.Key;
+                int b = direction.Value;
 
-    static bool IsValidCoordinate(int x, int y, int size)
-    {
-        return !(x < 0 || x >= size || y < 0 || y >= size);
-    }
+                if ((x + a < n && x + a >= 0) && (y + b >= 0 && y + b < n) && visits[x + a, y + b] == 0)
+                {
+                    visits[x + a, y + b] = visits[x, y] + 1;
+                    queue.Enqueue(new KeyValuePair<int, int>(x + a, y + b));
+                }
+            });
+        }
 
-    static int[] GetXDirections(int jump)
-    {
-        return new[] { -jump, -jump, -jump, 0, 0, jump, jump, jump };
-    }
-
-    static int[] GetYDirections(int jump)
-    {
-        return new[] { -jump, 0, jump, -jump, jump, -jump, 0, jump };
+        return visits[n - 1, n - 1] - 1;
     }
 }
 
