@@ -44,7 +44,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ice cream parlor", "Algorit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnightL on a chessboard", "Algorithms\05. Search\KnightL on a chessboard\KnightL on a chessboard.csproj", "{EC6AC9DF-5577-4F07-BB79-49715C689703}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Missing numbers", "Algorithms\05. Search\Missing numbers\Missing numbers.csproj", "{ABF36DE3-4FC0-4239-97ED-2835E004B8FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Missing numbers", "Algorithms\05. Search\Missing numbers\Missing numbers.csproj", "{ABF36DE3-4FC0-4239-97ED-2835E004B8FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birthday cake candles", "Algorithms\01. Warmup\Birthday cake candles\Birthday cake candles.csproj", "{AF81695C-29F6-402F-8E71-6F3AB19C9B71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mini-max sum", "Algorithms\01. Warmup\Mini-max sum\Mini-max sum.csproj", "{0F327581-32DF-43CD-B658-620384C0CDD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Staircase", "Algorithms\01. Warmup\Staircase\Staircase.csproj", "{EA7A4FBB-811C-488C-844B-24421C276000}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Time conversion", "Algorithms\01. Warmup\Time conversion\Time conversion.csproj", "{D8129967-9B14-48AF-ADA3-E25A3E8EB5CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -112,6 +120,22 @@ Global
 		{ABF36DE3-4FC0-4239-97ED-2835E004B8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABF36DE3-4FC0-4239-97ED-2835E004B8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABF36DE3-4FC0-4239-97ED-2835E004B8FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF81695C-29F6-402F-8E71-6F3AB19C9B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF81695C-29F6-402F-8E71-6F3AB19C9B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF81695C-29F6-402F-8E71-6F3AB19C9B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF81695C-29F6-402F-8E71-6F3AB19C9B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F327581-32DF-43CD-B658-620384C0CDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F327581-32DF-43CD-B658-620384C0CDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F327581-32DF-43CD-B658-620384C0CDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F327581-32DF-43CD-B658-620384C0CDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA7A4FBB-811C-488C-844B-24421C276000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA7A4FBB-811C-488C-844B-24421C276000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA7A4FBB-811C-488C-844B-24421C276000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA7A4FBB-811C-488C-844B-24421C276000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8129967-9B14-48AF-ADA3-E25A3E8EB5CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8129967-9B14-48AF-ADA3-E25A3E8EB5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8129967-9B14-48AF-ADA3-E25A3E8EB5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8129967-9B14-48AF-ADA3-E25A3E8EB5CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +156,10 @@ Global
 		{FEAB67C4-F78B-42BE-8CD5-0321B0B0E94E} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 		{EC6AC9DF-5577-4F07-BB79-49715C689703} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 		{ABF36DE3-4FC0-4239-97ED-2835E004B8FB} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
+		{AF81695C-29F6-402F-8E71-6F3AB19C9B71} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
+		{0F327581-32DF-43CD-B658-620384C0CDD7} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
+		{EA7A4FBB-811C-488C-844B-24421C276000} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
+		{D8129967-9B14-48AF-ADA3-E25A3E8EB5CD} = {635BD817-424F-4354-97FE-958AFB0DA1C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
