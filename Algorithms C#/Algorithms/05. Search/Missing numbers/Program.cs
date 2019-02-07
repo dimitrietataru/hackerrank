@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 class Program
 {
@@ -19,26 +18,21 @@ class Program
 
     static void Solve(int[] a, int[] b)
     {
-        var diff = a.Except(b).OrderBy(x => x).ToHashSet();
+        var freq = new int[100_001];
+        var diff = new SortedSet<int>();
 
-        var result = new SortedSet<int>();
-
-        //int indexA = 0;
-        //for (int i = 0; i < b.Length; ++i)
-        //{
-        //    if (indexA >= a.Length)
-        //    {
-        //        result.Add(b[i]);
-        //    }
-        //    else if (b[i] == a[indexA])
-        //    {
-        //        indexA++;
-        //    }
-        //    else 
-        //    {
-        //        result.Add(b[i]);
-        //    }
-        //}
+        foreach (int i in a)
+        {
+            freq[i]++;
+        }
+        
+        foreach (int i in b)
+        {
+            if (freq[i]-- == 0)
+            {
+                diff.Add(i);
+            }
+        }
 
         Console.WriteLine(string.Join(" ", diff));
     }
