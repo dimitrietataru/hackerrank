@@ -1,15 +1,17 @@
 # HACKERRANK
 
-185+ solutions (...and counting)
+195+ solutions (...and counting)
 
 * 30 days of code
   - Java
-  - C++
   - C#
+  - C++
 * Algorithms
   - Warmup
   - Implementation
   - Strings
+  - Sorting
+  - Search
 * Java
   - Introduction
   - Strings
