@@ -21,10 +21,11 @@ class Program
 
     static void Solve(string[] items)
     {
-        Array.Sort(items, (s1, s2) => (s1.Length == s2.Length)
-            ? string.Compare(s1, s2, StringComparison.Ordinal)
-            : s1.Length - s2.Length
-        );
+        Array.Sort(
+            items,
+            (s1, s2) => (s1.Length == s2.Length)
+                ? string.Compare(s1, s2, StringComparison.Ordinal)
+                : s1.Length - s2.Length);
 
         Console.WriteLine(string.Join("\n", items));
     }
