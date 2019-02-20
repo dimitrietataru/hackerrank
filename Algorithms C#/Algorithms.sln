@@ -70,6 +70,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marc's cakewalk", "Algorith
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid challenge", "Algorithms\07. Greedy\Grid challenge\Grid challenge.csproj", "{33D4F9A5-5F3C-422D-BED3-9DC0852F302B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luck balance", "Algorithms\07. Greedy\Luck balance\Luck balance.csproj", "{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -180,6 +182,10 @@ Global
 		{33D4F9A5-5F3C-422D-BED3-9DC0852F302B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33D4F9A5-5F3C-422D-BED3-9DC0852F302B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33D4F9A5-5F3C-422D-BED3-9DC0852F302B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -211,6 +217,7 @@ Global
 		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{E99187FF-11B8-41A7-A806-1639713DCC66} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{33D4F9A5-5F3C-422D-BED3-9DC0852F302B} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
+		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
