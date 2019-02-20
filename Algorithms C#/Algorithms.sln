@@ -64,13 +64,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Count luck", "Algorithms\05
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Greedy", "07. Greedy", "{16B32A2E-135E-414B-93B7-1FFF915A2F83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minimum absolute difference in an array", "Algorithms\07. Greedy\Minimum absolute difference in an array\Minimum absolute difference in an array.csproj", "{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minimum absolute difference in an array", "Algorithms\07. Greedy\Minimum absolute difference in an array\Minimum absolute difference in an array.csproj", "{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marc's cakewalk", "Algorithms\07. Greedy\Marc's cakewalk\Marc's cakewalk.csproj", "{E99187FF-11B8-41A7-A806-1639713DCC66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marc's cakewalk", "Algorithms\07. Greedy\Marc's cakewalk\Marc's cakewalk.csproj", "{E99187FF-11B8-41A7-A806-1639713DCC66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid challenge", "Algorithms\07. Greedy\Grid challenge\Grid challenge.csproj", "{33D4F9A5-5F3C-422D-BED3-9DC0852F302B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grid challenge", "Algorithms\07. Greedy\Grid challenge\Grid challenge.csproj", "{33D4F9A5-5F3C-422D-BED3-9DC0852F302B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luck balance", "Algorithms\07. Greedy\Luck balance\Luck balance.csproj", "{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Luck balance", "Algorithms\07. Greedy\Luck balance\Luck balance.csproj", "{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maximum perimeter triangle", "Algorithms\07. Greedy\Maximum perimeter triangle\Maximum perimeter triangle.csproj", "{CE68BAB0-D819-4CE1-BC9C-47604530C895}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -186,6 +188,10 @@ Global
 		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE68BAB0-D819-4CE1-BC9C-47604530C895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE68BAB0-D819-4CE1-BC9C-47604530C895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE68BAB0-D819-4CE1-BC9C-47604530C895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE68BAB0-D819-4CE1-BC9C-47604530C895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -218,6 +224,7 @@ Global
 		{E99187FF-11B8-41A7-A806-1639713DCC66} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{33D4F9A5-5F3C-422D-BED3-9DC0852F302B} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{80FC0FDA-B1FC-48F1-988E-6FC0A3B7B473} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
+		{CE68BAB0-D819-4CE1-BC9C-47604530C895} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
