@@ -60,7 +60,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minimum loss", "Algorithms\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pairs", "Algorithms\05. Search\Pairs\Pairs.csproj", "{A1E80671-079F-41C1-9691-99F432393A40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Count luck", "Algorithms\05. Search\Count luck\Count luck.csproj", "{7F091F5A-CE7F-452B-9546-8AF081401F74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Count luck", "Algorithms\05. Search\Count luck\Count luck.csproj", "{7F091F5A-CE7F-452B-9546-8AF081401F74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Greedy", "07. Greedy", "{16B32A2E-135E-414B-93B7-1FFF915A2F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minimum absolute difference in an array", "Algorithms\07. Greedy\Minimum absolute difference in an array\Minimum absolute difference in an array.csproj", "{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -160,6 +164,10 @@ Global
 		{7F091F5A-CE7F-452B-9546-8AF081401F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F091F5A-CE7F-452B-9546-8AF081401F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F091F5A-CE7F-452B-9546-8AF081401F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -188,6 +196,7 @@ Global
 		{9AE89D6C-F30D-43D1-8B4D-9356C5DB2D45} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 		{A1E80671-079F-41C1-9691-99F432393A40} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 		{7F091F5A-CE7F-452B-9546-8AF081401F74} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
+		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
