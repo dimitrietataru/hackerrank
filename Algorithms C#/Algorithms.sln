@@ -66,6 +66,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Greedy", "07. Greedy", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minimum absolute difference in an array", "Algorithms\07. Greedy\Minimum absolute difference in an array\Minimum absolute difference in an array.csproj", "{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marc's cakewalk", "Algorithms\07. Greedy\Marc's cakewalk\Marc's cakewalk.csproj", "{E99187FF-11B8-41A7-A806-1639713DCC66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -168,6 +170,10 @@ Global
 		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99187FF-11B8-41A7-A806-1639713DCC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99187FF-11B8-41A7-A806-1639713DCC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99187FF-11B8-41A7-A806-1639713DCC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99187FF-11B8-41A7-A806-1639713DCC66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,6 +203,7 @@ Global
 		{A1E80671-079F-41C1-9691-99F432393A40} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 		{7F091F5A-CE7F-452B-9546-8AF081401F74} = {CE415D9E-D595-48C2-8CBF-12495072D3FD}
 		{EE9F10CA-C97C-45E7-B8B7-80687A25C8F3} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
+		{E99187FF-11B8-41A7-A806-1639713DCC66} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
