@@ -20,36 +20,29 @@ class Program
 
     static void Solve(int length)
     {
-        if (length % 15 == 0)
+        int fives = 0;
+        int threes = 0;
+
+        for (int i = length; i >= 0; --i)
         {
-            var fives = Enumerable.Repeat("5", length);
-            Console.WriteLine(string.Join("", fives));
+            if (i % 3 == 0 && (length - i) % 5 ==0)
+            {
+                fives = i;
+                threes = length - i;
+                break;
+            }
         }
-        else if (length % 5 == 0)
+
+        if (fives == 0 && threes == 0)
         {
-            var digits = Enumerable.Repeat("3", length);
-            Console.WriteLine(string.Join("", digits));
-        }
-        else if (length % 3 == 0)
-        {
-            var digits = Enumerable.Repeat("5", length);
-            Console.WriteLine(string.Join("", digits));
-        }
-        else if (length > 5 && (length - 5) % 3 == 0)
-        {
-            var fives = Enumerable.Repeat("5", length - 5);
-            var threes = Enumerable.Repeat("3", 5);
-            Console.WriteLine(string.Join("", fives.Concat(threes)));
-        }
-        else if (length > 10 && (length - 10) % 3 == 0)
-        {
-            var fives = Enumerable.Repeat("5", length - 10);
-            var threes = Enumerable.Repeat("3", 10);
-            Console.WriteLine(string.Join("", fives.Concat(threes)));
+            Console.WriteLine("-1");
         }
         else
         {
-            Console.WriteLine("-1");
+            var fiveTimes = Enumerable.Repeat("5", fives);
+            var threeTimes = Enumerable.Repeat("3", threes);
+
+            Console.WriteLine($"{string.Join("", fiveTimes)}{string.Join("", threeTimes)}");
         }
     }
 }
