@@ -74,9 +74,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Luck balance", "Algorithms\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maximum perimeter triangle", "Algorithms\07. Greedy\Maximum perimeter triangle\Maximum perimeter triangle.csproj", "{CE68BAB0-D819-4CE1-BC9C-47604530C895}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beautiful pairs", "Algorithms\07. Greedy\Beautiful pairs\Beautiful pairs.csproj", "{BDC08974-6693-4FD5-9A55-E9E5D9CFAAB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beautiful pairs", "Algorithms\07. Greedy\Beautiful pairs\Beautiful pairs.csproj", "{BDC08974-6693-4FD5-9A55-E9E5D9CFAAB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sherlock and the beast", "Algorithms\07. Greedy\Sherlock and the beast\Sherlock and the beast.csproj", "{F9AA72B4-8202-409B-85A7-CF6595DB0257}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sherlock and the beast", "Algorithms\07. Greedy\Sherlock and the beast\Sherlock and the beast.csproj", "{F9AA72B4-8202-409B-85A7-CF6595DB0257}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Priyanka and toys", "Algorithms\07. Greedy\Priyanka and toys\Priyanka and toys.csproj", "{43768C0A-A9E5-43AC-9597-2C5F5F531817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -204,6 +206,10 @@ Global
 		{F9AA72B4-8202-409B-85A7-CF6595DB0257}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9AA72B4-8202-409B-85A7-CF6595DB0257}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9AA72B4-8202-409B-85A7-CF6595DB0257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43768C0A-A9E5-43AC-9597-2C5F5F531817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43768C0A-A9E5-43AC-9597-2C5F5F531817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43768C0A-A9E5-43AC-9597-2C5F5F531817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43768C0A-A9E5-43AC-9597-2C5F5F531817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -239,6 +245,7 @@ Global
 		{CE68BAB0-D819-4CE1-BC9C-47604530C895} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{BDC08974-6693-4FD5-9A55-E9E5D9CFAAB9} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{F9AA72B4-8202-409B-85A7-CF6595DB0257} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
+		{43768C0A-A9E5-43AC-9597-2C5F5F531817} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
