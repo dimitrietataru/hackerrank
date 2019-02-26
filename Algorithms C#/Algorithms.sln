@@ -86,6 +86,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "The coin change problem", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two characters", "Algorithms\03. Strings\Two characters\Two characters.csproj", "{9412E32F-BC8F-44B7-8719-3591AF5F2899}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caesar cipher", "Algorithms\03. Strings\Caesar cipher\Caesar cipher.csproj", "{20BC3356-CD53-4478-9B33-CFAEC389A1DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -224,6 +226,10 @@ Global
 		{9412E32F-BC8F-44B7-8719-3591AF5F2899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9412E32F-BC8F-44B7-8719-3591AF5F2899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9412E32F-BC8F-44B7-8719-3591AF5F2899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20BC3356-CD53-4478-9B33-CFAEC389A1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20BC3356-CD53-4478-9B33-CFAEC389A1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20BC3356-CD53-4478-9B33-CFAEC389A1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20BC3356-CD53-4478-9B33-CFAEC389A1DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -262,6 +268,7 @@ Global
 		{43768C0A-A9E5-43AC-9597-2C5F5F531817} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{461C2CEB-C107-4966-8771-8D4441183053} = {F4C93498-1D9C-429B-970D-BEA19812D6A1}
 		{9412E32F-BC8F-44B7-8719-3591AF5F2899} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
+		{20BC3356-CD53-4478-9B33-CFAEC389A1DF} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
