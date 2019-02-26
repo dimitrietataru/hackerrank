@@ -94,6 +94,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerrank in a string", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pangrams", "Algorithms\03. Strings\Pangrams\Pangrams.csproj", "{E08831F0-A3E2-4FD6-BCD2-305D6F9FF8B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weighted uniform strings", "Algorithms\03. Strings\Weighted uniform strings\Weighted uniform strings.csproj", "{7AFB1BE0-9635-4D46-B27C-060ECEA62CD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -248,6 +250,10 @@ Global
 		{E08831F0-A3E2-4FD6-BCD2-305D6F9FF8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E08831F0-A3E2-4FD6-BCD2-305D6F9FF8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E08831F0-A3E2-4FD6-BCD2-305D6F9FF8B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFB1BE0-9635-4D46-B27C-060ECEA62CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFB1BE0-9635-4D46-B27C-060ECEA62CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFB1BE0-9635-4D46-B27C-060ECEA62CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFB1BE0-9635-4D46-B27C-060ECEA62CD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -290,6 +296,7 @@ Global
 		{24D366CA-27B4-4051-8974-278D831CA8EF} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 		{D844167C-BC27-4B32-A503-06666DEDE430} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 		{E08831F0-A3E2-4FD6-BCD2-305D6F9FF8B8} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
+		{7AFB1BE0-9635-4D46-B27C-060ECEA62CD1} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
