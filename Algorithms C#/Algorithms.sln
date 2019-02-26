@@ -88,6 +88,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two characters", "Algorithm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caesar cipher", "Algorithms\03. Strings\Caesar cipher\Caesar cipher.csproj", "{20BC3356-CD53-4478-9B33-CFAEC389A1DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars exploration", "Algorithms\03. Strings\Mars exploration\Mars exploration.csproj", "{24D366CA-27B4-4051-8974-278D831CA8EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -230,6 +232,10 @@ Global
 		{20BC3356-CD53-4478-9B33-CFAEC389A1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20BC3356-CD53-4478-9B33-CFAEC389A1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20BC3356-CD53-4478-9B33-CFAEC389A1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24D366CA-27B4-4051-8974-278D831CA8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D366CA-27B4-4051-8974-278D831CA8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D366CA-27B4-4051-8974-278D831CA8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D366CA-27B4-4051-8974-278D831CA8EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -269,6 +275,7 @@ Global
 		{461C2CEB-C107-4966-8771-8D4441183053} = {F4C93498-1D9C-429B-970D-BEA19812D6A1}
 		{9412E32F-BC8F-44B7-8719-3591AF5F2899} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 		{20BC3356-CD53-4478-9B33-CFAEC389A1DF} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
+		{24D366CA-27B4-4051-8974-278D831CA8EF} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
