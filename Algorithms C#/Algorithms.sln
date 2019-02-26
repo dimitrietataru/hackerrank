@@ -78,7 +78,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beautiful pairs", "Algorith
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sherlock and the beast", "Algorithms\07. Greedy\Sherlock and the beast\Sherlock and the beast.csproj", "{F9AA72B4-8202-409B-85A7-CF6595DB0257}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Priyanka and toys", "Algorithms\07. Greedy\Priyanka and toys\Priyanka and toys.csproj", "{43768C0A-A9E5-43AC-9597-2C5F5F531817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Priyanka and toys", "Algorithms\07. Greedy\Priyanka and toys\Priyanka and toys.csproj", "{43768C0A-A9E5-43AC-9597-2C5F5F531817}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Dynamic programming", "08. Dynamic programming", "{F4C93498-1D9C-429B-970D-BEA19812D6A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The coin change problem", "Algorithms\08. Dynamic programming\The coin change problem\The coin change problem.csproj", "{461C2CEB-C107-4966-8771-8D4441183053}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -210,6 +214,10 @@ Global
 		{43768C0A-A9E5-43AC-9597-2C5F5F531817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43768C0A-A9E5-43AC-9597-2C5F5F531817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43768C0A-A9E5-43AC-9597-2C5F5F531817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461C2CEB-C107-4966-8771-8D4441183053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461C2CEB-C107-4966-8771-8D4441183053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461C2CEB-C107-4966-8771-8D4441183053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461C2CEB-C107-4966-8771-8D4441183053}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -246,6 +254,7 @@ Global
 		{BDC08974-6693-4FD5-9A55-E9E5D9CFAAB9} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{F9AA72B4-8202-409B-85A7-CF6595DB0257} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
 		{43768C0A-A9E5-43AC-9597-2C5F5F531817} = {16B32A2E-135E-414B-93B7-1FFF915A2F83}
+		{461C2CEB-C107-4966-8771-8D4441183053} = {F4C93498-1D9C-429B-970D-BEA19812D6A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
