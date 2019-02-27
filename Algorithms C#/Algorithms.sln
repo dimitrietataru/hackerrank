@@ -108,6 +108,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beautiful binary string", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The love-letter mystery", "Algorithms\03. Strings\The love-letter mystery\The love-letter mystery.csproj", "{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome index", "Algorithms\03. Strings\Palindrome index\Palindrome index.csproj", "{01F7E8ED-9081-4BAC-AFA5-AB3DCF11EB5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -290,6 +292,10 @@ Global
 		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F7E8ED-9081-4BAC-AFA5-AB3DCF11EB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F7E8ED-9081-4BAC-AFA5-AB3DCF11EB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F7E8ED-9081-4BAC-AFA5-AB3DCF11EB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F7E8ED-9081-4BAC-AFA5-AB3DCF11EB5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -339,6 +345,7 @@ Global
 		{DAA2C993-E29E-486D-BF38-E8EC9FDC1883} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 		{0E325C21-24C7-42B6-9BAB-58DD3198E2AC} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
+		{01F7E8ED-9081-4BAC-AFA5-AB3DCF11EB5C} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
