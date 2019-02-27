@@ -84,27 +84,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Dynamic programming", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "The coin change problem", "Algorithms\08. Dynamic programming\The coin change problem\The coin change problem.csproj", "{461C2CEB-C107-4966-8771-8D4441183053}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two characters", "Algorithms\03. Strings\Two characters\Two characters.csproj", "{9412E32F-BC8F-44B7-8719-3591AF5F2899}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Two characters", "Algorithms\03. Strings\Two characters\Two characters.csproj", "{9412E32F-BC8F-44B7-8719-3591AF5F2899}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caesar cipher", "Algorithms\03. Strings\Caesar cipher\Caesar cipher.csproj", "{20BC3356-CD53-4478-9B33-CFAEC389A1DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caesar cipher", "Algorithms\03. Strings\Caesar cipher\Caesar cipher.csproj", "{20BC3356-CD53-4478-9B33-CFAEC389A1DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars exploration", "Algorithms\03. Strings\Mars exploration\Mars exploration.csproj", "{24D366CA-27B4-4051-8974-278D831CA8EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mars exploration", "Algorithms\03. Strings\Mars exploration\Mars exploration.csproj", "{24D366CA-27B4-4051-8974-278D831CA8EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerrank in a string", "Algorithms\03. Strings\Hackerrank in a string\Hackerrank in a string.csproj", "{D844167C-BC27-4B32-A503-06666DEDE430}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackerrank in a string", "Algorithms\03. Strings\Hackerrank in a string\Hackerrank in a string.csproj", "{D844167C-BC27-4B32-A503-06666DEDE430}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pangrams", "Algorithms\03. Strings\Pangrams\Pangrams.csproj", "{E08831F0-A3E2-4FD6-BCD2-305D6F9FF8B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pangrams", "Algorithms\03. Strings\Pangrams\Pangrams.csproj", "{E08831F0-A3E2-4FD6-BCD2-305D6F9FF8B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weighted uniform strings", "Algorithms\03. Strings\Weighted uniform strings\Weighted uniform strings.csproj", "{7AFB1BE0-9635-4D46-B27C-060ECEA62CD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weighted uniform strings", "Algorithms\03. Strings\Weighted uniform strings\Weighted uniform strings.csproj", "{7AFB1BE0-9635-4D46-B27C-060ECEA62CD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Separate the numbers", "Algorithms\03. Strings\Separate the numbers\Separate the numbers.csproj", "{593839E4-0FA4-47C6-878C-190F6158E6E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Separate the numbers", "Algorithms\03. Strings\Separate the numbers\Separate the numbers.csproj", "{593839E4-0FA4-47C6-878C-190F6158E6E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funny string", "Algorithms\03. Strings\Funny string\Funny string.csproj", "{15D524A4-6D00-43F5-A080-47D59819F969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funny string", "Algorithms\03. Strings\Funny string\Funny string.csproj", "{15D524A4-6D00-43F5-A080-47D59819F969}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gemstones", "Algorithms\03. Strings\Gemstones\Gemstones.csproj", "{30DA4F4D-B64F-4480-B2F4-18DFAD593BC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gemstones", "Algorithms\03. Strings\Gemstones\Gemstones.csproj", "{30DA4F4D-B64F-4480-B2F4-18DFAD593BC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alternating characters", "Algorithms\03. Strings\Alternating characters\Alternating characters.csproj", "{DAA2C993-E29E-486D-BF38-E8EC9FDC1883}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alternating characters", "Algorithms\03. Strings\Alternating characters\Alternating characters.csproj", "{DAA2C993-E29E-486D-BF38-E8EC9FDC1883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beautiful binary string", "Algorithms\03. Strings\Beautiful binary string\Beautiful binary string.csproj", "{0E325C21-24C7-42B6-9BAB-58DD3198E2AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beautiful binary string", "Algorithms\03. Strings\Beautiful binary string\Beautiful binary string.csproj", "{0E325C21-24C7-42B6-9BAB-58DD3198E2AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The love-letter mystery", "Algorithms\03. Strings\The love-letter mystery\The love-letter mystery.csproj", "{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -284,6 +286,10 @@ Global
 		{0E325C21-24C7-42B6-9BAB-58DD3198E2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E325C21-24C7-42B6-9BAB-58DD3198E2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E325C21-24C7-42B6-9BAB-58DD3198E2AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -332,6 +338,7 @@ Global
 		{30DA4F4D-B64F-4480-B2F4-18DFAD593BC6} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 		{DAA2C993-E29E-486D-BF38-E8EC9FDC1883} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 		{0E325C21-24C7-42B6-9BAB-58DD3198E2AC} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
+		{F8BF230C-2C94-4425-98B7-FB23FFF2ABCC} = {CBBB1833-386F-421F-B410-58EED1F9DE82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9D5B8A9-1BFD-4060-9950-84D44C88CA65}
