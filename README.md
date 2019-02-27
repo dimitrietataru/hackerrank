@@ -1,6 +1,6 @@
 # HACKERRANK
 
-195+ solutions (...and counting)
+203+ solutions (...and counting)
 
 * 30 days of code
   - Java
@@ -12,6 +12,8 @@
   - Strings
   - Sorting
   - Search
+  - Greedy
+  - Dynamic programming
 * Java
   - Introduction
   - Strings
